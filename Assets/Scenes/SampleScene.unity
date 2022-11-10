@@ -290,7 +290,7 @@ MonoBehaviour:
   webs: {fileID: 6194677874044689170, guid: 0e45abf74d36e8b449880472d621564a, type: 3}
   cheats: {fileID: 542975565}
   SpawnPoint: {fileID: 1879877644}
-  timeBetweenWaves: 10
+  timeBetweenWaves: 12.5
   waveNumber: 1
 --- !u!1 &170718785 stripped
 GameObject:
@@ -628,7 +628,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c0e03304d7a49f4291d87c484fc98ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  secondsToDestroy: 7.5
+  secondsToDestroy: 7
 --- !u!1001 &1841964327
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -757,6 +757,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_FontSize
       value: 45
+      objectReference: {fileID: 0}
+    - target: {fileID: 6739547145951201776, guid: e9c9c151e8dc7c145b6b64bcf8ad7b97,
+        type: 3}
+      propertyPath: m_Color.rgba
+      value: 4280790704
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e9c9c151e8dc7c145b6b64bcf8ad7b97, type: 3}
