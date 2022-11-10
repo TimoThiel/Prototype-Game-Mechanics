@@ -16,7 +16,7 @@ public class Cheats : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            move.currentSpeed *= 1.1f;
+            move.currentSpeed *= 1.01f;
         }
         if (Input.GetKeyDown(KeyCode.X))
         {
