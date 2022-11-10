@@ -18,8 +18,6 @@ public class EnemySlower : MonoBehaviour
     void Start()
     {
         floatingText = Instantiate(floatingTextPrefab, transform.position, Quaternion.identity);
-        
-        
     }
 
     // Update is called once per frame

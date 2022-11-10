@@ -18,10 +18,6 @@ public class tower : MonoBehaviour
     }
     private void Update()
     {
-        /*ShowAmount(health.ToString());*/
-
-
-
         if (health <= 0)
         {
             ResetTheGame();

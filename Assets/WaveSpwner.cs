@@ -41,7 +41,7 @@ public class WaveSpwner : MonoBehaviour
         if (countdown <= 0)
         {
             
-            if (waveNumber < 50)
+            if (waveNumber < 30)
             {
                 
                 StartCoroutine(SpawnWave());
