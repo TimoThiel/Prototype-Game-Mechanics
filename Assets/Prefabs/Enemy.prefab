@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 5612259875077187579}
   - component: {fileID: -6327695155092700547}
   - component: {fileID: -1222379816735610433}
-  - component: {fileID: -1672131002002996569}
+  - component: {fileID: 7281849447955429499}
   m_Layer: 6
   m_Name: Enemy
   m_TagString: Enemy
@@ -167,7 +167,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.59, y: 0.56}
   m_EdgeRadius: 0
---- !u!114 &-1672131002002996569
+--- !u!114 &7281849447955429499
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -179,9 +179,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de14801afa293024bb9d1345ab49516b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  money: 0.39944854
+  money: 0
   enemies: {fileID: 6194677874044689199}
   obj: {fileID: 3873373276762105559, guid: 308bad75ee7a6dc49ab0889c25ef76e1, type: 3}
   floatingTextPrefab: {fileID: 31912549327244892, guid: e9c9c151e8dc7c145b6b64bcf8ad7b97,
     type: 3}
   collisionIsWorking: 0
+  geld: {fileID: 1476971116041196330, guid: 6d2f24c4b5acb8f4a9a5e195ac165ca5, type: 3}

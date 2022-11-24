@@ -11,9 +11,9 @@ public class WaveSpwner : MonoBehaviour
     [SerializeField] public GameObject waypoint;
     [SerializeField] public GameObject webs;
     [SerializeField] public GameObject cheats;
-
+    [SerializeField] public GameManager gameManager;
     public Transform SpawnPoint;
-
+    public float moneyTimer = 0;
     public float timeBetweenWaves = 100f;
     private float countdown = 5f;
     public int waveNumber = 1;
@@ -24,7 +24,7 @@ public class WaveSpwner : MonoBehaviour
         var enemy = enemyPrefab.GetComponent<Enemy>();
         var web = webs.GetComponent<EnemySlower>();
         enemy.maxHP = 17.5f;
-        web.money = 0;
+        
         enemy1.currentSpeed = 3;
     }
     void Update()
@@ -33,9 +33,16 @@ public class WaveSpwner : MonoBehaviour
         var cheat = cheats.GetComponent<Cheats>();
         var waypoints = waypoint.GetComponent<Waypoint>();
         var web = webs.GetComponent<EnemySlower>();
-        web.money += 1*Time.deltaTime;
-        
-        web.Update();
+        if(moneyTimer < 0)
+        {
+          
+            gameManager.ChangeAmount(1);
+            moneyTimer = 1;
+        }
+        moneyTimer-= Time.deltaTime;
+        /*web.money +=  Mathf.CeilToInt(Time.deltaTime);*/
+
+        /*web.Update();*/
         cheat.Update();
         
         if (countdown <= 0)
