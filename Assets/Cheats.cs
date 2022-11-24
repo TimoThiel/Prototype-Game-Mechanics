@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Cheats : MonoBehaviour
 {
+    public GameManage gameManager;
     [SerializeField] public Mover move;
     [SerializeField] public EnemySlower web;
     void Start()
@@ -20,7 +21,7 @@ public class Cheats : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.X))
         {
-            web.money += 100;
+            gameManager.ChangeAmount(100);
         }
 
     }

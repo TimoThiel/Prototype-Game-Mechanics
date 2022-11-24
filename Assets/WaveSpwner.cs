@@ -11,7 +11,7 @@ public class WaveSpwner : MonoBehaviour
     [SerializeField] public GameObject waypoint;
     [SerializeField] public GameObject webs;
     [SerializeField] public GameObject cheats;
-    [SerializeField] public GameManager gameManager;
+    [SerializeField] public GameManage gameManager;
     public Transform SpawnPoint;
     public float moneyTimer = 0;
     public float timeBetweenWaves = 100f;
@@ -43,7 +43,7 @@ public class WaveSpwner : MonoBehaviour
         /*web.money +=  Mathf.CeilToInt(Time.deltaTime);*/
 
         /*web.Update();*/
-        cheat.Update();
+        /*cheat.Update();*/
         
         if (countdown <= 0)
         {
