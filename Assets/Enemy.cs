@@ -5,13 +5,14 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-
+    
     public float hitPoints;
 
     public float maxHP = 1000f;
     
     void Awake()
     {
+        
         hitPoints = maxHP;
     }
 
@@ -25,9 +26,10 @@ public class Enemy : MonoBehaviour
         if(hitPoints <= 0)
         {
             Die();
+            
         }
     }
-
+    
     private void Die()
     {
         Destroy(gameObject);

@@ -6,10 +6,13 @@ using UnityEngine.SceneManagement;
 public class tower : MonoBehaviour
 {
     int health;
+    public GameObject explo;
     [SerializeField] public int maxHitBox = 100;
     [SerializeField] private GameObject floatingTextPrefab;
     private GameObject floatingText;
     [SerializeField] private GameObject enemie;
+    public Enemy enem;
+    
     private void Start()
     {
         floatingText = Instantiate(floatingTextPrefab, transform.position, Quaternion.identity);
@@ -31,10 +34,20 @@ public class tower : MonoBehaviour
         if (collision.gameObject.tag == "Enemy")
         {
             HitTower();
+            Explosion();
+            
         }
+        
     }
-    
-    public void HitTower()
+    public void Explosion()
+    {
+        GameObject obj = Instantiate(explo, transform);
+        obj.transform.parent = null;
+        obj.transform.position = transform.position;
+    }
+   
+
+        public void HitTower()
     {
         
         health -= 10;
