@@ -25,7 +25,7 @@ public class Waypoint : MonoBehaviour
         if (Input.GetMouseButtonDown(0) && gameManage.money >= 30f)
         {
             gameManage.rotondes += 1;
-            gameManage.money -= 20;
+            gameManage.money -= 30;
             gameManage.ChangeRotondeAmount(1);
             Vector3 mousePos = Input.mousePosition;
             mousePos.z = 2.0f;       // we want 2m away from the camera position
@@ -52,9 +52,9 @@ public class Waypoint : MonoBehaviour
             }
             Destroy(rotonde.transform.gameObject);
         }
-        if (Input.GetMouseButtonDown(1) && gameManage.money >= 15f)
+        if (Input.GetMouseButtonDown(1) && gameManage.money >= 20f)
         {
-            gameManage.money -= 10;
+            gameManage.money -= 20;
             Vector3 mousePos = Input.mousePosition;
             mousePos.z = 2.0f;       // we want 2m away from the camera position
             Vector3 objectPos = Camera.main.ScreenToWorldPoint(mousePos);
