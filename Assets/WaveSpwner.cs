@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class WaveSpwner : MonoBehaviour
 {
+    public Mover move;
     public GameManage gameManage;
     [SerializeField] public GameObject mover;
     [SerializeField] public GameObject enemyPrefab;
@@ -55,12 +56,16 @@ public class WaveSpwner : MonoBehaviour
                 StartCoroutine(SpawnWave());
                 countdown = timeBetweenWaves;
                 
-                if (waveNumber == 3  || waveNumber == 6 || waveNumber == 9 || waveNumber == 12)
+                if (waveNumber == 5  || waveNumber == 10 || waveNumber == 20 || waveNumber == 30)
                 {
-                    
-                    waypoints.maxRotonde += 1;
+                    move.currentSpeed = 5;
+                    /*waypoints.maxRotonde += 1;*/
                     
 
+                }
+                else
+                {
+                    move.currentSpeed = 3;
                 }
             }
         }
