@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class WaveSpwner : MonoBehaviour
 {
+    public GameManage gameManage;
     [SerializeField] public GameObject mover;
     [SerializeField] public GameObject enemyPrefab;
     [SerializeField] public GameObject waypoint;
@@ -58,8 +59,8 @@ public class WaveSpwner : MonoBehaviour
                 {
                     
                     waypoints.maxRotonde += 1;
-                    
-                    
+                    gameManage.ChangeRotondeAmount(1);
+
                 }
             }
         }

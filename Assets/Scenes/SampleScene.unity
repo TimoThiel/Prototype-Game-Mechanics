@@ -283,6 +283,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb36747227fb12f43a8ba2fbfff1f2c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameManage: {fileID: 1088908272}
   mover: {fileID: 6194677874044689170, guid: 0e45abf74d36e8b449880472d621564a, type: 3}
   enemyPrefab: {fileID: 6194677874044689170, guid: 0e45abf74d36e8b449880472d621564a,
     type: 3}
@@ -486,7 +487,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -100, y: 200}
+  m_AnchoredPosition: {x: -80, y: 250}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &395054538
@@ -1344,6 +1345,16 @@ PrefabInstance:
       objectReference: {fileID: 394915097}
     - target: {fileID: 5913456369004828133, guid: 1d4d4e7fe565b424092b316d2df6244d,
         type: 3}
+      propertyPath: gameManage
+      value: 
+      objectReference: {fileID: 1088908272}
+    - target: {fileID: 5913456369004828133, guid: 1d4d4e7fe565b424092b316d2df6244d,
+        type: 3}
+      propertyPath: maxRotonde
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5913456369004828133, guid: 1d4d4e7fe565b424092b316d2df6244d,
+        type: 3}
       propertyPath: waveSpwner
       value: 
       objectReference: {fileID: 128342547}
@@ -1351,7 +1362,7 @@ PrefabInstance:
         type: 3}
       propertyPath: rotondePrefab
       value: 
-      objectReference: {fileID: 4211438211866608579, guid: 1954cfd7c9cfcc3409d519077efb2b65,
+      objectReference: {fileID: 4211438211866608579, guid: c5ff7856e7402ab488bff9c338538a98,
         type: 3}
     - target: {fileID: 5913456369004828133, guid: 1d4d4e7fe565b424092b316d2df6244d,
         type: 3}

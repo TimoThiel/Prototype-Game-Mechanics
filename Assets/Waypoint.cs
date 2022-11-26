@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class Waypoint : MonoBehaviour
 {
-
+    public GameManage gameManage;
     [SerializeField] private float waypointSize = 1f;
     [SerializeField] private GameObject rotondePrefab;
     [SerializeField] private GameObject floatingTextPrefab;
@@ -23,6 +23,7 @@ public class Waypoint : MonoBehaviour
 
         if (Input.GetMouseButtonDown(0) && minRotonde<maxRotonde)
         {
+            gameManage.rotondes -= 1;
             minRotonde++;
             Vector3 mousePos = Input.mousePosition;
             mousePos.z = 2.0f;       // we want 2m away from the camera position
