@@ -86,7 +86,7 @@ public class WaveSpwner : MonoBehaviour
         }
         gameManage.ChangeWaveAmount(1);
         waveNumber++;
-        enemy.maxHP += 1;
+        enemy.maxHP *= 1.1f;
     }
 
     void SpawnEnemy()
