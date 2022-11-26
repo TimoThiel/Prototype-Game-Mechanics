@@ -56,14 +56,14 @@ public class WaveSpwner : MonoBehaviour
                 StartCoroutine(SpawnWave());
                 countdown = timeBetweenWaves;
                 
-                if (waveNumber == 5  || waveNumber == 10 || waveNumber == 20 || waveNumber == 30)
+                if (waveNumber >= 19)
                 {
                     move.currentSpeed = 5;
                     /*waypoints.maxRotonde += 1;*/
                     
 
                 }
-                else
+                else if(waveNumber >= 20)
                 {
                     move.currentSpeed = 3;
                 }
@@ -86,7 +86,7 @@ public class WaveSpwner : MonoBehaviour
         }
         gameManage.ChangeWaveAmount(1);
         waveNumber++;
-        enemy.maxHP += 2;
+        enemy.maxHP += 1;
     }
 
     void SpawnEnemy()

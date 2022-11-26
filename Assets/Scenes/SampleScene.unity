@@ -283,6 +283,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb36747227fb12f43a8ba2fbfff1f2c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  move: {fileID: 6194677874044689199, guid: 0e45abf74d36e8b449880472d621564a, type: 3}
   gameManage: {fileID: 1088908272}
   mover: {fileID: 6194677874044689170, guid: 0e45abf74d36e8b449880472d621564a, type: 3}
   enemyPrefab: {fileID: 6194677874044689170, guid: 0e45abf74d36e8b449880472d621564a,
