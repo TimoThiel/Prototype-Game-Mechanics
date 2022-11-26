@@ -6,6 +6,7 @@ public class Waypoint : MonoBehaviour
     public GameManage gameManage;
     [SerializeField] private float waypointSize = 1f;
     [SerializeField] private GameObject rotondePrefab;
+    [SerializeField] private GameObject kruizingPrefab;
     [SerializeField] private GameObject floatingTextPrefab;
     private GameObject floatingText;
     Transform closestTransform;
@@ -21,10 +22,9 @@ public class Waypoint : MonoBehaviour
     private void Update()
     {
 
-        if (Input.GetMouseButtonDown(0) && minRotonde<maxRotonde)
+        if (Input.GetMouseButtonDown(0) && gameManage.money == 20)
         {
-            gameManage.rotondes -= 1;
-            minRotonde++;
+            gameManage.rotondes += 1;
             Vector3 mousePos = Input.mousePosition;
             mousePos.z = 2.0f;       // we want 2m away from the camera position
             Vector3 objectPos = Camera.main.ScreenToWorldPoint(mousePos);
@@ -50,7 +50,34 @@ public class Waypoint : MonoBehaviour
             }
             Destroy(rotonde.transform.gameObject);
         }
+        if (Input.GetMouseButtonDown(1) && gameManage.money == 10)
+        {
+            
+            Vector3 mousePos = Input.mousePosition;
+            mousePos.z = 2.0f;       // we want 2m away from the camera position
+            Vector3 objectPos = Camera.main.ScreenToWorldPoint(mousePos);
+            closestTransform = transform.GetChild(0);
+            int index = 0;
+            for (int i = 1; i < transform.childCount; i++)
+            {
 
+                if (Vector3.Distance(closestTransform.position, objectPos) > Vector3.Distance(objectPos, transform.GetChild(i).position) && transform.GetChild(i).CompareTag("Waypoint"))
+                {
+                    index = i;
+                    closestTransform = transform.GetChild(i);
+                }
+            }
+            GameObject rotonde = Instantiate(kruizingPrefab, objectPos, Quaternion.identity, transform);
+
+            rotonde.transform.SetSiblingIndex(index);
+            for (int i = 0; i < rotonde.transform.childCount; i++)
+            {
+                GameObject rotondeChild = rotonde.transform.GetChild(i).gameObject;
+                rotondeChild.transform.parent = transform;
+                rotondeChild.transform.SetSiblingIndex(index);
+            }
+            Destroy(rotonde.transform.gameObject);
+        }
 
     }
 
