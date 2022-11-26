@@ -30,7 +30,7 @@ public class GameManage : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButtonDown(1) && money >= 20f)
+       /* if (Input.GetMouseButtonDown(1) && money >= 20f)
         {
 
             Vector3 mousePos = Input.mousePosition;
@@ -38,7 +38,7 @@ public class GameManage : MonoBehaviour
             Vector3 objectPos = Camera.main.ScreenToWorldPoint(mousePos);
             tiles.Add(Instantiate(obj, objectPos, Quaternion.identity));
             money -= 20;
-        }
+        }*/
 
         geld.text = "Money: " + money.ToString();
         rotondeAmount.text = "rotondes: " + rotondes.ToString();

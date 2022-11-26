@@ -1366,6 +1366,12 @@ PrefabInstance:
         type: 3}
     - target: {fileID: 5913456369004828133, guid: 1d4d4e7fe565b424092b316d2df6244d,
         type: 3}
+      propertyPath: kruizingPrefab
+      value: 
+      objectReference: {fileID: 4211438211866608579, guid: 1954cfd7c9cfcc3409d519077efb2b65,
+        type: 3}
+    - target: {fileID: 5913456369004828133, guid: 1d4d4e7fe565b424092b316d2df6244d,
+        type: 3}
       propertyPath: floatingTextPrefab
       value: 
       objectReference: {fileID: 31912549327244892, guid: b67609f13479aa845b9ef9de3adf1c34,

@@ -119,7 +119,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hitPoints: 1000
-  maxHP: 23.5
+  maxHP: 18.5
 --- !u!50 &-6327695155092700547
 Rigidbody2D:
   serializedVersion: 4
