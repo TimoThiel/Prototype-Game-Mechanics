@@ -11,8 +11,10 @@ public class GameManage : MonoBehaviour
 
     public TextMeshProUGUI geld;
     public TextMeshProUGUI rotondeAmount;
+    public TextMeshProUGUI waveAmount;
     public int money;
     public int rotondes;
+    public int waves;
 
     // Start is called before the first frame update
     void Start()
@@ -27,20 +29,15 @@ public class GameManage : MonoBehaviour
     {
         this.rotondes += text;
     }
+    public void ChangeWaveAmount(int text)
+    {
+        this.waves += text;
+    }
     // Update is called once per frame
     void Update()
     {
-       /* if (Input.GetMouseButtonDown(1) && money >= 20f)
-        {
-
-            Vector3 mousePos = Input.mousePosition;
-            mousePos.z = 2.0f;       // we want 2m away from the camera position
-            Vector3 objectPos = Camera.main.ScreenToWorldPoint(mousePos);
-            tiles.Add(Instantiate(obj, objectPos, Quaternion.identity));
-            money -= 20;
-        }*/
-
         geld.text = "Money: " + money.ToString();
         rotondeAmount.text = "rotondes: " + rotondes.ToString();
+        waveAmount.text = "wave: " + waves.ToString();
     }
 }

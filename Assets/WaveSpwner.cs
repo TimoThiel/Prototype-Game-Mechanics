@@ -59,7 +59,7 @@ public class WaveSpwner : MonoBehaviour
                 {
                     
                     waypoints.maxRotonde += 1;
-                    gameManage.ChangeRotondeAmount(1);
+                    
 
                 }
             }
@@ -79,7 +79,7 @@ public class WaveSpwner : MonoBehaviour
             
             yield return new WaitForSeconds(0.5f);
         }
-        
+        gameManage.ChangeWaveAmount(1);
         waveNumber++;
         enemy.maxHP += 1;
     }
