@@ -10,10 +10,8 @@ public class GameManage : MonoBehaviour
     [SerializeField] private GameObject obj;
 
     public TextMeshProUGUI geld;
-    public TextMeshProUGUI rotondeAmount;
     public TextMeshProUGUI waveAmount;
     public int money;
-    public int rotondes;
     public int waves;
 
     // Start is called before the first frame update
@@ -25,10 +23,7 @@ public class GameManage : MonoBehaviour
     {
         this.money += text;
     }
-    public void ChangeRotondeAmount(int text)
-    {
-        this.rotondes += text;
-    }
+
     public void ChangeWaveAmount(int text)
     {
         this.waves += text;
@@ -37,7 +32,6 @@ public class GameManage : MonoBehaviour
     void Update()
     {
         geld.text = "Money: " + money.ToString();
-        rotondeAmount.text = "rotondes: " + rotondes.ToString();
         waveAmount.text = "wave: " + waves.ToString();
     }
 }
