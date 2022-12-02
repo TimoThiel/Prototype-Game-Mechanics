@@ -18,12 +18,12 @@ public class Waypoint : MonoBehaviour
 
     private void Start()
     {
- 
+        
    
     }
     private void Update()
     {
-
+        
         if (Input.GetMouseButtonDown(0) && maxRotonde>minRotonde)
         {
             minRotonde += 1;
