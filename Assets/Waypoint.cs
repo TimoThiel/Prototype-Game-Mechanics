@@ -84,13 +84,13 @@ public class Waypoint : MonoBehaviour
     }
    public void BuyRotonde()
     {
-        maxRotonde += 1;
         gameManage.money -= 25;
+        maxRotonde += 1;
     }
     public void BuyKruizing()
     {
-        maxRotonde += 1;
         gameManage.money -= 15;
+        maxKruizing += 1;
     }
     private void OnDrawGizmos()
     {
