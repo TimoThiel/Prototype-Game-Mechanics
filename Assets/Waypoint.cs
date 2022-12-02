@@ -13,6 +13,8 @@ public class Waypoint : MonoBehaviour
     Transform currentActive;
     public int maxRotonde = 1;
     public int minRotonde = 0;
+    public int maxKruizing = 0;
+    public int minKruizing = 0;
 
     private void Start()
     {
@@ -22,9 +24,9 @@ public class Waypoint : MonoBehaviour
     private void Update()
     {
 
-        if (Input.GetMouseButtonDown(0) && gameManage.money >= 25f)
+        if (Input.GetMouseButtonDown(0) && maxRotonde>minRotonde)
         {
-            gameManage.money -= 25;
+            minRotonde += 1;
             Vector3 mousePos = Input.mousePosition;
             mousePos.z = 2.0f;       // we want 2m away from the camera position
             Vector3 objectPos = Camera.main.ScreenToWorldPoint(mousePos);
@@ -50,9 +52,9 @@ public class Waypoint : MonoBehaviour
             }
             Destroy(rotonde.transform.gameObject);
         }
-        if (Input.GetMouseButtonDown(1) && gameManage.money >= 15f)
+        if (Input.GetMouseButtonDown(0) && maxKruizing>minKruizing)
         {
-            gameManage.money -= 15;
+            minKruizing += 1;
             Vector3 mousePos = Input.mousePosition;
             mousePos.z = 2.0f;       // we want 2m away from the camera position
             Vector3 objectPos = Camera.main.ScreenToWorldPoint(mousePos);
@@ -80,7 +82,16 @@ public class Waypoint : MonoBehaviour
         }
 
     }
-
+   public void BuyRotonde()
+    {
+        maxRotonde += 1;
+        gameManage.money -= 25;
+    }
+    public void BuyKruizing()
+    {
+        maxRotonde += 1;
+        gameManage.money -= 15;
+    }
     private void OnDrawGizmos()
     {
         foreach (Transform t in transform)

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 545064812336420657}
   m_Layer: 3
   m_Name: Waypoint 0
-  m_TagString: Rotonde
+  m_TagString: Waypoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -44,7 +44,7 @@ GameObject:
   - component: {fileID: 545064812347429829}
   m_Layer: 3
   m_Name: Waypoint 1
-  m_TagString: Rotonde
+  m_TagString: Waypoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -75,7 +75,7 @@ GameObject:
   - component: {fileID: 545064812767925809}
   m_Layer: 3
   m_Name: Waypoint 1 (5)
-  m_TagString: Rotonde
+  m_TagString: Waypoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -106,7 +106,7 @@ GameObject:
   - component: {fileID: 545064812783606442}
   m_Layer: 3
   m_Name: Waypoint 1 (2)
-  m_TagString: Rotonde
+  m_TagString: Waypoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -137,7 +137,7 @@ GameObject:
   - component: {fileID: 545064813039295996}
   m_Layer: 3
   m_Name: Waypoint 1 (1)
-  m_TagString: Rotonde
+  m_TagString: Waypoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -168,7 +168,7 @@ GameObject:
   - component: {fileID: 545064813644760073}
   m_Layer: 3
   m_Name: Waypoint 1 (3)
-  m_TagString: Rotonde
+  m_TagString: Waypoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -199,7 +199,7 @@ GameObject:
   - component: {fileID: 9126967376966979536}
   m_Layer: 3
   m_Name: Waypoint 1 (11)
-  m_TagString: Rotonde
+  m_TagString: Waypoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -400,7 +400,7 @@ GameObject:
   - component: {fileID: 8037265428905948482}
   m_Layer: 3
   m_Name: 'Waypoint 1 '
-  m_TagString: Rotonde
+  m_TagString: Waypoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -431,7 +431,7 @@ GameObject:
   - component: {fileID: 8074196592587050724}
   m_Layer: 3
   m_Name: Waypoint 1 (9)
-  m_TagString: Rotonde
+  m_TagString: Waypoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -467,7 +467,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &6373213350722081949
 Transform:
   m_ObjectHideFlags: 0
@@ -503,7 +503,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4211438211866608579}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: de8844166018d8347855f8a309e1fc8b, type: 3}
   m_Name: 
@@ -526,7 +526,7 @@ GameObject:
   - component: {fileID: 1696535497367206627}
   m_Layer: 3
   m_Name: Waypoint 1 (8)
-  m_TagString: Rotonde
+  m_TagString: Waypoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -557,7 +557,7 @@ GameObject:
   - component: {fileID: 6767639338807400393}
   m_Layer: 3
   m_Name: Waypoint 1 (12)
-  m_TagString: Rotonde
+  m_TagString: Waypoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -588,7 +588,7 @@ GameObject:
   - component: {fileID: 5975588086880084568}
   m_Layer: 3
   m_Name: Waypoint 1 (10)
-  m_TagString: Rotonde
+  m_TagString: Waypoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -619,7 +619,7 @@ GameObject:
   - component: {fileID: 8532096889559935885}
   m_Layer: 3
   m_Name: Waypoint 1 (7)
-  m_TagString: Rotonde
+  m_TagString: Waypoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
