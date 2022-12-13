@@ -11,6 +11,8 @@ TagManager:
   - Web
   - Level
   - MoneyDisplay
+  - Speedbord30
+  - Speedbord60
   layers:
   - Default
   - TransparentFX

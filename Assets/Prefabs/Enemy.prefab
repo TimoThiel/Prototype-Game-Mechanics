@@ -102,7 +102,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waypoints: {fileID: 0}
-  currentSpeed: 3
+  currentSpeed: 2
   bulletPrefab: {fileID: 808331628435892808, guid: 881dbbe19106e7b4dab1e1f6dce4a857,
     type: 3}
   firepoint: {fileID: 0}

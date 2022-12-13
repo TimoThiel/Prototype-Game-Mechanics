@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 545064812336420657}
   m_Layer: 3
   m_Name: Waypoint 0
-  m_TagString: Waypoint
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -44,7 +44,7 @@ GameObject:
   - component: {fileID: 545064812347429829}
   m_Layer: 3
   m_Name: Waypoint 1
-  m_TagString: Waypoint
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -75,7 +75,7 @@ GameObject:
   - component: {fileID: 545064812767925809}
   m_Layer: 3
   m_Name: Waypoint 1 (5)
-  m_TagString: Waypoint
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -106,7 +106,7 @@ GameObject:
   - component: {fileID: 545064812783606442}
   m_Layer: 3
   m_Name: Waypoint 1 (2)
-  m_TagString: Waypoint
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -137,7 +137,7 @@ GameObject:
   - component: {fileID: 545064813039295996}
   m_Layer: 3
   m_Name: Waypoint 1 (1)
-  m_TagString: Waypoint
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -168,7 +168,7 @@ GameObject:
   - component: {fileID: 545064813396525184}
   m_Layer: 3
   m_Name: Waypoint 1 (6)
-  m_TagString: Waypoint
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -199,7 +199,7 @@ GameObject:
   - component: {fileID: 545064813461585886}
   m_Layer: 3
   m_Name: Waypoint 1 (4)
-  m_TagString: Waypoint
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -230,7 +230,7 @@ GameObject:
   - component: {fileID: 545064813644760073}
   m_Layer: 3
   m_Name: Waypoint 1 (3)
-  m_TagString: Waypoint
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -351,7 +351,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &6373213350722081949
 Transform:
   m_ObjectHideFlags: 0
@@ -395,6 +395,8 @@ MonoBehaviour:
   floatingTextPrefab: {fileID: 0}
   maxRotonde: 0
   minRotonde: 0
+  maxKruizing: 0
+  minKruizing: 0
 --- !u!1 &6439076395817663206
 GameObject:
   m_ObjectHideFlags: 0
@@ -406,7 +408,7 @@ GameObject:
   - component: {fileID: 1577731987417821091}
   m_Layer: 3
   m_Name: Waypoint 1 (7)
-  m_TagString: Waypoint
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

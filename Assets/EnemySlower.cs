@@ -11,20 +11,17 @@ public class EnemySlower : MonoBehaviour
    
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "Web")
+        if (collision.gameObject.tag == "Speedbord60")
         {
-            enemies.currentSpeed = 1;
+            Debug.Log("very nice");
+            enemies.currentSpeed = 6;
         }
-        
-    }
-    private void OnTriggerExit2D(Collider2D collision)
-    {
-        if (collision.gameObject.tag == "Web")
+        if (collision.gameObject.tag == "Speedbord30")
         {
             enemies.currentSpeed = 3;
         }
     }
-   
+ 
 
 
 }
