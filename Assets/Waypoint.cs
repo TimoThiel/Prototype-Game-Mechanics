@@ -69,28 +69,34 @@ public class Waypoint : MonoBehaviour
                     closestTransform = transform.GetChild(i);
                 }
             }
-            GameObject rotonde = Instantiate(kruizingPrefab, objectPos, Quaternion.identity, transform);
+            GameObject kruizing = Instantiate(kruizingPrefab, objectPos, Quaternion.identity, transform);
 
-            rotonde.transform.SetSiblingIndex(index);
-            for (int i = 0; i < rotonde.transform.childCount; i++)
+            kruizing.transform.SetSiblingIndex(index);
+            for (int i = 0; i < kruizing.transform.childCount; i++)
             {
-                GameObject rotondeChild = rotonde.transform.GetChild(i).gameObject;
+                GameObject rotondeChild = kruizing.transform.GetChild(i).gameObject;
                 rotondeChild.transform.parent = transform;
                 rotondeChild.transform.SetSiblingIndex(index);
             }
-            Destroy(rotonde.transform.gameObject);
+            Destroy(kruizing.transform.gameObject);
         }
 
     }
    public void BuyRotonde()
     {
-        gameManage.money -= 25;
-        maxRotonde += 1;
+        if(gameManage.money >= 25)
+        {
+            gameManage.money -= 25;
+            maxRotonde += 1;
+        }
     }
     public void BuyKruizing()
     {
-        gameManage.money -= 15;
-        maxKruizing += 1;
+        if(gameManage.money >= 15)
+        {
+            gameManage.money -= 15;
+            maxKruizing += 1;
+        }
     }
     private void OnDrawGizmos()
     {

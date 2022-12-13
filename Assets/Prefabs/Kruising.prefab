@@ -462,7 +462,7 @@ GameObject:
   - component: {fileID: 6373213350722081949}
   - component: {fileID: 5711134391346363578}
   m_Layer: 0
-  m_Name: Kruizing
+  m_Name: Kruising
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
