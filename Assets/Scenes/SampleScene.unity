@@ -1157,90 +1157,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!1001 &399402909
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 5421157329900117544, guid: 70814ff9b53879540ad40323135d0128,
-        type: 3}
-      propertyPath: m_Name
-      value: StopBord
-      objectReference: {fileID: 0}
-    - target: {fileID: 6446559790734852026, guid: 70814ff9b53879540ad40323135d0128,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7279542144142481342, guid: 70814ff9b53879540ad40323135d0128,
-        type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7863612804768061912, guid: 70814ff9b53879540ad40323135d0128,
-        type: 3}
-      propertyPath: gameManage
-      value: 
-      objectReference: {fileID: 1088908272}
-    - target: {fileID: 8702243940695243753, guid: 70814ff9b53879540ad40323135d0128,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 8702243940695243753, guid: 70814ff9b53879540ad40323135d0128,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8702243940695243753, guid: 70814ff9b53879540ad40323135d0128,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -6.7
-      objectReference: {fileID: 0}
-    - target: {fileID: 8702243940695243753, guid: 70814ff9b53879540ad40323135d0128,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -9
-      objectReference: {fileID: 0}
-    - target: {fileID: 8702243940695243753, guid: 70814ff9b53879540ad40323135d0128,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8702243940695243753, guid: 70814ff9b53879540ad40323135d0128,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8702243940695243753, guid: 70814ff9b53879540ad40323135d0128,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8702243940695243753, guid: 70814ff9b53879540ad40323135d0128,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8702243940695243753, guid: 70814ff9b53879540ad40323135d0128,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8702243940695243753, guid: 70814ff9b53879540ad40323135d0128,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8702243940695243753, guid: 70814ff9b53879540ad40323135d0128,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 70814ff9b53879540ad40323135d0128, type: 3}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -2441,8 +2357,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1458275322}
-        m_TargetAssemblyTypeName: Stopboard, Assembly-CSharp
+      - m_Target: {fileID: 170718787}
+        m_TargetAssemblyTypeName: Waypoint, Assembly-CSharp
         m_MethodName: BuyStopBoard
         m_Mode: 1
         m_Arguments:
@@ -2491,29 +2407,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1291680287}
   m_CullTransparentMesh: 1
---- !u!1 &1458275319 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5421157329900117544, guid: 70814ff9b53879540ad40323135d0128,
-    type: 3}
-  m_PrefabInstance: {fileID: 399402909}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1458275322
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1458275319}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 87c2c708ad0c79143af51d51504dfdfe, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  stopPrefab: {fileID: 1458275319}
-  enemies: {fileID: 6194677874044689199, guid: 0e45abf74d36e8b449880472d621564a, type: 3}
-  gameManage: {fileID: 1088908272}
-  minStop: 0
-  maxStop: 0
 --- !u!1 &1724309547
 GameObject:
   m_ObjectHideFlags: 0
@@ -3444,6 +3337,12 @@ PrefabInstance:
       objectReference: {fileID: 394915097}
     - target: {fileID: 5913456369004828133, guid: 1d4d4e7fe565b424092b316d2df6244d,
         type: 3}
+      propertyPath: enemies
+      value: 
+      objectReference: {fileID: 6194677874044689199, guid: 0e45abf74d36e8b449880472d621564a,
+        type: 3}
+    - target: {fileID: 5913456369004828133, guid: 1d4d4e7fe565b424092b316d2df6244d,
+        type: 3}
       propertyPath: gameManage
       value: 
       objectReference: {fileID: 1088908272}
@@ -3456,7 +3355,8 @@ PrefabInstance:
         type: 3}
       propertyPath: stopPrefab
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 5421157329900117544, guid: 70814ff9b53879540ad40323135d0128,
+        type: 3}
     - target: {fileID: 5913456369004828133, guid: 1d4d4e7fe565b424092b316d2df6244d,
         type: 3}
       propertyPath: waveSpwner
