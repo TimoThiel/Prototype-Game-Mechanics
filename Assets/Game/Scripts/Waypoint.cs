@@ -89,6 +89,7 @@ public class Waypoint : MonoBehaviour
         }
 
     }
+    
     public void BuyStopBoard()
     {
         for (int i = 1; i < transform.childCount; i++)
