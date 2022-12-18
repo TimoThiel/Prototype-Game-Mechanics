@@ -44,6 +44,7 @@ public class tower : MonoBehaviour
         GameObject obj = Instantiate(explo, transform);
         obj.transform.parent = null;
         obj.transform.position = transform.position;
+        Debug.Log("Unit Test Enemy hits tower and explode: Succesfull");
     }
    
 

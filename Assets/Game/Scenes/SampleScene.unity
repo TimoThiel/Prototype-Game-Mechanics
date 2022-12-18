@@ -717,6 +717,18 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 5913456369750842245}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &170718786 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5913456369004828133, guid: 1d4d4e7fe565b424092b316d2df6244d,
+    type: 3}
+  m_PrefabInstance: {fileID: 5913456369750842245}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 170718785}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de8844166018d8347855f8a309e1fc8b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &247141741
 GameObject:
   m_ObjectHideFlags: 0
@@ -942,7 +954,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 170718786}
         m_TargetAssemblyTypeName: Waypoint, Assembly-CSharp
         m_MethodName: BuyRotonde
         m_Mode: 1
@@ -2345,7 +2357,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 170718786}
         m_TargetAssemblyTypeName: Waypoint, Assembly-CSharp
         m_MethodName: BuyStopBoard
         m_Mode: 1
@@ -2479,7 +2491,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 170718786}
         m_TargetAssemblyTypeName: Waypoint, Assembly-CSharp
         m_MethodName: BuyKruizing
         m_Mode: 1

@@ -89,7 +89,7 @@ public class WaveSpwner : MonoBehaviour
         enemy.maxHP *= 1.1f;
     }
 
-    void SpawnEnemy()
+    public void SpawnEnemy()
     {
         enemyPrefab.GetComponent<Mover>().waypoints = waypoint;
         GameObject enemy = Instantiate(enemyPrefab, SpawnPoint.position, SpawnPoint.rotation);

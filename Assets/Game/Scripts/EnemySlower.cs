@@ -1,6 +1,6 @@
 
 using System.Collections.Generic;
-using TMPro;
+/*using TMPro;*/
 using UnityEngine;
 
 public class EnemySlower : MonoBehaviour
@@ -13,9 +13,17 @@ public class EnemySlower : MonoBehaviour
     {
         if (collision.gameObject.tag == "Speedbord60")
         {
-            Debug.Log("very nice");
             enemies.currentSpeed = 6;
+            if (enemies.currentSpeed == 6)
+            {
+                Debug.Log("Unit Test Car goes Faster: Succesfull ");
+            }
+            else
+            {
+                Debug.Log("Unit Test Car goes Faster: Failed ");
+            }
         }
+       
         if (collision.gameObject.tag == "Speedbord30")
         {
             enemies.currentSpeed = 3;
