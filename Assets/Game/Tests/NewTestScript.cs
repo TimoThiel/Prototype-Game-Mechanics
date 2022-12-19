@@ -3,10 +3,11 @@ using UnityEngine.TestTools;
 using NUnit.Framework;
 using System.Collections;
 using NUnit.Framework.Internal;
+using UnityEngine.SceneManagement;
 
 public class NewTestScript 
 {
-/*    private EnemySlower slow;
+    private tower towers;
     private WaveSpwner spawnEnemy;
     private Mover move;
     // 1
@@ -14,21 +15,17 @@ public class NewTestScript
     public IEnumerator DoCarMoveFaster()
     {
         // 2
-        GameObject gameGameObject =
-            MonoBehaviour.Instantiate(Resources.Load<GameObject>("Prefabs/Game"));
-        spawnEnemy = gameGameObject.GetComponent<WaveSpwner>();
-        // 3
-       GameObject.Instantiate(spawnEnemy);
+        SceneManager.LoadScene("SampleScene");
+        
+        yield return new WaitForSeconds(9.1f);
 
-        // 5
-        yield return new WaitForSeconds(5f);
-        // 6
-        if(move.currentSpeed == 6)
-        {
-            //test is not failed.
-        }
-        // 7
-        Object.Destroy(spawnEnemy.gameObject);
-    }*/
+        move = GameObject.FindGameObjectWithTag("Enemy").GetComponent<Mover>();
+        // 3
+        Assert.AreEqual(6,move.currentSpeed);
+        // 4
+        Object.Destroy(move.gameObject);
+    }
+
+    
 
 }
