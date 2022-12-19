@@ -12,7 +12,7 @@ public class Waypoint : MonoBehaviour
     private GameObject floatingText;
     Transform closestTransform;
     Transform currentActive;
-    [SerializeField] private GameObject stopPrefab;
+    [SerializeField] public GameObject stopPrefab;
    
 
     public int minStop = 0;

@@ -12,6 +12,7 @@ public class tower : MonoBehaviour
     private GameObject floatingText;
     [SerializeField] private GameObject enemie;
     public Enemy enem;
+    public bool explosion = false;
     
     private void Start()
     {
@@ -33,6 +34,7 @@ public class tower : MonoBehaviour
     {
         if (collision.gameObject.tag == "Enemy")
         {
+           
             HitTower();
             Explosion();
             
@@ -41,6 +43,7 @@ public class tower : MonoBehaviour
     }
     public void Explosion()
     {
+        explosion = true;
         GameObject obj = Instantiate(explo, transform);
         obj.transform.parent = null;
         obj.transform.position = transform.position;

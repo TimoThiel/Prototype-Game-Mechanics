@@ -1019,7 +1019,7 @@ GameObject:
   - component: {fileID: 394915100}
   m_Layer: 0
   m_Name: MainTower
-  m_TagString: Untagged
+  m_TagString: Tower
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1042,6 +1042,7 @@ MonoBehaviour:
     type: 3}
   enemie: {fileID: 6194677874044689170, guid: 0e45abf74d36e8b449880472d621564a, type: 3}
   enem: {fileID: 5612259875077187579, guid: 0e45abf74d36e8b449880472d621564a, type: 3}
+  explosion: 0
 --- !u!212 &394915098
 SpriteRenderer:
   m_ObjectHideFlags: 0
