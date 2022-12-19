@@ -8,7 +8,7 @@ using UnityEngine.SceneManagement;
 public class NewTestScript 
 {
     private tower towers;
-    private WaveSpwner spawnEnemy;
+    private EnemySlower slower;
     private Mover move;
     private GameManage manage;
     private Waypoint waypoint;
@@ -20,10 +20,13 @@ public class NewTestScript
         // 2
         SceneManager.LoadScene("SampleScene");
 
-        yield return new WaitForSeconds(9.1f);
+        yield return new WaitForSeconds(6f);
 
         move = GameObject.FindGameObjectWithTag("Enemy").GetComponent<Mover>();
+        slower = GameObject.FindGameObjectWithTag("Speedbord60").GetComponent<EnemySlower>();
         // 3
+        move.transform.position = slower.transform.position;
+        yield return new WaitForSeconds(0.2f);
         Assert.AreEqual(6,move.currentSpeed);
         // 4
         Object.Destroy(move.gameObject);
@@ -34,13 +37,27 @@ public class NewTestScript
         //1
         SceneManager.LoadScene("SampleScene");
         //2
-        yield return new WaitForSeconds(22);
+        yield return new WaitForSeconds(6);
         //3
         move = GameObject.FindGameObjectWithTag("Enemy").GetComponent<Mover>();
         towers = GameObject.FindGameObjectWithTag("Tower").GetComponent<tower>();
+
+        move.transform.position = towers.transform.position;
+        yield return new WaitForSeconds(0.2f);
         //4
         Assert.IsTrue(towers.explosion);
         
+    }
+    [UnityTest]
+    public IEnumerator Does()
+    {
+        //1
+        SceneManager.LoadScene("SampleScene");
+        //2
+        yield return new WaitForSeconds(0);
+        //3
+        
+
     }
 
 
