@@ -121,7 +121,7 @@ public class Waypoint : MonoBehaviour
             maxRotonde += 1;
         }
     }
-    public void BuyKruizing()
+    public void BuyKruising()
     {
         if(gameManage.money >= 15)
         {

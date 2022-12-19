@@ -3276,6 +3276,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Waypoint
       objectReference: {fileID: 0}
+    - target: {fileID: 5913456369004828122, guid: 1d4d4e7fe565b424092b316d2df6244d,
+        type: 3}
+      propertyPath: m_TagString
+      value: WaypointParent
+      objectReference: {fileID: 0}
     - target: {fileID: 5913456369004828132, guid: 1d4d4e7fe565b424092b316d2df6244d,
         type: 3}
       propertyPath: m_RootOrder
