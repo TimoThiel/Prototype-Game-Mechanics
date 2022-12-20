@@ -20,7 +20,7 @@ public class NewTestScript
         // 2
         SceneManager.LoadScene("SampleScene");
 
-        yield return new WaitForSeconds(6f);
+        yield return new WaitForSeconds(2f);
 
         move = GameObject.FindGameObjectWithTag("Enemy").GetComponent<Mover>();
         slower = GameObject.FindGameObjectWithTag("Speedbord60");
@@ -40,7 +40,7 @@ public class NewTestScript
         //1
         SceneManager.LoadScene("SampleScene");
         //2
-        yield return new WaitForSeconds(6);
+        yield return new WaitForSeconds(2);
         //3
         move = GameObject.FindGameObjectWithTag("Enemy").GetComponent<Mover>();
         towers = GameObject.FindGameObjectWithTag("Tower").GetComponent<tower>();
@@ -64,7 +64,7 @@ public class NewTestScript
         yield return new WaitForSeconds(0.1f);
         waypoint.BuyStopBoard();
         yield return new WaitForSeconds(1);
-
+        waypoint.stopPrefab = GameObject.FindGameObjectWithTag("Stop");
         Assert.AreEqual(waypoint.transform.GetChild(1).position, waypoint.stopPrefab.transform.position);
         
     }

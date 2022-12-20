@@ -99,14 +99,14 @@ public class Waypoint : MonoBehaviour
                 gameManage.money -= 6;
                 maxStop += 1;
                 Instantiate(stopPrefab,transform.GetChild(1));
-                if(transform.GetChild(1).position == stopPrefab.transform.position)
+            /*    if(transform.GetChild(1).position == stopPrefab.transform.position)
                 {
                     Debug.Log("Unit Test Spawn stopboard on child 1: Succesfull");
                 }
                 else if(transform.GetChild(1).position != stopPrefab.transform.position)
                 {
                     Debug.Log("Unit Test Spawn stopboard on child 1: Failed");
-                }
+                }*/
                 
             }
         }

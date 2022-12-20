@@ -17,7 +17,7 @@ public class WaveSpwner : MonoBehaviour
     public Transform SpawnPoint;
     public float moneyTimer = 0;
     public float timeBetweenWaves = 100f;
-    private float countdown = 5f;
+    private float countdown = 1f;
     public int waveNumber = 1;
     /*public int HP = 50;*/
     private void Start()
