@@ -32,9 +32,9 @@ public class WaveSpwner : MonoBehaviour
     void Update()
     {
         
-        var cheat = cheats.GetComponent<Cheats>();
+        /*var cheat = cheats.GetComponent<Cheats>();
         var waypoints = waypoint.GetComponent<Waypoint>();
-        var web = webs.GetComponent<EnemySlower>();
+        var web = webs.GetComponent<EnemySlower>();*/
         if(moneyTimer < 0)
         {
           
