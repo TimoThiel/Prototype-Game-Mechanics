@@ -108,17 +108,17 @@ public class Waypoint : MonoBehaviour
 
     public void BuyRotonde()
     {
-        if(gameManage.money >= 25)
+        if(gameManage.money >= 15)
         {
-            gameManage.money -= 25;
+            gameManage.money -= 15;
             maxRotonde += 1;
         }
     }
     public void BuyKruising()
     {
-        if(gameManage.money >= 15)
+        if(gameManage.money >= 25)
         {
-            gameManage.money -= 15;
+            gameManage.money -= 25;
             Debug.Log("Unit Test Money changed: Succesfull");
             maxKruizing += 1;
         }
