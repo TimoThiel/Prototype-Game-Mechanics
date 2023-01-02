@@ -94,9 +94,9 @@ public class Waypoint : MonoBehaviour
     {
         for (int i = 1; i < transform.childCount; i++)
         {
-            if (gameManage.money >= 6)
+            if (gameManage.money >= 5)
             {
-                gameManage.money -= 6;
+                gameManage.money -= 5;
                 maxStop += 1;
                i = Random.Range(1, 8);
                     Instantiate(stopPrefab,transform.GetChild(i));
@@ -108,17 +108,17 @@ public class Waypoint : MonoBehaviour
 
     public void BuyRotonde()
     {
-        if(gameManage.money >= 15)
+        if(gameManage.money >= 10)
         {
-            gameManage.money -= 15;
+            gameManage.money -= 10;
             maxRotonde += 1;
         }
     }
     public void BuyKruising()
     {
-        if(gameManage.money >= 25)
+        if(gameManage.money >= 20)
         {
-            gameManage.money -= 25;
+            gameManage.money -= 20;
             Debug.Log("Unit Test Money changed: Succesfull");
             maxKruizing += 1;
         }

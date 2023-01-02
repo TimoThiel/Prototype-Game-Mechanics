@@ -76,7 +76,7 @@ public class WaveSpwner : MonoBehaviour
 
     IEnumerator SpawnWave()
     {
-        var enemy = enemyPrefab.GetComponent<Enemy>();
+        var enemy = enemyPrefab.GetComponent<Mover>();
         for (int i = 0; i < waveNumber; i++)
         {
            
@@ -86,7 +86,7 @@ public class WaveSpwner : MonoBehaviour
         }
         gameManage.ChangeWaveAmount(1);
         waveNumber++;
-        enemy.maxHP *= 1.1f;
+        enemy.currentSpeed *= 1.1f;
     }
 
     public void SpawnEnemy()
