@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1920
     height: 989
   m_ShowMode: 4
-  m_Title: Test Runner
+  m_Title: Game
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -120,7 +120,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 17
+  controlID: 15
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -171,7 +171,7 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 200}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 61
+  controlID: 16
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -182,7 +182,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: SceneView
+  m_Name: GameView
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -193,12 +193,12 @@ MonoBehaviour:
     height: 658
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
-  m_ActualView: {fileID: 12}
+  m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 12}
   - {fileID: 14}
-  m_Selected: 0
-  m_LastSelected: 1
+  m_Selected: 1
+  m_LastSelected: 0
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -209,7 +209,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: ProjectBrowser
+  m_Name: ConsoleWindow
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -218,14 +218,14 @@ MonoBehaviour:
     y: 658
     width: 1220
     height: 281
-  m_MinSize: {x: 232, y: 271}
-  m_MaxSize: {x: 10002, y: 10021}
-  m_ActualView: {fileID: 15}
+  m_MinSize: {x: 102, y: 121}
+  m_MaxSize: {x: 4002, y: 4021}
+  m_ActualView: {fileID: 16}
   m_Panes:
   - {fileID: 15}
   - {fileID: 16}
-  m_Selected: 0
-  m_LastSelected: 1
+  m_Selected: 1
+  m_LastSelected: 0
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -236,7 +236,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: TestRunnerWindow
+  m_Name: InspectorWindow
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -245,14 +245,14 @@ MonoBehaviour:
     y: 0
     width: 516
     height: 939
-  m_MinSize: {x: 100, y: 100}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_ActualView: {fileID: 11}
+  m_MinSize: {x: 276, y: 71}
+  m_MaxSize: {x: 4001, y: 4021}
+  m_ActualView: {fileID: 17}
   m_Panes:
   - {fileID: 17}
   - {fileID: 11}
-  m_Selected: 1
-  m_LastSelected: 0
+  m_Selected: 0
+  m_LastSelected: 1
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -282,7 +282,7 @@ MonoBehaviour:
     m_LastAppliedPresetName: Default
     m_SaveData: []
   m_Spl:
-    ID: 1809
+    ID: 129
     splitterInitialOffset: 0
     currentActiveSplitter: -1
     realSizes:
@@ -313,9 +313,9 @@ MonoBehaviour:
       uniqueId: '[Prototype Game Mechanics][suite]'
       name: Prototype Game Mechanics
       fullName: Prototype Game Mechanics
-      resultStatus: 2
-      duration: 16.261038
-      messages: One or more child tests had errors
+      resultStatus: 1
+      duration: 8.007745
+      messages: 
       output: 
       stacktrace: 
       notRunnable: 0
@@ -329,9 +329,9 @@ MonoBehaviour:
       uniqueId: '[Tests][C:/Users/Developer/Prototype Game Mechanics/Library/ScriptAssemblies/Tests.dll][suite]'
       name: Tests.dll
       fullName: C:/Users/Developer/Prototype Game Mechanics/Library/ScriptAssemblies/Tests.dll
-      resultStatus: 2
-      duration: 16.123287
-      messages: One or more child tests had errors
+      resultStatus: 1
+      duration: 7.7544427
+      messages: 
       output: 
       stacktrace: 
       notRunnable: 0
@@ -345,9 +345,9 @@ MonoBehaviour:
       uniqueId: Tests.dll/[Tests][NewTestScript][suite]
       name: NewTestScript
       fullName: NewTestScript
-      resultStatus: 2
-      duration: 16.11573
-      messages: One or more child tests had errors
+      resultStatus: 1
+      duration: 7.7417564
+      messages: 
       output: 
       stacktrace: 
       notRunnable: 0
@@ -362,7 +362,7 @@ MonoBehaviour:
       name: DoCarMoveFaster
       fullName: NewTestScript.DoCarMoveFaster
       resultStatus: 1
-      duration: 7.4053993
+      duration: 2.927969
       messages: 
       output: "False\r\nUnit Test Car goes Faster: Succesfull \r\n"
       stacktrace: 
@@ -378,20 +378,11 @@ MonoBehaviour:
       uniqueId: Tests.dll/NewTestScript/[Tests][NewTestScript.DoesStopbordSpawnOnChild1]
       name: DoesStopbordSpawnOnChild1
       fullName: NewTestScript.DoesStopbordSpawnOnChild1
-      resultStatus: 2
-      duration: 2.1585145
-      messages: "  Expected: (-7.28, 0.52, 0.00)\r\n  But was:  (0.00, 0.00, 0.00)\r\n"
-      output: 'Unit Test Spawn stopboard on child 1: Failed
-
-'
-      stacktrace: 'at NewTestScript+<DoesStopbordSpawnOnChild1>d__7.MoveNext () [0x000c8]
-        in C:\Users\Developer\Prototype Game Mechanics\Assets\Game\Tests\NewTestScript.cs:68
-
-        at
-        UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0003a]
-        in C:\Users\Developer\Prototype Game Mechanics\Library\PackageCache\com.unity.test-framework@1.1.31\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:46
-
-'
+      resultStatus: 1
+      duration: 2.2784789
+      messages: 
+      output: 
+      stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
       description: 
@@ -405,7 +396,7 @@ MonoBehaviour:
       name: DoesTheyCarExplodeWhileCollidingWithTheTower
       fullName: NewTestScript.DoesTheyCarExplodeWhileCollidingWithTheTower
       resultStatus: 1
-      duration: 6.241633
+      duration: 2.3040698
       messages: 
       output: 'Unit Test Enemy hits tower and explode: Succesfull
 
@@ -424,7 +415,7 @@ MonoBehaviour:
       name: DoesYourMoneyWork
       fullName: NewTestScript.DoesYourMoneyWork
       resultStatus: 1
-      duration: 0.1442347
+      duration: 0.191276
       messages: 
       output: 'Unit Test Money changed: Succesfull
 
@@ -438,24 +429,17 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1001
       parentUniqueId: Tests.dll/[Tests][NewTestScript][suite]
-    m_ResultText: "DoesStopbordSpawnOnChild1 (2,159s)\n---\nExpected: (-7.28, 0.52,
-      0.00)\r\n  But was:  (0.00, 0.00, 0.00)\n---\nat NewTestScript+<DoesStopbordSpawnOnChild1>d__7.MoveNext
-      () [0x000c8] in C:\\Users\\Developer\\Prototype Game Mechanics\\Assets\\Game\\Tests\\NewTestScript.cs:68\r\nat
-      UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0003a] in
-      C:\\Users\\Developer\\Prototype Game Mechanics\\Library\\PackageCache\\com.unity.test-framework@1.1.31\\UnityEngine.TestRunner\\NUnitExtensions\\Attributes\\TestEnumerator.cs:46\n---\nUnit
-      Test Spawn stopboard on child 1: Failed"
-    m_ResultStacktrace: 'at NewTestScript+<DoesStopbordSpawnOnChild1>d__7.MoveNext
-      () [0x000c8] in C:\Users\Developer\Prototype Game Mechanics\Assets\Game\Tests\NewTestScript.cs:68
+    m_ResultText: 'DoesYourMoneyWork (0,191s)
 
-      at
-      UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0003a] in
-      C:\Users\Developer\Prototype Game Mechanics\Library\PackageCache\com.unity.test-framework@1.1.31\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:46
+      ---
 
-'
+      Unit Test Money changed:
+      Succesfull'
+    m_ResultStacktrace: 
     m_TestListState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: df142f4a
-      m_LastClickedID: 1244599519
+      m_SelectedIDs: 11985795
+      m_LastClickedID: -1789421551
       m_ExpandedIDs: 4f3aa93880722c3a22524b3affffff7f
       m_RenameOverlay:
         m_UserAcceptedRename: 0
@@ -896,7 +880,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: d61bfeff201cfeff2e23feff3427feff7e27feff3c2afeffac2cfefff62cfeffb42ffeff2832feff7232feff3035feffca36feff1437feffe839feff4c3cfeff963cfeff543ffeffd641feff2042fefff444feff6e47feffb847feff8c4afefff44cfeff3e4dfeff1250feff8852feffd252feff9055feff1457feff5e57feff3e5afeffba5bfeff045cfeffe45efeff8a67feffd467feff726dfeffe66ffeff3070feff0473feff2c77feff7677feff347afeffa47bfeffee7bfeffc27efeffbe88feff0889feffda8bfeffa897fefff297feff8e9dfeff1a9ffeff649ffeff30a2feffaaa8fefff4a8feffc0abfeff2aaefeff74aefeff56b1feffc6b2feff10b3feffccb5feff52b8feff9cb8feff36befeff72c1feffbcc1feff3ac7feffacc9fefff6c9feff90cffeff82d2feffccd2feff34d8feffd8dbfeff22dcfeffbee1feff66e3feffb0e3feff7ce9feff40ecfeff8aecfeff66effefff0f1feff3af2feffb8f7fefff4fafeff3efbfeff9600ffff5a05ffffa405fffffe0affff8410ffffce10ffff6a16ffff281effff601effff721effff7c1effff981effffb41effffb61effff001fffffb224ffffee27ffff3828ffff622cfffffc33ffff4634ffffbe39ffff223dffff6c3dfffff642ffffda47ffff2448ffffb64dffffee50ffff3851ffffa056ffff4863ffff9263ffff2a69ffff926bffffdc6bffff8c6dffffc871ffff1272ffffcc77ffffbe7affff087bffffd880ffff2e87ffff7887ffffe28bffffa692fffff092ffff5c97ffffca99ffff149affffe09cffff48a6ffff92a6ffff5ea9fffff8acffff42adffff0eb0ffffd2b3ffff1cb4ffffe8b6ffff2cbaffff76baffff1cbdffffd0bfffff1ac0ffffe6c2ffff80c5ffffcac5ffff3ac7ffff08cfffff4acfffff7ed0ffff7ed5ffffc0d5fffff4d6ffff5ad9ffff9cd9ffffe6daffffd0ddffff12deffff46dfffff48e2ffff8ae2ffffbee3ffff92e6ffffd0e6ffff22e7ffffeae8ffff30e9ffff6aeafffff6faffff046d0000a67600004a8d0000caa700000cc0000010ce000046d50000f8d90000
+      m_ExpandedIDs: fefaffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -984,7 +968,7 @@ MonoBehaviour:
     m_HSlider: 0
     m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 0
+    m_EnableMouseInput: 1
     m_EnableSliderZoomHorizontal: 0
     m_EnableSliderZoomVertical: 0
     m_UniformScale: 1
@@ -1070,9 +1054,9 @@ MonoBehaviour:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 68}
-    m_SelectedIDs: 96750000
-    m_LastClickedID: 30102
-    m_ExpandedIDs: 0000000020650000226500002465000026650000286500002a6500002c6500002e65000030650000326500003465000036650000386500003a6500003c6500003e65000040650000426500004465000046650000486500004a6500004c6500004e65000050650000526500005465000056650000586500005a6500005c6500005e6500007465000000ca9a3b
+    m_SelectedIDs: 68650000
+    m_LastClickedID: 25960
+    m_ExpandedIDs: 000000001a6500001c6500001e65000020650000226500002465000026650000286500002a6500002c6500002e65000030650000326500003465000036650000386500003a6500003c6500003e65000040650000426500004465000046650000486500004a6500004c6500004e65000050650000526500005465000056650000586500005a650000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1100,7 +1084,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 0000000020650000226500002465000026650000286500002a6500002c6500002e65000030650000326500003465000036650000386500003a6500003c6500003e65000040650000426500004465000046650000486500004a6500004c6500004e65000050650000526500005465000056650000586500005a6500005c6500005e650000
+    m_ExpandedIDs: 000000001a6500001c6500001e65000020650000226500002465000026650000286500002a6500002c6500002e65000030650000326500003465000036650000386500003a6500003c6500003e65000040650000426500004465000046650000486500004a6500004c6500004e65000050650000526500005465000056650000586500005a650000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 

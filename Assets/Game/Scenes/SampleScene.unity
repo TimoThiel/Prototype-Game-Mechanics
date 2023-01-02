@@ -2493,8 +2493,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 170718786}
-        m_TargetAssemblyTypeName: Waypoint, Assembly-CSharp
-        m_MethodName: BuyKruizing
+        m_TargetAssemblyTypeName: Waypoint, Scripten
+        m_MethodName: BuyKruising
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
