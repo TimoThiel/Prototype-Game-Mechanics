@@ -15,6 +15,10 @@ public class EnemySlower : MonoBehaviour
     {
         
     }
+    private void Update()
+    {
+       
+    }
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "Speedbord60")
@@ -38,13 +42,9 @@ public class EnemySlower : MonoBehaviour
 
         if(collision.gameObject.tag == "Truck")
         {
+            
             enemies.currentSpeed = 0;
 
-            if (enemies.currentSpeed == 0)
-            {
-                gameManage.ChangeAngryMeter(10);
-            }
-            // Angry meter goes up!!
         }
       
     }

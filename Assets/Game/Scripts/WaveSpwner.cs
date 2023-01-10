@@ -61,12 +61,12 @@ public class WaveSpwner : MonoBehaviour
                 if (waveNumber >= 10)
                 {
                     
-                    enemy.maxHP *= 1.5f;
+                    /*enemy.maxHP *= 1.5f;*/
                     /*waypoints.maxRotonde += 1;*/
-                    
+                    gameManage.ChangeAngryMeter(10);
 
                 }
-              
+             
             }
         }
         countdown -= Time.deltaTime;
@@ -85,8 +85,13 @@ public class WaveSpwner : MonoBehaviour
             yield return new WaitForSeconds(2f);
         //}
         gameManage.ChangeWaveAmount(1);
+
         /*waveNumber++;*/
         enemy.currentSpeed *= 1.05f;
+        if(enemy.currentSpeed > 5)
+        {
+            enemy.currentSpeed = 5;
+        }
 
     }
 

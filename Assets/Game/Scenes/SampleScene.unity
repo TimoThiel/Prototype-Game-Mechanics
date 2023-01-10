@@ -3209,6 +3209,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5353683688700804074, guid: 567b847d516a18a4a9a2b64f4b66b781,
         type: 3}
+      propertyPath: angry
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5353683688700804074, guid: 567b847d516a18a4a9a2b64f4b66b781,
+        type: 3}
       propertyPath: AngryMeter
       value: 
       objectReference: {fileID: 894853988}

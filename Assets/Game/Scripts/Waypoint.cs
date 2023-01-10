@@ -34,6 +34,7 @@ public class Waypoint : MonoBehaviour
         if (Input.GetMouseButtonDown(0) && maxRotonde>minRotonde)
         {
             minRotonde += 1;
+            gameManage.ChangeAngryMeter(-10);
             Vector3 mousePos = Input.mousePosition;
             mousePos.z = 2.0f;       // we want 2m away from the camera position
             Vector3 objectPos = Camera.main.ScreenToWorldPoint(mousePos);
@@ -61,6 +62,7 @@ public class Waypoint : MonoBehaviour
         }
         if (Input.GetMouseButtonDown(0) && maxKruizing>minKruizing)
         {
+            gameManage.ChangeAngryMeter(-10);
             minKruizing += 1;
             Vector3 mousePos = Input.mousePosition;
             mousePos.z = 2.0f;       // we want 2m away from the camera position
@@ -97,6 +99,7 @@ public class Waypoint : MonoBehaviour
             if (gameManage.money >= 5)
             {
                 gameManage.money -= 5;
+                
                 maxStop += 1;
                i = Random.Range(1, 8);
                     Instantiate(stopPrefab,transform.GetChild(i));
@@ -111,6 +114,7 @@ public class Waypoint : MonoBehaviour
         if(gameManage.money >= 10)
         {
             gameManage.money -= 10;
+            
             maxRotonde += 1;
         }
     }
@@ -119,6 +123,7 @@ public class Waypoint : MonoBehaviour
         if(gameManage.money >= 20)
         {
             gameManage.money -= 20;
+            
             Debug.Log("Unit Test Money changed: Succesfull");
             maxKruizing += 1;
         }

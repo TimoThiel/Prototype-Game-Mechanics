@@ -15,7 +15,7 @@ public class GameManage : MonoBehaviour
     public TextMeshProUGUI AngryMeter;
     public int money;
     public int waves;
-    public int Angry;
+    public int angry;
 
     // Start is called before the first frame update
     void Start()
@@ -34,7 +34,7 @@ public class GameManage : MonoBehaviour
 
     public void ChangeAngryMeter(int text)
     {
-        this.Angry += text;
+        this.angry += text;
     }
 
     // Update is called once per frame
@@ -42,9 +42,9 @@ public class GameManage : MonoBehaviour
     {
         geld.text = "Money: " + money.ToString();
         waveAmount.text = "wave: " + waves.ToString();
-        AngryMeter.text = "Angry: " + Angry.ToString();
+        AngryMeter.text = "Angry: " + angry.ToString();
 
-        if (Angry >= 100)
+        if (angry >= 100)
         {
             ResetTheGame();
         }
