@@ -16,6 +16,7 @@ TagManager:
   - Tower
   - Stop
   - WaypointParent
+  - Truck
   layers:
   - Default
   - TransparentFX

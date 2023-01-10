@@ -10,14 +10,16 @@ public class WaveSpwner : MonoBehaviour
     public GameManage gameManage;
     [SerializeField] public GameObject mover;
     [SerializeField] public GameObject enemyPrefab;
+    [SerializeField] public GameObject bossPrefab;
     [SerializeField] public GameObject waypoint;
+    [SerializeField] public GameObject waypoint1;
     [SerializeField] public GameObject webs;
     [SerializeField] public GameObject cheats;
     [SerializeField] public GameManage gameManager;
     public Transform SpawnPoint;
     public float moneyTimer = 0;
     public float timeBetweenWaves = 100f;
-    private float countdown = 5f;
+    private float countdown = 1f;
     public int waveNumber = 1;
     /*public int HP = 50;*/
     private void Start()
@@ -27,15 +29,15 @@ public class WaveSpwner : MonoBehaviour
         var web = webs.GetComponent<EnemySlower>();
         enemy.maxHP = 17.5f;
         
-        enemy1.currentSpeed = 3;
+        enemy1.currentSpeed = 4;
     }
     void Update()
     {
-        
+        var enemy = enemyPrefab.GetComponent<Enemy>();
         /*var cheat = cheats.GetComponent<Cheats>();
         var waypoints = waypoint.GetComponent<Waypoint>();
         var web = webs.GetComponent<EnemySlower>();*/
-        if(moneyTimer < 0)
+        if (moneyTimer < 0)
         {
           
             gameManager.ChangeAmount(1);
@@ -56,17 +58,15 @@ public class WaveSpwner : MonoBehaviour
                 StartCoroutine(SpawnWave());
                 countdown = timeBetweenWaves;
                 
-                if (waveNumber >= 19)
+                if (waveNumber >= 10)
                 {
-                    move.currentSpeed = 5;
+                    
+                    enemy.maxHP *= 1.5f;
                     /*waypoints.maxRotonde += 1;*/
                     
 
                 }
-                else if(waveNumber >= 20)
-                {
-                    move.currentSpeed = 3;
-                }
+              
             }
         }
         countdown -= Time.deltaTime;
@@ -77,16 +77,17 @@ public class WaveSpwner : MonoBehaviour
     IEnumerator SpawnWave()
     {
         var enemy = enemyPrefab.GetComponent<Mover>();
-        for (int i = 0; i < waveNumber; i++)
-        {
+      //  for (int i = 0; i < waveNumber; i++)
+       // {
            
             SpawnEnemy();
-            
-            yield return new WaitForSeconds(0.5f);
-        }
+            SpawnEnemyBoss();
+            yield return new WaitForSeconds(2f);
+        //}
         gameManage.ChangeWaveAmount(1);
-        waveNumber++;
-        enemy.currentSpeed *= 1.1f;
+        /*waveNumber++;*/
+        enemy.currentSpeed *= 1.05f;
+
     }
 
     public void SpawnEnemy()
@@ -95,5 +96,14 @@ public class WaveSpwner : MonoBehaviour
         GameObject enemy = Instantiate(enemyPrefab, SpawnPoint.position, SpawnPoint.rotation);
         enemy.transform.SetParent(this.transform);
     }
+    public void SpawnEnemyBoss()
+    {
+        bossPrefab.GetComponent<Mover>().waypoints = waypoint1;
+        GameObject enemy = Instantiate(bossPrefab, SpawnPoint.position, bossPrefab.transform.rotation);
+        enemy.transform.SetParent(this.transform);
+        
+    }
+
+
    
 }

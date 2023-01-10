@@ -17,7 +17,7 @@ public class Waypoint : MonoBehaviour
 
     public int minStop = 0;
     public int maxStop = 0;
-    public int maxRotonde = 1;
+    public int maxRotonde = 0;
     public int minRotonde = 0;
     public int maxKruizing = 0;
     public int minKruizing = 0;
