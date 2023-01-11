@@ -15,7 +15,7 @@ public class EnemySlower : MonoBehaviour
     {
         
     }
-    private void Update()
+     void Update()
     {
        
     }
@@ -44,9 +44,13 @@ public class EnemySlower : MonoBehaviour
         {
             
             enemies.currentSpeed = 0;
-
+            
         }
-      
+        if (collision.gameObject.tag == "Truck")
+        {
+            gameManage.ChangeAngryMeter(10);
+        }
+
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
@@ -57,7 +61,8 @@ public class EnemySlower : MonoBehaviour
 
 
     }
-   
+    
+
 
 
 }

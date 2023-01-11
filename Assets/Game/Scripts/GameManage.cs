@@ -48,6 +48,8 @@ public class GameManage : MonoBehaviour
         {
             ResetTheGame();
         }
+
+        
     }
     public void ResetTheGame()
     {
