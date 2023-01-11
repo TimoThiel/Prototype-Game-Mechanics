@@ -2,17 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GrassTile : MonoBehaviour
+public class GrassTile : test
 {
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField] private Color firstColor, secondColor;
+    public override void Init(int x, int y)
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        var isOffset = (x + y)% 2 ==1;
+        renderer.color = isOffset ? secondColor : firstColor;
     }
 }

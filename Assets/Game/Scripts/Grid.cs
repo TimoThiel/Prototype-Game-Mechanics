@@ -7,7 +7,7 @@ public class Grid : MonoBehaviour
 {
     [SerializeField] private int _width, _height;
 
-    [SerializeField] private test _tilePrefab;
+    [SerializeField] private test _tilePrefab, _roadTile;
     [SerializeField] private Transform camera;
 
     private void Start()
@@ -20,11 +20,12 @@ public class Grid : MonoBehaviour
         {
             for(int y =0; y < _height; y++)
             {
-                var spawnedTile = Instantiate(_tilePrefab,new Vector3(x,y),Quaternion.identity);
+                var roadPlaced = Random.Range(0,6) == 3? _roadTile: _tilePrefab;
+                var spawnedTile = Instantiate(roadPlaced, new Vector3(x,y),Quaternion.identity);
                 spawnedTile.name = $"tile{x} {y}";
 
-                var isOffset = (x % 2 == 0 && y % 2 != 0) || (x % 2 != 0 && y % 2 == 0);
-                spawnedTile.Init(isOffset);
+                
+                spawnedTile.Init(x,y);
             }
         }
 

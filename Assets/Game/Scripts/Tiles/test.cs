@@ -2,15 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class test : MonoBehaviour
+public abstract class test : MonoBehaviour
 {
- [SerializeField] private Color firstColor, secondColor;
-    [SerializeField] private SpriteRenderer renderer;
+ 
+    [SerializeField] protected SpriteRenderer renderer;
     [SerializeField] private GameObject highlight;
 
-    public void Init(bool isOffset)
+    public virtual void Init(int x,int y)
     {
-        renderer.color = isOffset ? secondColor : firstColor;
+        
     }
 
      void OnMouseEnter()
