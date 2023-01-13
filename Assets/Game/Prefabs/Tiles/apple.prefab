@@ -10,10 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 4710396617808994840}
   - component: {fileID: 870977891576022863}
-  - component: {fileID: -3427164265451406629}
   - component: {fileID: -2353970570449093036}
   - component: {fileID: 8079910812381511411}
-  - component: {fileID: 2362006014472231764}
+  - component: {fileID: -2082132370573688201}
   m_Layer: 0
   m_Name: apple
   m_TagString: Truck
@@ -28,15 +27,15 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3727730208704911426}
-  m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: -11.903652, y: -2.4816515, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1779.7949, y: 274.3413, z: -0.31580666}
+  m_LocalScale: {x: 0.6, y: 0.6, z: 0.6}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 6929279018201248360}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &870977891576022863
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -89,25 +88,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &-3427164265451406629
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3727730208704911426}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7906bbe8d1e2d0449abcb026993c2077, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  waypoints: {fileID: 0}
-  currentSpeed: 3.1
-  bulletPrefab: {fileID: 808331628435892808, guid: 881dbbe19106e7b4dab1e1f6dce4a857,
-    type: 3}
-  firepoint: {fileID: 0}
-  enemyTag: Waypoint
-  range: 1
 --- !u!114 &-2353970570449093036
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -115,7 +95,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3727730208704911426}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9d7d833ee20e90e4fb7eaebb0276ddd9, type: 3}
   m_Name: 
@@ -148,7 +128,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2, y: 1.4}
   m_EdgeRadius: 0
---- !u!114 &2362006014472231764
+--- !u!114 &-2082132370573688201
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -157,11 +137,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 3727730208704911426}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 620a9d6c0ccecc443a1d9b4af6a5d121, type: 3}
+  m_Script: {fileID: 11500000, guid: b2cf54c058f6a1746a2220fadc699a7f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  renderer: {fileID: 870977891576022863}
-  highlight: {fileID: 7921093375953605294}
+  gameManages: {fileID: 8767101258804772617, guid: 896ad39195e9ac044a78f550f4aa88ea,
+    type: 3}
+  truck: {fileID: 4710396617808994840}
+  car: {fileID: 6194677874044689168, guid: 0e45abf74d36e8b449880472d621564a, type: 3}
+  grid: {fileID: 1395946647121256206, guid: 4b6709394ddd0ca48a92d546cc16673c, type: 3}
+  currentSpeed: 2
+  countdown: 1
 --- !u!1 &7921093375953605294
 GameObject:
   m_ObjectHideFlags: 0
