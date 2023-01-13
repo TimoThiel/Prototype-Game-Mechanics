@@ -53,11 +53,10 @@ MonoBehaviour:
   camera: {fileID: 0}
   startPoint: {fileID: 5181029578549648793, guid: d98204bb039f3d64e9b4e47f96da0b8f,
     type: 3}
-  endPointTruck: {fileID: 2227891229403936656, guid: 3c89af7aac0f90748b8d482d29ab951e,
-    type: 3}
   carStart: {fileID: 4461853573037705638, guid: 5c47d2de7687da445a70dd2cf70f3758,
     type: 3}
   truck: {fileID: 3727730208704911426, guid: 57fe54f06efafaa4e809c2c93fc6c137, type: 3}
   car: {fileID: 6194677874044689170, guid: 0e45abf74d36e8b449880472d621564a, type: 3}
+  angry: {fileID: 8904548077661300090, guid: c2f4a8ced1a2930489be685cb6ffe006, type: 3}
   timeBetweenWaves: 2
   currentSpeed: 2

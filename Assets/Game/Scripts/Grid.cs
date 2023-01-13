@@ -3,6 +3,7 @@ using UnityEngine;
 
 public class Grid : MonoBehaviour
 {
+     
     [SerializeField] private int _width, _height;
 
     [SerializeField] private test _tilePrefab, _roadTile;
@@ -10,6 +11,7 @@ public class Grid : MonoBehaviour
 
     [SerializeField] public Transform startPoint, carStart;
     [SerializeField] private GameObject truck, car;
+
 
     private float countdown = 1f;
     public float timeBetweenWaves = 100f;
@@ -44,6 +46,7 @@ public class Grid : MonoBehaviour
                 var spawnedRoadTileHr = Instantiate(_roadTile,new Vector3(x,4), Quaternion.identity);
                 startPoint.position = new Vector3(7, 0,-1);
                 carStart.position = new Vector3(0, 4, -1);
+        
                 spawnedTile.Init(x,y);
                 spawnedRoadTile.Init(x,y);
                 spawnedRoadTileHr.Init(x,y);
@@ -71,5 +74,7 @@ public class Grid : MonoBehaviour
         
         yield return new WaitForSeconds(2f);
     }
+
+  
 }
 

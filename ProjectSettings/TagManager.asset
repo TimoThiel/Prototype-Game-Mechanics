@@ -17,6 +17,7 @@ TagManager:
   - Stop
   - WaypointParent
   - Truck
+  - Angry
   layers:
   - Default
   - TransparentFX

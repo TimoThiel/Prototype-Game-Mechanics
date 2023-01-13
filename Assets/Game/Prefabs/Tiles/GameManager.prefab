@@ -44,6 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5d50eb8ac3d02b47b4433ef8fb3b3ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  move: {fileID: -1158651105933832303, guid: 0e45abf74d36e8b449880472d621564a, type: 3}
   AngryMeter: {fileID: 3986485117972032356, guid: 171a3165d7a3b7746bd36a95ba6eaa65,
     type: 3}
   angry: 0

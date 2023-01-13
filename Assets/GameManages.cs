@@ -6,9 +6,10 @@ using UnityEngine.SceneManagement;
 
 public class GameManages : MonoBehaviour
 {
+    [SerializeField] public moveTruck move;
     public TextMeshProUGUI AngryMeter;
     public int angry;
-    private void Start()
+    private void Awake()
     {
         angry = 0;
     }
@@ -26,9 +27,10 @@ public class GameManages : MonoBehaviour
         {
             ResetTheGame();
         }
-
+        
 
     }
+
     public void ResetTheGame()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
