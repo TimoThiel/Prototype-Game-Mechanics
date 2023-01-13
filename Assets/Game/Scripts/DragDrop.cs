@@ -1,33 +1,27 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
-public class DragDrop : MonoBehaviour
-{ 
-    private Vector3 mOffset;
-    private float mZCoord;
-    private void OnMouseDown()
+public class DragAndDrop : MonoBehaviour, IPointerDownHandler,IBeginDragHandler, IEndDragHandler, IDragHandler
+{
+    public void OnBeginDrag(PointerEventData eventData)
     {
-        mZCoord = Camera.main.WorldToScreenPoint(gameObject.transform.position).z;
-
-
-        mOffset = gameObject.transform.position - GetMouseWorldPos();
+        Debug.Log("OnBeginDrag");
     }
 
-    private Vector3 GetMouseWorldPos()
+    public void OnDrag(PointerEventData eventData)
     {
-        Vector3 mousePoint = Input.mousePosition;
-        
-        mousePoint.z = mZCoord;
-
-        return Camera.main.WorldToScreenPoint(mousePoint);
+        Debug.Log("OnDrag");
     }
 
-
-
-    private void OnMouseDrag()
+    public void OnEndDrag(PointerEventData eventData)
     {
-        
-        transform.position = GetMouseWorldPos() + mOffset;
+        Debug.Log("OnEndDrag");
+    }
+
+    public void OnPointerDown(PointerEventData eventData)
+    {
+        Debug.Log("OnPointerDown");
     }
 }
