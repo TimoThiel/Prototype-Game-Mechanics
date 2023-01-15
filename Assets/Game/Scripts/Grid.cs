@@ -42,8 +42,8 @@ public class Grid : MonoBehaviour
                 /*var roadPlaced = Random.Range(0,6) == 3? _roadTile: _tilePrefab;*/
                 var spawnedTile = Instantiate(_tilePrefab, new Vector3(x,y),Quaternion.identity);
                 spawnedTile.name = $"tile{x} {y}";
-              /*  var spawnedRoadTile = Instantiate(_roadTile, new Vector3(7,y), Quaternion.identity);
-                var spawnedRoadTileHr = Instantiate(_roadTile,new Vector3(x,4), Quaternion.identity);*/
+                var spawnedRoadTile = Instantiate(_roadTile, new Vector3(0, 0), Quaternion.identity);
+                var spawnedRoadTileHr = Instantiate(_roadTile, new Vector3(7,5), Quaternion.identity);
                 startPoint.position = new Vector3(7, 0,-1);
                 carStart.position = new Vector3(0, 4, -1);
         
@@ -52,9 +52,9 @@ public class Grid : MonoBehaviour
                 spawnedRoadTileHr.Init(x,y);*/
                 
                 spawnedTile.transform.SetParent(this.transform);
-          /*      spawnedRoadTile.transform.SetParent(this.transform);
-                spawnedRoadTileHr.transform.SetParent(this.transform);*/
-                
+                spawnedRoadTile.transform.SetParent(this.transform);
+                /*spawnedRoadTileHr.transform.SetParent(this.transform);*/
+
 
             }
         }
