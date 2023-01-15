@@ -1,4 +1,4 @@
-using System.Collections;
+/*using System.Collections;
 using System.Collections.Generic;
 
 using Unity.VisualScripting;
@@ -32,7 +32,7 @@ public class ArcherBuilder : MonoBehaviour
    
     void Update()
     {
-/*        obj.SetActive(true);
+*//*        obj.SetActive(true);
         if (Input.GetMouseButtonDown(0) && beginTile < maxTiles)
         {
             beginTile++;
@@ -70,7 +70,7 @@ public class ArcherBuilder : MonoBehaviour
             mousePos.z = 2.0f;       // we want 2m away from the camera position
             Vector3 objectPos = Camera.main.ScreenToWorldPoint(mousePos);
             elek.Add(Instantiate(ele, objectPos, Quaternion.identity));*/
-       /* }*/
+       /* }*//*
 
     }
 
@@ -84,4 +84,4 @@ public class ArcherBuilder : MonoBehaviour
         }
     }
 }
- 
+ */

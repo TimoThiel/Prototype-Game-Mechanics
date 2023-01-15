@@ -18,6 +18,8 @@ TagManager:
   - WaypointParent
   - Truck
   - Angry
+  - Grass
+  - Road
   layers:
   - Default
   - TransparentFX

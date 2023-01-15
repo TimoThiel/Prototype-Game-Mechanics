@@ -1,10 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class moveTruck : MonoBehaviour
 {
-    [SerializeField] public Transform truck, car;
+    [SerializeField] public Transform car, finish, start;
     [SerializeField] public Grid grid;
     public float currentSpeed = 2f;
     public float countdown = 20f;
@@ -18,25 +19,26 @@ public class moveTruck : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        truck.position = Vector3.MoveTowards(truck.position, new Vector3(7, 8, -1), currentSpeed * Time.deltaTime);
-        car.position = Vector3.MoveTowards(car.position, new Vector3(15, 4, -1), currentSpeed * Time.deltaTime);
+       /* truck.position = Vector3.MoveTowards(truck.position, new Vector3(7, 8, -1), currentSpeed * Time.deltaTime);*/
+        car.position = Vector3.MoveTowards(car.position,finish.position, currentSpeed * Time.deltaTime);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.gameObject.tag == "Truck" )
+        if(collision.gameObject.tag == "Grass" )
         {
-            currentSpeed = 0;
+            currentSpeed = 1;
            
         }
-        
-    }
-
-    private void OnTriggerExit2D(Collider2D collision)
-    {
-        if (collision.gameObject.tag == "Truck")
+        if (collision.gameObject.tag == "Grass"&& collision.gameObject.tag == "Road")
         {
             currentSpeed = 3;
         }
+    }
+
+    
+    public void ResetTheGame()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }

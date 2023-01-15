@@ -8,10 +8,12 @@ public class DragDrop : MonoBehaviour, IPointerDownHandler,IBeginDragHandler,IEn
 {
     [SerializeField] private GameObject car;
     [SerializeField] private Canvas canvas;
+    public static List<Vector3> RoadToCheckpoint = new List<Vector3>();
     private RectTransform rectTransform;
     private CanvasGroup canvasGroup;
     
-   
+
+
     private void Awake()
     {
         rectTransform = GetComponent<RectTransform>();
@@ -20,11 +22,11 @@ public class DragDrop : MonoBehaviour, IPointerDownHandler,IBeginDragHandler,IEn
     }
     public void Update()
     {
-      if(Input.GetKeyDown(KeyCode.R))
+        if (Input.GetKeyDown(KeyCode.R))
         {
             ResetTheGame();
         }
-        if(Input.GetKeyDown(KeyCode.D))
+        if (Input.GetKeyDown(KeyCode.Tab))
         {
             StartGame();
         }
@@ -51,6 +53,10 @@ public class DragDrop : MonoBehaviour, IPointerDownHandler,IBeginDragHandler,IEn
     {
         canvasGroup.alpha = 1f;
         canvasGroup.blocksRaycasts = true;
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            rectTransform.rotation = Quaternion.Euler(0, 0, transform.rotation.eulerAngles.z + 90);
+        }
     }
 
     public void OnPointerDown(PointerEventData eventData)
@@ -70,12 +76,11 @@ public class DragDrop : MonoBehaviour, IPointerDownHandler,IBeginDragHandler,IEn
     }
     void SpawnCar()
     {
-        Instantiate(car, new Vector3(0,0), Quaternion.Euler(0f, 0f, 0f));
+        Instantiate(car, new Vector3(0,0,0), Quaternion.Euler(0f, 0f, 0f));
     }
     void MoveCar()
     {
         
     }
-
 
 }

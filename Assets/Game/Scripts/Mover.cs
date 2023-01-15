@@ -1,4 +1,4 @@
-using System.Collections;
+/*using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using static UnityEngine.GraphicsBuffer;
@@ -12,7 +12,7 @@ public class Mover : MonoBehaviour
 
 
 
-    /*public bool hitEnemy = false;*/
+    *//*public bool hitEnemy = false;*//*
     private Transform target;
     public GameObject bulletPrefab;
     public Transform firepoint;
@@ -79,3 +79,4 @@ public class Mover : MonoBehaviour
     }
 
 }
+*/
