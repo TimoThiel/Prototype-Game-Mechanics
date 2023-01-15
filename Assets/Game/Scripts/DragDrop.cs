@@ -6,10 +6,11 @@ using UnityEngine.SceneManagement;
 
 public class DragDrop : MonoBehaviour, IPointerDownHandler,IBeginDragHandler,IEndDragHandler,IDragHandler
 {
+    [SerializeField] private GameObject car;
     [SerializeField] private Canvas canvas;
     private RectTransform rectTransform;
     private CanvasGroup canvasGroup;
-    private Transform currentItem;
+    
    
     private void Awake()
     {
@@ -22,6 +23,10 @@ public class DragDrop : MonoBehaviour, IPointerDownHandler,IBeginDragHandler,IEn
       if(Input.GetKeyDown(KeyCode.R))
         {
             ResetTheGame();
+        }
+        if(Input.GetKeyDown(KeyCode.D))
+        {
+            StartGame();
         }
     }
     public void OnBeginDrag(PointerEventData eventData)
@@ -57,6 +62,19 @@ public class DragDrop : MonoBehaviour, IPointerDownHandler,IBeginDragHandler,IEn
     public void ResetTheGame()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+    public void StartGame()
+    {
+        SpawnCar();
+        MoveCar();
+    }
+    void SpawnCar()
+    {
+        Instantiate(car, new Vector3(0,0), Quaternion.Euler(0f, 0f, 0f));
+    }
+    void MoveCar()
+    {
+        
     }
 
 
