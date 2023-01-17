@@ -3,42 +3,61 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class moveTruck : MonoBehaviour
+public class MoveTruck : MonoBehaviour
 {
     [SerializeField] public Transform car, finish, start;
     [SerializeField] public Grid grid;
     public float currentSpeed = 2f;
     public float countdown = 20f;
-
+    public int checkpointCount = 0;
     // Start is called before the first frame update
     void Start()
     {
-       
+        if(DragDrop.RoadToCheckpoint.Count<= 0)
+        {
+            return;
+        }
+        SetRotation(DragDrop.RoadToCheckpoint[0]);
     }
-
+    
     // Update is called once per frame
     void Update()
     {
-       /* truck.position = Vector3.MoveTowards(truck.position, new Vector3(7, 8, -1), currentSpeed * Time.deltaTime);*/
-        car.position = Vector3.MoveTowards(car.position,finish.position, currentSpeed * Time.deltaTime);
+        if(checkpointCount >= DragDrop.RoadToCheckpoint.Count)
+        {
+            ResetTheGame();
+            return;
+            
+        }
+        car.position = Vector3.MoveTowards(car.position, DragDrop.RoadToCheckpoint[checkpointCount], currentSpeed * Time.deltaTime);
+        if (Vector3.Distance(transform.position, DragDrop.RoadToCheckpoint[checkpointCount])< 0.2f)
+        {
+            checkpointCount++;
+            if(checkpointCount < DragDrop.RoadToCheckpoint.Count)
+            {
+                SetRotation(DragDrop.RoadToCheckpoint[checkpointCount]);
+            }
+        }
+       
+        
     }
-
-    private void OnTriggerEnter2D(Collider2D collision)
+    void SetRotation(Vector3 target)
     {
-        if(collision.gameObject.tag == "Grass" )
+        var x = transform.position.x- target.x;
+        var y = transform.position.y- target.y;
+        if(Mathf.Abs(x)>= Mathf.Abs(y))
         {
-            currentSpeed = 1;
-           
+            car.rotation = Quaternion.Euler(0,0,x>=0? -180: 0);
         }
-        if (collision.gameObject.tag == "Grass"&& collision.gameObject.tag == "Road")
+        else
         {
-            currentSpeed = 3;
+            car.rotation = Quaternion.Euler(0, 0, y >= 0 ? -90 : 90);
         }
     }
 
-    
     public void ResetTheGame()
     {
+        DragDrop.RoadToCheckpoint = new List<Vector3>();
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }

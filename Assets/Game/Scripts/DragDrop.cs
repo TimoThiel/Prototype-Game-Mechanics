@@ -6,7 +6,6 @@ using UnityEngine.SceneManagement;
 
 public class DragDrop : MonoBehaviour, IPointerDownHandler,IBeginDragHandler,IEndDragHandler,IDragHandler
 {
-    [SerializeField] private GameObject car;
     [SerializeField] private Canvas canvas;
     public static List<Vector3> RoadToCheckpoint = new List<Vector3>();
     private RectTransform rectTransform;
@@ -24,6 +23,7 @@ public class DragDrop : MonoBehaviour, IPointerDownHandler,IBeginDragHandler,IEn
     {
         if (Input.GetKeyDown(KeyCode.R))
         {
+            
             ResetTheGame();
         }
         if (Input.GetKeyDown(KeyCode.Tab))
@@ -76,7 +76,7 @@ public class DragDrop : MonoBehaviour, IPointerDownHandler,IBeginDragHandler,IEn
     }
     void SpawnCar()
     {
-        Instantiate(car, new Vector3(0,0,0), Quaternion.Euler(0f, 0f, 0f));
+      /*  Instantiate(car, new Vector3(0,0,0), Quaternion.Euler(0f, 0f, 0f));*/
     }
     void MoveCar()
     {

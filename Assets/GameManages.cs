@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class GameManages : MonoBehaviour
 {
-    [SerializeField] public moveTruck move;
+    [SerializeField] public MoveTruck move;
     public TextMeshProUGUI AngryMeter;
     public int angry;
     private void Awake()

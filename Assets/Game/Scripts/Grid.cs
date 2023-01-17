@@ -46,11 +46,12 @@ public class Grid : MonoBehaviour
                 var spawnedRoadTile = Instantiate(_roadTile, new Vector3(0, 0), Quaternion.identity);
                 var spawnedRoadTileHr = Instantiate(_roadTile, new Vector3(7, 5), Quaternion.identity);
                 spawnedTile.name = $"tile{x} {y}";
-                var obstacleTile = Instantiate(_obstacleTile, new Vector3(7,4), Quaternion.identity);
+                
+                var obstacleTile = Instantiate(_obstacleTile, new Vector3(4,5), Quaternion.identity);
                 var obstacleTileHr = Instantiate(_obstacleTile, new Vector3(2, 1), Quaternion.identity);
-                var obstacleTileHr2 = Instantiate(_obstacleTile, new Vector3(4, 3), Quaternion.identity);
+               var waterTile = Instantiate(_waterTile,new Vector3(3, 2), Quaternion.identity);
                 startPoint.position = new Vector3(7, 0,-1);
-                /*carStart.position = new Vector3(0, 4, -1);*/
+                
         
                 spawnedTile.Init(x,y);
 /*                spawnedRoadTile.Init(x,y);
