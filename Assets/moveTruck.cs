@@ -10,6 +10,7 @@ public class MoveTruck : MonoBehaviour
     public float currentSpeed = 2f;
     public float countdown = 20f;
     public int checkpointCount = 0;
+    private int canWin = 0;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,7 +24,8 @@ public class MoveTruck : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(checkpointCount >= DragDrop.RoadToCheckpoint.Count)
+        Debug.Log(canWin);
+        if (checkpointCount >= DragDrop.RoadToCheckpoint.Count)
         {
             ResetTheGame();
             return;
@@ -54,7 +56,14 @@ public class MoveTruck : MonoBehaviour
             car.rotation = Quaternion.Euler(0, 0, y >= 0 ? -90 : 90);
         }
     }
+    public void OnTriggerStay2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Road")
+        {
+            canWin += 1;
 
+        }
+    }
     public void ResetTheGame()
     {
         DragDrop.RoadToCheckpoint = new List<Vector3>();

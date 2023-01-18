@@ -44,12 +44,13 @@ public class Grid : MonoBehaviour
                 /*var roadPlaced = Random.Range(0,6) == 3? _roadTile: _tilePrefab;*/
                 var spawnedTile = Instantiate(_tilePrefab, new Vector3(x,y),Quaternion.identity);
                 var spawnedRoadTile = Instantiate(_roadTile, new Vector3(0, 0), Quaternion.identity);
-                var spawnedRoadTileHr = Instantiate(_roadTile, new Vector3(7, 5), Quaternion.identity);
+                var spawnedRoadTileHr = Instantiate(_obstacleTile, new Vector3(7, 5), Quaternion.identity);
                 spawnedTile.name = $"tile{x} {y}";
                 
-                var obstacleTile = Instantiate(_obstacleTile, new Vector3(4,5), Quaternion.identity);
-                var obstacleTileHr = Instantiate(_obstacleTile, new Vector3(2, 1), Quaternion.identity);
+             
                var waterTile = Instantiate(_waterTile,new Vector3(3, 2), Quaternion.identity);
+                var obstacleTile = Instantiate(_obstacleTile, new Vector3(4, 5), Quaternion.identity);
+                var obstacleTileHr = Instantiate(_obstacleTile, new Vector3(2, 1), Quaternion.identity);
                 startPoint.position = new Vector3(7, 0,-1);
                 
         

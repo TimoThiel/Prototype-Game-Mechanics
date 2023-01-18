@@ -4411,6 +4411,32 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 402195722}
   m_PrefabAsset: {fileID: 0}
+--- !u!61 &1412344358
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1412344354}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.051525116, y: -0.33596992}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 60.061646, y: 54.1329}
+  m_EdgeRadius: 0
 --- !u!1 &1443282994
 GameObject:
   m_ObjectHideFlags: 0
@@ -6184,6 +6210,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rechtt (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 700490220911064, guid: 43f48855f33ec974794b117e40889a67, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 700490220911065, guid: 43f48855f33ec974794b117e40889a67, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -6477,6 +6507,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rechtt (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 3226337770304211344, guid: 29be790d602497745916077169260aa7,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 3226337770304211347, guid: 29be790d602497745916077169260aa7,
         type: 3}
       propertyPath: m_Pivot.x
@@ -6600,6 +6635,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: bochtt (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3656250086651510768, guid: acebaf6f801f0bb42806232c7c52967c,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 3656250086651510781, guid: acebaf6f801f0bb42806232c7c52967c,
         type: 3}
@@ -6835,6 +6875,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: bochtt
       objectReference: {fileID: 0}
+    - target: {fileID: 4003378952778314109, guid: c88b64de1b1d9ce4f97050a3518c49a0,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c88b64de1b1d9ce4f97050a3518c49a0, type: 3}
 --- !u!1001 &4161609466418632066
@@ -6953,6 +6998,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: bochtt (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4161609467690802551, guid: 264d5663e959bfd498fb5571e3e9847b,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 4161609467690802554, guid: 264d5663e959bfd498fb5571e3e9847b,
         type: 3}
@@ -7083,6 +7133,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rechtt (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 4387565979419808999, guid: 66e4bb854a51edb49bcb42e1532f77b1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 66e4bb854a51edb49bcb42e1532f77b1, type: 3}
 --- !u!1001 &5139525997351657933
@@ -7201,6 +7256,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Rechtt
+      objectReference: {fileID: 0}
+    - target: {fileID: 5139525997976434533, guid: 8dc6889a7e99ee342a9d1e4d1df6fd50,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 5139525997976434534, guid: 8dc6889a7e99ee342a9d1e4d1df6fd50,
         type: 3}
@@ -7395,6 +7455,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: bochtt (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6424162130488254773, guid: 10b4232ac144e2b40aa9d8d3e72b2d77,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 6424162130488254774, guid: 10b4232ac144e2b40aa9d8d3e72b2d77,
         type: 3}
       propertyPath: canvas
@@ -7519,6 +7584,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rechtt (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 6440672101379952293, guid: c80053e3b15585d4eb098468596560ae,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 6440672101379952294, guid: c80053e3b15585d4eb098468596560ae,
         type: 3}
       propertyPath: canvas
@@ -7606,6 +7676,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: bochtt (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6999868650973555148, guid: c28daf5552d67aa4682e8a28c5594e30,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 6999868650973555149, guid: c28daf5552d67aa4682e8a28c5594e30,
         type: 3}
@@ -7816,6 +7891,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Rechtt (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8722536334966963202, guid: 195cedd7048fec54abbdabf4c4b520e4,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 8722536334966963213, guid: 195cedd7048fec54abbdabf4c4b520e4,
         type: 3}
