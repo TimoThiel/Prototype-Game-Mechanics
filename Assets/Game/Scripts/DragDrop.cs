@@ -7,12 +7,15 @@ using UnityEngine.SceneManagement;
 public class DragDrop : MonoBehaviour, IPointerDownHandler,IBeginDragHandler,IEndDragHandler,IDragHandler
 {
     [SerializeField] private Canvas canvas;
-    public static List<Vector3> RoadToCheckpoint = new List<Vector3>();
+    public static List<DragDrop> RoadToCheckpoint = new List<DragDrop>();
     private RectTransform rectTransform;
     private CanvasGroup canvasGroup;
+    public static DragDrop CurrentDragDrop { get; private set; }
     
-    private bool topConnect, leftConnect, rightConnect, bottomConnect;
+    public bool topConnect, leftConnect, rightConnect, bottomConnect;
     [SerializeField] private bool isCorner;
+    int rotation;
+
     private void Awake()
     {
         rectTransform = GetComponent<RectTransform>();
@@ -46,7 +49,7 @@ public class DragDrop : MonoBehaviour, IPointerDownHandler,IBeginDragHandler,IEn
     }
     public void OnBeginDrag(PointerEventData eventData)
     {
-        
+        CurrentDragDrop = this;
         canvasGroup.alpha = 0.6f;
         canvasGroup.blocksRaycasts = false;
         
@@ -58,7 +61,14 @@ public class DragDrop : MonoBehaviour, IPointerDownHandler,IBeginDragHandler,IEn
         rectTransform.anchoredPosition += eventData.delta/ canvas.scaleFactor;
         if (Input.GetKeyDown(KeyCode.Space))
         {
+            
             rectTransform.rotation = Quaternion.Euler(0, 0, transform.rotation.eulerAngles.z + 90);
+            rotation += 90;
+            if(rotation>= 360)
+            {
+                rotation = 0;
+            }
+            RotateConnectionPoints();
         }
     }
 
@@ -66,12 +76,13 @@ public class DragDrop : MonoBehaviour, IPointerDownHandler,IBeginDragHandler,IEn
     {
         canvasGroup.alpha = 1f;
         canvasGroup.blocksRaycasts = true;
-        if (Input.GetKeyDown(KeyCode.Space))
+       /* if (Input.GetKeyDown(KeyCode.Space))
         {
+            RotateConnectionPoints();
             rectTransform.rotation = Quaternion.Euler(0, 0, transform.rotation.eulerAngles.z + 90);
-        }
+            rotation += 90;
+        }*/
     }
-
     public void OnPointerDown(PointerEventData eventData)
     {
         
@@ -99,7 +110,7 @@ public class DragDrop : MonoBehaviour, IPointerDownHandler,IBeginDragHandler,IEn
     {
         if (isCorner)
         {
-            switch (transform.rotation.z)
+            switch (rotation)
             {
                 case 0:
                     leftConnect = false;
@@ -113,13 +124,13 @@ public class DragDrop : MonoBehaviour, IPointerDownHandler,IBeginDragHandler,IEn
                     bottomConnect = false;
                     topConnect = true;
                     break;
-                case -180:
+                case 180:
                     leftConnect = true;
                     rightConnect = false;
                     bottomConnect = false;
                     topConnect = true;
                     break;
-                case -90:
+                case 270:
                     leftConnect = true;
                     rightConnect = false;
                     bottomConnect = true;

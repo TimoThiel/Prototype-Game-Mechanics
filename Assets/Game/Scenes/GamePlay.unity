@@ -7459,6 +7459,11 @@ PrefabInstance:
       propertyPath: canvas
       value: 
       objectReference: {fileID: 281458898}
+    - target: {fileID: 3656250086651510781, guid: acebaf6f801f0bb42806232c7c52967c,
+        type: 3}
+      propertyPath: isCorner
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3656250086651510783, guid: acebaf6f801f0bb42806232c7c52967c,
         type: 3}
       propertyPath: m_Pivot.x
@@ -7822,6 +7827,11 @@ PrefabInstance:
       propertyPath: canvas
       value: 
       objectReference: {fileID: 281458898}
+    - target: {fileID: 4161609467690802554, guid: 264d5663e959bfd498fb5571e3e9847b,
+        type: 3}
+      propertyPath: isCorner
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 264d5663e959bfd498fb5571e3e9847b, type: 3}
 --- !u!1001 &4387565980702795780
@@ -8278,6 +8288,11 @@ PrefabInstance:
       propertyPath: canvas
       value: 
       objectReference: {fileID: 281458898}
+    - target: {fileID: 6424162130488254774, guid: 10b4232ac144e2b40aa9d8d3e72b2d77,
+        type: 3}
+      propertyPath: isCorner
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 10b4232ac144e2b40aa9d8d3e72b2d77, type: 3}
 --- !u!1001 &6440672099903638753
@@ -8605,6 +8620,11 @@ PrefabInstance:
       propertyPath: canvas
       value: 
       objectReference: {fileID: 281458898}
+    - target: {fileID: 6999868650973555187, guid: c28daf5552d67aa4682e8a28c5594e30,
+        type: 3}
+      propertyPath: isCorner
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c28daf5552d67aa4682e8a28c5594e30, type: 3}
 --- !u!1001 &7040844478414665889

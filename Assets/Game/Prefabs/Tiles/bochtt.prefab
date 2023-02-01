@@ -91,8 +91,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0385b33e1bf17b74087fa7a9da8c3c24, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  car: {fileID: 6194677874044689170, guid: 0e45abf74d36e8b449880472d621564a, type: 3}
   canvas: {fileID: 0}
+  isCorner: 1
 --- !u!225 &4003378952778314096
 CanvasGroup:
   m_ObjectHideFlags: 0
