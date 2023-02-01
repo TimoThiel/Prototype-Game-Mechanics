@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class MoveTruck : MonoBehaviour
 {
+    [SerializeField] public GameManages gameManages;
     [SerializeField] public Transform car, finish, start;
     [SerializeField] public Grid grid;
     public float currentSpeed = 2f;
@@ -20,28 +21,28 @@ public class MoveTruck : MonoBehaviour
         }
         SetRotation(DragDrop.RoadToCheckpoint[0]);
     }
-    
+
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(canWin);
+        /*Debug.Log(canWin);*/
         if (checkpointCount >= DragDrop.RoadToCheckpoint.Count)
         {
+            Finish.busReachEnd = true;
             ResetTheGame();
             return;
-            
+
         }
+
         car.position = Vector3.MoveTowards(car.position, DragDrop.RoadToCheckpoint[checkpointCount], currentSpeed * Time.deltaTime);
-        if (Vector3.Distance(transform.position, DragDrop.RoadToCheckpoint[checkpointCount])< 0.2f)
+        if (Vector3.Distance(transform.position, DragDrop.RoadToCheckpoint[checkpointCount]) < 0.2f)
         {
             checkpointCount++;
-            if(checkpointCount < DragDrop.RoadToCheckpoint.Count)
+            if (checkpointCount < DragDrop.RoadToCheckpoint.Count)
             {
                 SetRotation(DragDrop.RoadToCheckpoint[checkpointCount]);
             }
         }
-       
-        
     }
     void SetRotation(Vector3 target)
     {
@@ -56,17 +57,11 @@ public class MoveTruck : MonoBehaviour
             car.rotation = Quaternion.Euler(0, 0, y >= 0 ? -90 : 90);
         }
     }
-    public void OnTriggerStay2D(Collider2D collision)
-    {
-        if (collision.gameObject.tag == "Road")
-        {
-            canWin += 1;
-
-        }
-    }
+   
     public void ResetTheGame()
     {
         DragDrop.RoadToCheckpoint = new List<Vector3>();
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        /*Finish.points = 0;*/
     }
 }

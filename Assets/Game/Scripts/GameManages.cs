@@ -7,29 +7,41 @@ using UnityEngine.SceneManagement;
 public class GameManages : MonoBehaviour
 {
     [SerializeField] public MoveTruck move;
-    public TextMeshProUGUI tijdMeter;
-    public int tijd;
-    
+    public TextMeshProUGUI tijdMeter, puntenMeter;
+    public int tijd, punten;
+    public float tijdCount, puntCount;
     private void Awake()
     {
-        tijd = 30;
-        
+        tijd = 45;
+        if (tijdCount < 0)
+        {
+
+            ChangeTijd(-1);
+            tijdCount = 1;
+        }
+        tijdCount -= Time.deltaTime;
     }
     public void ChangeTijd(int text)
     {
         this.tijd += text;
+       
+    }
+    public void ChangePunten(int text)
+    {
+        this.punten += text;
     }
 
     void Update()
     {
       
         tijdMeter.text = "Tijd: " + tijd.ToString();
+        puntenMeter.text = "Punten: "+ punten.ToString();
 
         if (tijd <= 0)
         {
             ResetTheGame();
         }
-        
+      
 
     }
 

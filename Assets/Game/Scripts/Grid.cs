@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class Grid : MonoBehaviour
 {
-     
+    [SerializeField] private GameManages gameManages;
     [SerializeField] private int _width, _height;
 
     [SerializeField] private test _tilePrefab, _roadTile, _obstacleTile, _waterTile;
@@ -12,7 +12,7 @@ public class Grid : MonoBehaviour
     [SerializeField] public Transform startPoint, carStart;
     [SerializeField] private GameObject truck, car;
 
-
+    public float tijdCount;
     private float countdown = 1f;
     public float timeBetweenWaves = 100f;
     public float currentSpeed = 2f;
@@ -26,6 +26,13 @@ public class Grid : MonoBehaviour
     private void Update()
     {
         
+        if (tijdCount < 0)
+        {
+
+            gameManages.ChangeTijd(-1);
+            tijdCount = 1;
+        }
+        tijdCount -= Time.deltaTime;
         if (countdown <= 0)
         {
                /* StartCoroutine(SpawnWave());*/
@@ -44,7 +51,7 @@ public class Grid : MonoBehaviour
                 /*var roadPlaced = Random.Range(0,6) == 3? _roadTile: _tilePrefab;*/
                 var spawnedTile = Instantiate(_tilePrefab, new Vector3(x,y),Quaternion.identity);
                 var spawnedRoadTile = Instantiate(_roadTile, new Vector3(0, 0), Quaternion.identity);
-                var spawnedRoadTileHr = Instantiate(_obstacleTile, new Vector3(7, 5), Quaternion.identity);
+                var spawnedRoadTileHr = Instantiate(_roadTile, new Vector3(7, 5), Quaternion.identity);
                 spawnedTile.name = $"tile{x} {y}";
                 
              

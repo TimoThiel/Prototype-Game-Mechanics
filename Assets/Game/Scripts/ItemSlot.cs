@@ -5,6 +5,12 @@ using UnityEngine.EventSystems;
 
 public class ItemSlot : MonoBehaviour,IDropHandler
 {
+    [field:SerializeField] public int points { get; set; }
+
+     void Start()
+    {
+       
+    }
     public void OnDrop(PointerEventData eventData)
     {
         Debug.Log("OnDrop");
@@ -12,6 +18,7 @@ public class ItemSlot : MonoBehaviour,IDropHandler
         {
             eventData.pointerDrag.GetComponent<RectTransform>().anchoredPosition = GetComponent<RectTransform>().anchoredPosition;
             DragDrop.RoadToCheckpoint.Add(GetComponent<RectTransform>().position);
+            Finish.points += points;
         }
         
     }

@@ -11,19 +11,32 @@ public class DragDrop : MonoBehaviour, IPointerDownHandler,IBeginDragHandler,IEn
     private RectTransform rectTransform;
     private CanvasGroup canvasGroup;
     
-
-
+    private bool topConnect, leftConnect, rightConnect, bottomConnect;
+    [SerializeField] private bool isCorner;
     private void Awake()
     {
         rectTransform = GetComponent<RectTransform>();
         canvasGroup= GetComponent<CanvasGroup>();
-        
+        if (isCorner)
+        {
+            leftConnect = false;
+            rightConnect = true;
+            bottomConnect = true;
+            topConnect = false;
+        }
+        else
+        {
+            leftConnect = true; 
+            rightConnect = true; 
+            bottomConnect =false; 
+            topConnect = false;
+        }
     }
     public void Update()
     {
         if (Input.GetKeyDown(KeyCode.R))
         {
-            
+         
             ResetTheGame();
         }
         if (Input.GetKeyDown(KeyCode.Tab))
@@ -82,5 +95,44 @@ public class DragDrop : MonoBehaviour, IPointerDownHandler,IBeginDragHandler,IEn
     {
         
     }
-
+    void RotateConnectionPoints()
+    {
+        if (isCorner)
+        {
+            switch (transform.rotation.z)
+            {
+                case 0:
+                    leftConnect = false;
+                    rightConnect = true;
+                    bottomConnect = true;
+                    topConnect = false;
+                    break;
+                case 90:
+                    leftConnect = false;
+                    rightConnect = true;
+                    bottomConnect = false;
+                    topConnect = true;
+                    break;
+                case -180:
+                    leftConnect = true;
+                    rightConnect = false;
+                    bottomConnect = false;
+                    topConnect = true;
+                    break;
+                case -90:
+                    leftConnect = true;
+                    rightConnect = false;
+                    bottomConnect = true;
+                    topConnect = false;
+                    break;
+            }
+        }
+        else
+        {
+            leftConnect = !leftConnect;
+            rightConnect = !rightConnect;
+            bottomConnect = !bottomConnect;
+            topConnect = !topConnect;
+        }
+    }
 }
