@@ -75,6 +75,7 @@ public class MoveTruck : MonoBehaviour
         DragDrop.RoadToCheckpoint = new List<DragDrop>();
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         /*Finish.points = 0;*/
+        /*Finish.busReachEnd = false;*/
     }
     bool CheckConnectionPoints(DragDrop current, DragDrop next)
     {
