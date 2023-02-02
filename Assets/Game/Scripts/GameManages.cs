@@ -12,7 +12,7 @@ public class GameManages : MonoBehaviour
     public float tijdCount, puntCount;
     private void Awake()
     {
-        tijd = 45;
+        tijd = 35;
         if (tijdCount < 0)
         {
 
