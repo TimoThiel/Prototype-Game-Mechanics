@@ -13,10 +13,15 @@ public class Finish : MonoBehaviour
     private void Update()
     {
         Debug.Log(points);
+        /*if(points == pointsNeeded)
+        {
+
+        }*/
         if(points >= pointsNeeded && busReachEnd)
         {
             Win();
         }
+
     }
     void Win()
     {

@@ -35,13 +35,12 @@ public class GameManages : MonoBehaviour
     {
       
         tijdMeter.text = "Tijd: " + tijd.ToString();
-        puntenMeter.text = "Punten: "+ punten.ToString();
+        puntenMeter.text = "Punten: "+ punten.ToString()+"Needed: 2";
 
         if (tijd <= 0)
         {
             ResetTheGame();
         }
-      
 
     }
 

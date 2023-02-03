@@ -6,7 +6,7 @@ using UnityEngine.EventSystems;
 public class ItemSlot : MonoBehaviour,IDropHandler
 {
     [field:SerializeField] public int points { get; set; }
-
+    [SerializeField] private GameManages gameManages;
      void Start()
     {
        
@@ -20,7 +20,7 @@ public class ItemSlot : MonoBehaviour,IDropHandler
             DragDrop.RoadToCheckpoint.Add(DragDrop.CurrentDragDrop);
             Finish.points += points;
         }
-        
+        gameManages.ChangePunten(points);
     }
 
 
