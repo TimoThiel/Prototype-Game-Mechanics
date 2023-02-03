@@ -35,7 +35,7 @@ public class GameManages : MonoBehaviour
     {
       
         tijdMeter.text = "Tijd: " + tijd.ToString();
-        puntenMeter.text = "Punten: "+ punten.ToString()+ "Needed: 2";
+        puntenMeter.text = "Punten: "+ punten.ToString() + " If 2 you can finish";
 
         if (tijd <= 0)
         {
