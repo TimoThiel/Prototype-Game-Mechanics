@@ -52,7 +52,17 @@ public class DragDrop : MonoBehaviour, IPointerDownHandler,IBeginDragHandler,IEn
         CurrentDragDrop = this;
         canvasGroup.alpha = 0.6f;
         canvasGroup.blocksRaycasts = false;
-        
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+
+            rectTransform.rotation = Quaternion.Euler(0, 0, transform.rotation.eulerAngles.z + 90);
+            rotation += 90;
+            if (rotation >= 360)
+            {
+                rotation = 0;
+            }
+            RotateConnectionPoints();
+        }
     }
 
     public void OnDrag(PointerEventData eventData)

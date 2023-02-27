@@ -47,5 +47,7 @@ public class GameManages : MonoBehaviour
     public void ResetTheGame()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        Finish.busReachEnd = false;
+        Finish.points = 0;
     }
 }

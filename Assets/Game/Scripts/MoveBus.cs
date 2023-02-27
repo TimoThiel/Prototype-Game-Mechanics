@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class MoveTruck : MonoBehaviour
+public class MoveBus : MonoBehaviour
 {
     [SerializeField] public GameManages gameManages;
     [SerializeField] public Transform car, finish, start;
@@ -17,7 +17,7 @@ public class MoveTruck : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if(DragDrop.RoadToCheckpoint.Count<= 0)
+        if (DragDrop.RoadToCheckpoint.Count <= 0)
         {
             return;
         }
@@ -28,18 +28,18 @@ public class MoveTruck : MonoBehaviour
     void Update()
     {
         /*Debug.Log(canWin);*/
-        if (checkpointCount >= DragDrop.RoadToCheckpoint.Count && Finish.points == 2 || checkpointCount >= DragDrop.RoadToCheckpoint.Count && Finish.pointsLevel2 == 2)
+        if (checkpointCount >= DragDrop.RoadToCheckpoint.Count && Finish.points == 2)
         {
             Finish.busReachEnd = true;
             ResetTheGame();
             return;
 
         }
-        else if(checkpointCount >= DragDrop.RoadToCheckpoint.Count && Finish.points < 2 || checkpointCount >= DragDrop.RoadToCheckpoint.Count && Finish.pointsLevel2 < 2)
+        else if (checkpointCount >= DragDrop.RoadToCheckpoint.Count && Finish.points < 2)
         {
             Finish.busReachEnd = false;
             ResetTheGame();
-            return; 
+            return;
         }
         /*if(checkpointCount > 1)
         {
@@ -51,7 +51,7 @@ public class MoveTruck : MonoBehaviour
                 return;
             }
         }*/
-       
+
         car.position = Vector3.MoveTowards(car.position, DragDrop.RoadToCheckpoint[checkpointCount].transform.position, currentSpeed * Time.deltaTime);
         if (Vector3.Distance(transform.position, DragDrop.RoadToCheckpoint[checkpointCount].transform.position) < 0.2f)
         {
@@ -64,30 +64,30 @@ public class MoveTruck : MonoBehaviour
     }
     void SetRotation(Vector3 target)
     {
-        var x = transform.position.x- target.x;
-        var y = transform.position.y- target.y;
-        if(Mathf.Abs(x)>= Mathf.Abs(y))
+        var x = transform.position.x - target.x;
+        var y = transform.position.y - target.y;
+        if (Mathf.Abs(x) >= Mathf.Abs(y))
         {
-            car.rotation = Quaternion.Euler(0,0,x>=0? -180: 0);
+            car.rotation = Quaternion.Euler(0, 0, x >= 0 ? -180 : 0);
         }
         else
         {
             car.rotation = Quaternion.Euler(0, 0, y >= 0 ? -90 : 90);
         }
     }
-   
+
     public void ResetTheGame()
     {
-        
+
         DragDrop.RoadToCheckpoint = new List<DragDrop>();
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         /*Finish.points = 0;*/
-        
+
     }
     bool CheckConnectionPoints(DragDrop current, DragDrop next)
     {
         Vector2 distance = current.transform.position - next.transform.position;
-        if (MathF.Abs(distance.y) <=.2f)
+        if (MathF.Abs(distance.y) <= .2f)
         {
             if (distance.x <= 0)
             {
@@ -104,9 +104,9 @@ public class MoveTruck : MonoBehaviour
                 }
             }
         }
-       if(MathF.Abs(distance.x) <= .2f)
+        if (MathF.Abs(distance.x) <= .2f)
         {
-            if(distance.y <= 0)
+            if (distance.y <= 0)
             {
                 if (current.topConnect && next.bottomConnect)
                 {
@@ -121,7 +121,7 @@ public class MoveTruck : MonoBehaviour
                 }
             }
         }
-      
+
         ResetTheGame();
         return false;
     }
