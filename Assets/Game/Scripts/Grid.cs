@@ -29,7 +29,7 @@ public class Grid : MonoBehaviour
         if (tijdCount < 0)
         {
 
-            gameManages.ChangeTijd(-1);
+            gameManages.ChangeTijd(1);
             tijdCount = 1;
         }
         tijdCount -= Time.deltaTime;

@@ -19,6 +19,7 @@ public class ItemSlot : MonoBehaviour,IDropHandler
         {
             eventData.pointerDrag.GetComponent<RectTransform>().anchoredPosition = GetComponent<RectTransform>().anchoredPosition;
             DragDrop.RoadToCheckpoint.Add(DragDrop.CurrentDragDrop);
+            gameManages.ChangeMoney(5);
             Finish.points += points;
             Finish.pointsLevel2 += points2;
         }
