@@ -6,8 +6,10 @@ using UnityEngine.SceneManagement;
 public class Finish : MonoBehaviour
 {
     public int pointsNeeded;
+    public static int money;
     public static int points;
     public static int pointsLevel2;
+    public static int pointsLevel3;
     public static bool busReachEnd = false;
 
 
@@ -27,6 +29,10 @@ public class Finish : MonoBehaviour
         {
             WinLevel2();
         }
+        if(pointsLevel3 >= pointsNeeded && busReachEnd)
+        {
+            WinLevel3();
+        }
 
     }
     void Win()
@@ -37,8 +43,14 @@ public class Finish : MonoBehaviour
     }
     void WinLevel2()
     {
-        SceneManager.LoadScene("Win");
+        SceneManager.LoadScene("Level3");
         Finish.pointsLevel2 = 0;
+        busReachEnd = false;
+    }
+    void WinLevel3()
+    {
+        SceneManager.LoadScene("Win");
+        Finish.pointsLevel3 = 0;
         busReachEnd = false;
     }
 }

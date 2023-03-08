@@ -12,11 +12,11 @@ public class GameManages : MonoBehaviour
     public float tijdCount, puntCount,moneyCount;
     private void Awake()
     {
+        money = 50;
         tijd = 35;
         if (tijdCount < 1)
         {
-
-            ChangeTijd(0);
+            /*ChangeTijd(-1);*/
             tijdCount = 0;
         }
         tijdCount += Time.deltaTime;
@@ -51,6 +51,7 @@ public class GameManages : MonoBehaviour
 
     public void ResetTheGame()
     {
+        DragDrop.RoadToCheckpoint = new List<DragDrop>();
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         Finish.busReachEnd = false;
         Finish.points = 0;

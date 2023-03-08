@@ -28,14 +28,14 @@ public class MoveTruck : MonoBehaviour
     void Update()
     {
         /*Debug.Log(canWin);*/
-        if (checkpointCount >= DragDrop.RoadToCheckpoint.Count && Finish.points == 2 || checkpointCount >= DragDrop.RoadToCheckpoint.Count && Finish.pointsLevel2 == 2)
+        if (checkpointCount >= DragDrop.RoadToCheckpoint.Count && Finish.points == 2 || checkpointCount >= DragDrop.RoadToCheckpoint.Count && Finish.pointsLevel2 == 2 || checkpointCount >= DragDrop.RoadToCheckpoint.Count && Finish.pointsLevel3 == 2)
         {
             Finish.busReachEnd = true;
             ResetTheGame();
             return;
 
         }
-        else if(checkpointCount >= DragDrop.RoadToCheckpoint.Count && Finish.points < 2 || checkpointCount >= DragDrop.RoadToCheckpoint.Count && Finish.pointsLevel2 < 2)
+        else if(checkpointCount >= DragDrop.RoadToCheckpoint.Count && Finish.points < 2 || checkpointCount >= DragDrop.RoadToCheckpoint.Count && Finish.pointsLevel2 < 2 || checkpointCount >= DragDrop.RoadToCheckpoint.Count && Finish.pointsLevel3 < 2)
         {
             Finish.busReachEnd = false;
             ResetTheGame();

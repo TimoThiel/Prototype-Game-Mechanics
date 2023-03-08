@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GridNextLevel : MonoBehaviour
+public class GridLevel3 : MonoBehaviour
 {
     [SerializeField] private GameManages gameManages;
     [SerializeField] private int _width, _height;
@@ -57,8 +57,8 @@ public class GridNextLevel : MonoBehaviour
 
 
                 var waterTile = Instantiate(_waterTile, new Vector3(3, 2), Quaternion.identity);
-                var obstacleTile = Instantiate(_obstacleTile, new Vector3(6, 4), Quaternion.identity);
-                var obstacleTileHr = Instantiate(_obstacleTile, new Vector3(5, 2), Quaternion.identity);
+                var obstacleTile = Instantiate(_obstacleTile, new Vector3(5, 4), Quaternion.identity);
+                var obstacleTileHr = Instantiate(_obstacleTile, new Vector3(4, 2), Quaternion.identity);
                 startPoint.position = new Vector3(7, 0, -1);
 
 
