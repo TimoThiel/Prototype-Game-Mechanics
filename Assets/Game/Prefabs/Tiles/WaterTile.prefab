@@ -177,7 +177,7 @@ MonoBehaviour:
   renderer: {fileID: 804762957263040087}
   highlight: {fileID: 5576794639202320545}
   firstColor: {r: 0.09233712, g: 0.75729394, b: 0.7830189, a: 1}
-  secondColor: {r: 0.027634395, g: 0.16884658, b: 0.254717, a: 1}
+  secondColor: {r: 0, g: 0.6206894, b: 1, a: 1}
 --- !u!1 &5576794639202320545 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 339554591375858811, guid: 877f68c65bc43b744959f950a012203c,

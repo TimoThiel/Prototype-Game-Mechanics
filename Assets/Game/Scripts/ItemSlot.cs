@@ -11,6 +11,7 @@ public class ItemSlot : MonoBehaviour,IDropHandler
     [field: SerializeField] public int points3 { get; set; }
     [field: SerializeField] public int money { get; set; }
     [SerializeField] private GameManages gameManages;
+    [SerializeField] private AudioSource placeSound, placementsound;
      void Start()
     {
        
@@ -23,10 +24,13 @@ public class ItemSlot : MonoBehaviour,IDropHandler
             eventData.pointerDrag.GetComponent<RectTransform>().anchoredPosition = GetComponent<RectTransform>().anchoredPosition;
             DragDrop.RoadToCheckpoint.Add(DragDrop.CurrentDragDrop);
             gameManages.ChangeMoney(-5);
+            gameManages.ChangeBocht(-1);
             Finish.points += points;
             Finish.pointsLevel2 += points2;
             Finish.pointsLevel3 += points3;
             gameManages.money += money;
+            placeSound.Play();
+            placementsound.Play();
         }
         gameManages.ChangePunten(points);
         gameManages.ChangePunten(points2);

@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    
+    [SerializeField] public ParticleSystem dust;
     public float hitPoints;
 
     public float maxHP = 1000f;
@@ -15,7 +15,7 @@ public class Enemy : MonoBehaviour
         
         hitPoints = maxHP;
     }
-
+   
     public void Hit()
     {
         hitPoints -= 10;

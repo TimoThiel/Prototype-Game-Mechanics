@@ -56,7 +56,7 @@ public class GridLevel3 : MonoBehaviour
                 spawnedTile.name = $"tile{x} {y}";
 
 
-                var waterTile = Instantiate(_waterTile, new Vector3(3, 2), Quaternion.identity);
+                var waterTile = Instantiate(_waterTile, new Vector3(1, 1), Quaternion.identity);
                 var obstacleTile = Instantiate(_obstacleTile, new Vector3(5, 4), Quaternion.identity);
                 var obstacleTileHr = Instantiate(_obstacleTile, new Vector3(4, 2), Quaternion.identity);
                 startPoint.position = new Vector3(7, 0, -1);

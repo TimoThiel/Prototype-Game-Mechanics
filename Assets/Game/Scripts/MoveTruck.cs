@@ -13,17 +13,18 @@ public class MoveTruck : MonoBehaviour
     public float countdown = 20f;
     public int checkpointCount = 0;
     private int canWin = 0;
-
     // Start is called before the first frame update
     void Start()
     {
-        if(DragDrop.RoadToCheckpoint.Count<= 0)
+        
+
+        if (DragDrop.RoadToCheckpoint.Count<= 0)
         {
             return;
         }
         SetRotation(DragDrop.RoadToCheckpoint[0].transform.position);
     }
-
+  
     // Update is called once per frame
     void Update()
     {
@@ -55,12 +56,14 @@ public class MoveTruck : MonoBehaviour
         car.position = Vector3.MoveTowards(car.position, DragDrop.RoadToCheckpoint[checkpointCount].transform.position, currentSpeed * Time.deltaTime);
         if (Vector3.Distance(transform.position, DragDrop.RoadToCheckpoint[checkpointCount].transform.position) < 0.2f)
         {
+            
             checkpointCount++;
             if (checkpointCount < DragDrop.RoadToCheckpoint.Count)
             {
                 SetRotation(DragDrop.RoadToCheckpoint[checkpointCount].transform.position);
             }
         }
+        
     }
     void SetRotation(Vector3 target)
     {
