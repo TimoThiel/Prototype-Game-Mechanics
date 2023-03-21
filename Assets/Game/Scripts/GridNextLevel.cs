@@ -41,7 +41,7 @@ public class GridNextLevel : MonoBehaviour
 
         }
         countdown -= Time.deltaTime;
-
+        
     }
     void GenerateGrid()
     {
