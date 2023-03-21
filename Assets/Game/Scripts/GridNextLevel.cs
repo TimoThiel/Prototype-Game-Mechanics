@@ -41,7 +41,7 @@ public class GridNextLevel : MonoBehaviour
 
         }
         countdown -= Time.deltaTime;
-        
+
     }
     void GenerateGrid()
     {
@@ -57,8 +57,8 @@ public class GridNextLevel : MonoBehaviour
 
 
                 var waterTile = Instantiate(_waterTile, new Vector3(5, 3), Quaternion.identity);
-                var obstacleTile = Instantiate(_obstacleTile, new Vector3(6, y), Quaternion.identity);
-                var obstacleTileHr = Instantiate(_obstacleTile, new Vector3(x, 2), Quaternion.identity);
+                var obstacleTile = Instantiate(_obstacleTile, new Vector3(6, 4), Quaternion.identity);
+                var obstacleTileHr = Instantiate(_obstacleTile, new Vector3(5, 2), Quaternion.identity);
                 startPoint.position = new Vector3(7, 0, -1);
 
 
