@@ -8203,7 +8203,7 @@ MonoBehaviour:
   _height: 6
   _tilePrefab: {fileID: 7066278006467817452, guid: f7c2988a9efc18643aa628aeb5daae2a,
     type: 3}
-  _roadTile: {fileID: 973379988469935266, guid: 2fa7df802bdfb6c4797e9a7c4954e4eb,
+  _roadTile: {fileID: -8300478635791618853, guid: 68f94e46ce0b8b14cafee6adca4f287d,
     type: 3}
   _obstacleTile: {fileID: 973379988469935266, guid: 2fa7df802bdfb6c4797e9a7c4954e4eb,
     type: 3}
