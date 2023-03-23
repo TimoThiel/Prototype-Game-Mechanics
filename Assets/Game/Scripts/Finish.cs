@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class Finish : MonoBehaviour
 {
     public int pointsNeeded;
+    public static int time;
     public static int money;
     public static int points;
     public static int pointsLevel2;

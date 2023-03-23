@@ -5,6 +5,7 @@ using UnityEngine.EventSystems;
 
 public class ItemSlot : MonoBehaviour,IDropHandler
 {
+    [field:SerializeField] public int time { get; set; }
     [field:SerializeField] public int points { get; set; }
     [field: SerializeField] public int points2 { get; set; }
 
@@ -28,6 +29,7 @@ public class ItemSlot : MonoBehaviour,IDropHandler
             Finish.points += points;
             Finish.pointsLevel2 += points2;
             Finish.pointsLevel3 += points3;
+            Finish.time+= time;
             gameManages.money += money;
             placeSound.Play();
             placementsound.Play();
@@ -35,6 +37,7 @@ public class ItemSlot : MonoBehaviour,IDropHandler
         gameManages.ChangePunten(points);
         gameManages.ChangePunten(points2);
         gameManages.ChangePunten(points3);
+        gameManages.ChangeTijd(time);
 
     }
 
