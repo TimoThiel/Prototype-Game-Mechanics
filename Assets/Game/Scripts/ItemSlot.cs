@@ -13,14 +13,16 @@ public class ItemSlot : MonoBehaviour,IDropHandler
     [field: SerializeField] public int money { get; set; }
     [SerializeField] private GameManages gameManages;
     [SerializeField] private AudioSource placeSound, placementsound;
+    [SerializeField] private DragDrop dragDrop;
      void Start()
     {
        
     }
     public void OnDrop(PointerEventData eventData)
     {
+        dragDrop.isDragging = true;
         Debug.Log("OnDrop");
-        if(eventData.pointerDrag != null && gameManages.money >= 0)
+        if(eventData.pointerDrag != null && gameManages.money > 0)
         {
             eventData.pointerDrag.GetComponent<RectTransform>().anchoredPosition = GetComponent<RectTransform>().anchoredPosition;
             DragDrop.RoadToCheckpoint.Add(DragDrop.CurrentDragDrop);

@@ -12,6 +12,7 @@ public class DragDrop : MonoBehaviour, IPointerDownHandler,IBeginDragHandler,IEn
     private CanvasGroup canvasGroup;
     public static DragDrop CurrentDragDrop { get; private set; }
     
+    public bool isDragging = false;
     public bool topConnect, leftConnect, rightConnect, bottomConnect;
     [SerializeField] private bool isCorner;
     int rotation;
@@ -46,9 +47,21 @@ public class DragDrop : MonoBehaviour, IPointerDownHandler,IBeginDragHandler,IEn
         {
             StartGame();
         }
+        if (Input.GetKeyDown(KeyCode.Space)&& isDragging == false)
+        {
+
+            rectTransform.rotation = Quaternion.Euler(0, 0, transform.rotation.eulerAngles.z + 90);
+            rotation += 90;
+            if (rotation >= 360)
+            {
+                rotation = 0;
+            }
+            RotateConnectionPoints();
+        }
     }
     public void OnBeginDrag(PointerEventData eventData)
     {
+        isDragging = false;
         CurrentDragDrop = this;
         canvasGroup.alpha = 0.6f;
         canvasGroup.blocksRaycasts = false;
@@ -67,7 +80,7 @@ public class DragDrop : MonoBehaviour, IPointerDownHandler,IBeginDragHandler,IEn
 
     public void OnDrag(PointerEventData eventData)
     {
-        
+        isDragging= false;
         rectTransform.anchoredPosition += eventData.delta/ canvas.scaleFactor;
         if (Input.GetKeyDown(KeyCode.Space))
         {
@@ -84,6 +97,7 @@ public class DragDrop : MonoBehaviour, IPointerDownHandler,IBeginDragHandler,IEn
 
     public void OnEndDrag(PointerEventData eventData)
     {
+        isDragging = true;
         canvasGroup.alpha = 1f;
         canvasGroup.blocksRaycasts = true;
        /* if (Input.GetKeyDown(KeyCode.Space))
@@ -101,6 +115,7 @@ public class DragDrop : MonoBehaviour, IPointerDownHandler,IBeginDragHandler,IEn
 
     public void ResetTheGame()
     {
+        RoadToCheckpoint = new List<DragDrop>();
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
     public void StartGame()

@@ -38,13 +38,13 @@ public class Finish : MonoBehaviour
     }
     void Win()
     {
-        SceneManager.LoadScene("Level2");
+        SceneManager.LoadScene("Level3");
         Finish.points = 0;
         busReachEnd= false;
     }
     void WinLevel2()
     {
-        SceneManager.LoadScene("Level3");
+        SceneManager.LoadScene("Level2");
         Finish.pointsLevel2 = 0;
         busReachEnd = false;
     }

@@ -56,6 +56,7 @@ public class Grid : MonoBehaviour
                 
              
                var waterTile = Instantiate(_waterTile,new Vector3(3, 2), Quaternion.identity);
+                var waterTileHr = Instantiate(_waterTile, new Vector3(3,5),Quaternion.identity);
                 var obstacleTile = Instantiate(_obstacleTile, new Vector3(4, 5), Quaternion.identity);
                 var obstacleTileHr = Instantiate(_obstacleTile, new Vector3(2, 1), Quaternion.identity);
                 startPoint.position = new Vector3(7, 0,-1);
@@ -70,7 +71,7 @@ public class Grid : MonoBehaviour
                 spawnedRoadTile.transform.SetParent(this.transform);
                 spawnedRoadTileHr.transform.SetParent(this.transform);
                 obstacleTile.transform.SetParent(this.transform);
-
+                obstacleTileHr.transform.SetParent(this.transform);
 
             }
         }

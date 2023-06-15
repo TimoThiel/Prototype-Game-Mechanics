@@ -14,7 +14,7 @@ public class GameManages : MonoBehaviour
     {
 
         bocht = 11;
-        money = 50;
+        money = 35;
         tijd = 35;
         if (tijdCount < 1)
         {
@@ -45,7 +45,7 @@ public class GameManages : MonoBehaviour
 
     void Update()
     {
-        tijdMeter.text = "Tijd: " + tijd.ToString();
+        /*tijdMeter.text = "Tijd: " + tijd.ToString();*/
         moneyMeter.text = "Money: " + money.ToString();
         puntenMeter.text = "Punten: "+ punten.ToString() + " If 2 finish";
         bochtMeter.text = bocht.ToString();

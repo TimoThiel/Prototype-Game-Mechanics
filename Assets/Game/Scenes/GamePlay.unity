@@ -182,6 +182,7 @@ MonoBehaviour:
   gameManages: {fileID: 740509306}
   placeSound: {fileID: 1834336923}
   placementsound: {fileID: 625137327}
+  dragDrop: {fileID: 1460303208}
 --- !u!114 &3851098
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -279,6 +280,7 @@ MonoBehaviour:
   gameManages: {fileID: 740509306}
   placeSound: {fileID: 1834336923}
   placementsound: {fileID: 625137327}
+  dragDrop: {fileID: 1460303208}
 --- !u!114 &9277099
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -376,6 +378,7 @@ MonoBehaviour:
   gameManages: {fileID: 740509306}
   placeSound: {fileID: 1834336923}
   placementsound: {fileID: 625137327}
+  dragDrop: {fileID: 1460303208}
 --- !u!114 &12690193
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -557,6 +560,7 @@ MonoBehaviour:
   gameManages: {fileID: 740509306}
   placeSound: {fileID: 1834336923}
   placementsound: {fileID: 625137327}
+  dragDrop: {fileID: 1460303208}
 --- !u!114 &30413468
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -753,6 +757,7 @@ MonoBehaviour:
   gameManages: {fileID: 740509306}
   placeSound: {fileID: 1834336923}
   placementsound: {fileID: 625137327}
+  dragDrop: {fileID: 1460303208}
 --- !u!114 &58907691
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -991,6 +996,7 @@ MonoBehaviour:
   gameManages: {fileID: 740509306}
   placeSound: {fileID: 1834336923}
   placementsound: {fileID: 625137327}
+  dragDrop: {fileID: 1460303208}
 --- !u!114 &144070415
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1088,6 +1094,7 @@ MonoBehaviour:
   gameManages: {fileID: 740509306}
   placeSound: {fileID: 1834336923}
   placementsound: {fileID: 625137327}
+  dragDrop: {fileID: 1460303208}
 --- !u!114 &167243772
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1185,6 +1192,7 @@ MonoBehaviour:
   gameManages: {fileID: 740509306}
   placeSound: {fileID: 1834336923}
   placementsound: {fileID: 625137327}
+  dragDrop: {fileID: 1460303208}
 --- !u!114 &182004646
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1625,6 +1633,7 @@ MonoBehaviour:
   gameManages: {fileID: 740509306}
   placeSound: {fileID: 1834336923}
   placementsound: {fileID: 625137327}
+  dragDrop: {fileID: 1460303208}
 --- !u!114 &340000961
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1722,6 +1731,7 @@ MonoBehaviour:
   gameManages: {fileID: 740509306}
   placeSound: {fileID: 1834336923}
   placementsound: {fileID: 625137327}
+  dragDrop: {fileID: 1460303208}
 --- !u!114 &364338703
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1845,6 +1855,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4143684760424176604, guid: 0e45abf74d36e8b449880472d621564a,
         type: 3}
+      propertyPath: Loop
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4143684760424176604, guid: 0e45abf74d36e8b449880472d621564a,
+        type: 3}
       propertyPath: m_Volume
       value: 0.75
       objectReference: {fileID: 0}
@@ -1856,7 +1871,7 @@ PrefabInstance:
     - target: {fileID: 4143684760424176604, guid: 0e45abf74d36e8b449880472d621564a,
         type: 3}
       propertyPath: m_PlayOnAwake
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4209103680672701658, guid: 0e45abf74d36e8b449880472d621564a,
         type: 3}
@@ -2003,6 +2018,7 @@ MonoBehaviour:
   gameManages: {fileID: 740509306}
   placeSound: {fileID: 1834336923}
   placementsound: {fileID: 625137327}
+  dragDrop: {fileID: 1460303208}
 --- !u!114 &405581712
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2106,6 +2122,7 @@ MonoBehaviour:
   gameManages: {fileID: 740509306}
   placeSound: {fileID: 1834336923}
   placementsound: {fileID: 625137327}
+  dragDrop: {fileID: 1460303208}
 --- !u!114 &428907457
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2203,6 +2220,7 @@ MonoBehaviour:
   gameManages: {fileID: 740509306}
   placeSound: {fileID: 1834336923}
   placementsound: {fileID: 625137327}
+  dragDrop: {fileID: 1460303208}
 --- !u!114 &446212688
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2300,6 +2318,7 @@ MonoBehaviour:
   gameManages: {fileID: 740509306}
   placeSound: {fileID: 1834336923}
   placementsound: {fileID: 625137327}
+  dragDrop: {fileID: 1460303208}
 --- !u!114 &476265127
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2403,6 +2422,7 @@ MonoBehaviour:
   gameManages: {fileID: 740509306}
   placeSound: {fileID: 1834336923}
   placementsound: {fileID: 625137327}
+  dragDrop: {fileID: 1460303208}
 --- !u!114 &574885318
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2500,6 +2520,7 @@ MonoBehaviour:
   gameManages: {fileID: 740509306}
   placeSound: {fileID: 1834336923}
   placementsound: {fileID: 625137327}
+  dragDrop: {fileID: 1460303208}
 --- !u!114 &586853186
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2597,6 +2618,7 @@ MonoBehaviour:
   gameManages: {fileID: 740509306}
   placeSound: {fileID: 1834336923}
   placementsound: {fileID: 625137327}
+  dragDrop: {fileID: 1460303208}
 --- !u!114 &601629728
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3025,6 +3047,7 @@ MonoBehaviour:
   gameManages: {fileID: 740509306}
   placeSound: {fileID: 1834336923}
   placementsound: {fileID: 625137327}
+  dragDrop: {fileID: 1460303208}
 --- !u!114 &739082243
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3134,6 +3157,7 @@ MonoBehaviour:
   gameManages: {fileID: 740509306}
   placeSound: {fileID: 1834336923}
   placementsound: {fileID: 625137327}
+  dragDrop: {fileID: 1460303208}
 --- !u!114 &826587693
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3333,6 +3357,7 @@ MonoBehaviour:
   gameManages: {fileID: 740509306}
   placeSound: {fileID: 1834336923}
   placementsound: {fileID: 625137327}
+  dragDrop: {fileID: 1460303208}
 --- !u!114 &854525610
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3430,6 +3455,7 @@ MonoBehaviour:
   gameManages: {fileID: 740509306}
   placeSound: {fileID: 1834336923}
   placementsound: {fileID: 625137327}
+  dragDrop: {fileID: 1460303208}
 --- !u!114 &857775149
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3571,6 +3597,7 @@ MonoBehaviour:
   gameManages: {fileID: 740509306}
   placeSound: {fileID: 1834336923}
   placementsound: {fileID: 625137327}
+  dragDrop: {fileID: 1460303208}
 --- !u!114 &883488614
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3803,6 +3830,7 @@ MonoBehaviour:
   gameManages: {fileID: 740509306}
   placeSound: {fileID: 1834336923}
   placementsound: {fileID: 625137327}
+  dragDrop: {fileID: 1460303208}
 --- !u!114 &934784755
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3900,6 +3928,7 @@ MonoBehaviour:
   gameManages: {fileID: 740509306}
   placeSound: {fileID: 1834336923}
   placementsound: {fileID: 625137327}
+  dragDrop: {fileID: 1460303208}
 --- !u!114 &955891064
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4003,6 +4032,7 @@ MonoBehaviour:
   gameManages: {fileID: 740509306}
   placeSound: {fileID: 1834336923}
   placementsound: {fileID: 625137327}
+  dragDrop: {fileID: 1460303208}
 --- !u!114 &964593808
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4415,6 +4445,7 @@ MonoBehaviour:
   gameManages: {fileID: 740509306}
   placeSound: {fileID: 1834336923}
   placementsound: {fileID: 625137327}
+  dragDrop: {fileID: 1460303208}
 --- !u!114 &1040975542
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4512,6 +4543,7 @@ MonoBehaviour:
   gameManages: {fileID: 740509306}
   placeSound: {fileID: 1834336923}
   placementsound: {fileID: 625137327}
+  dragDrop: {fileID: 1460303208}
 --- !u!114 &1091562617
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4609,6 +4641,7 @@ MonoBehaviour:
   gameManages: {fileID: 740509306}
   placeSound: {fileID: 1834336923}
   placementsound: {fileID: 625137327}
+  dragDrop: {fileID: 1460303208}
 --- !u!114 &1101873310
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4750,6 +4783,7 @@ MonoBehaviour:
   gameManages: {fileID: 740509306}
   placeSound: {fileID: 1834336923}
   placementsound: {fileID: 625137327}
+  dragDrop: {fileID: 1460303208}
 --- !u!114 &1146011535
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4934,6 +4968,7 @@ MonoBehaviour:
   gameManages: {fileID: 740509306}
   placeSound: {fileID: 1834336923}
   placementsound: {fileID: 625137327}
+  dragDrop: {fileID: 1460303208}
 --- !u!114 &1180330417
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5166,6 +5201,7 @@ MonoBehaviour:
   gameManages: {fileID: 740509306}
   placeSound: {fileID: 1834336923}
   placementsound: {fileID: 625137327}
+  dragDrop: {fileID: 1460303208}
 --- !u!114 &1239101832
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5410,6 +5446,7 @@ MonoBehaviour:
   gameManages: {fileID: 740509306}
   placeSound: {fileID: 1834336923}
   placementsound: {fileID: 625137327}
+  dragDrop: {fileID: 1460303208}
 --- !u!114 &1358121265
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6073,6 +6110,7 @@ MonoBehaviour:
   gameManages: {fileID: 740509306}
   placeSound: {fileID: 1834336923}
   placementsound: {fileID: 625137327}
+  dragDrop: {fileID: 1460303208}
 --- !u!114 &1443282997
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6213,6 +6251,18 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1460303208 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6999868650973555187, guid: c28daf5552d67aa4682e8a28c5594e30,
+    type: 3}
+  m_PrefabInstance: {fileID: 6999868649513262226}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 571583971}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0385b33e1bf17b74087fa7a9da8c3c24, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1483181810
 GameObject:
   m_ObjectHideFlags: 0
@@ -6272,6 +6322,7 @@ MonoBehaviour:
   gameManages: {fileID: 740509306}
   placeSound: {fileID: 1834336923}
   placementsound: {fileID: 625137327}
+  dragDrop: {fileID: 1460303208}
 --- !u!114 &1483181813
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6471,6 +6522,7 @@ MonoBehaviour:
   gameManages: {fileID: 740509306}
   placeSound: {fileID: 1834336923}
   placementsound: {fileID: 625137327}
+  dragDrop: {fileID: 1460303208}
 --- !u!114 &1511646080
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6568,6 +6620,7 @@ MonoBehaviour:
   gameManages: {fileID: 740509306}
   placeSound: {fileID: 1834336923}
   placementsound: {fileID: 625137327}
+  dragDrop: {fileID: 1460303208}
 --- !u!114 &1517821857
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7055,6 +7108,7 @@ MonoBehaviour:
   gameManages: {fileID: 740509306}
   placeSound: {fileID: 1834336923}
   placementsound: {fileID: 625137327}
+  dragDrop: {fileID: 1460303208}
 --- !u!114 &1650388174
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7152,6 +7206,7 @@ MonoBehaviour:
   gameManages: {fileID: 740509306}
   placeSound: {fileID: 1834336923}
   placementsound: {fileID: 625137327}
+  dragDrop: {fileID: 1460303208}
 --- !u!114 &1662105090
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7519,6 +7574,7 @@ MonoBehaviour:
   gameManages: {fileID: 740509306}
   placeSound: {fileID: 1834336923}
   placementsound: {fileID: 625137327}
+  dragDrop: {fileID: 1460303208}
 --- !u!114 &1750400277
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7616,6 +7672,7 @@ MonoBehaviour:
   gameManages: {fileID: 740509306}
   placeSound: {fileID: 1834336923}
   placementsound: {fileID: 625137327}
+  dragDrop: {fileID: 1460303208}
 --- !u!114 &1803557211
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7713,6 +7770,7 @@ MonoBehaviour:
   gameManages: {fileID: 740509306}
   placeSound: {fileID: 1834336923}
   placementsound: {fileID: 625137327}
+  dragDrop: {fileID: 1460303208}
 --- !u!114 &1827181412
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7912,6 +7970,7 @@ MonoBehaviour:
   gameManages: {fileID: 740509306}
   placeSound: {fileID: 1834336923}
   placementsound: {fileID: 625137327}
+  dragDrop: {fileID: 1460303208}
 --- !u!114 &1851088144
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8009,6 +8068,7 @@ MonoBehaviour:
   gameManages: {fileID: 740509306}
   placeSound: {fileID: 1834336923}
   placementsound: {fileID: 625137327}
+  dragDrop: {fileID: 1460303208}
 --- !u!114 &1951469133
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8241,6 +8301,7 @@ MonoBehaviour:
   gameManages: {fileID: 740509306}
   placeSound: {fileID: 1834336923}
   placementsound: {fileID: 625137327}
+  dragDrop: {fileID: 1460303208}
 --- !u!114 &1989595434
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8841,6 +8902,7 @@ MonoBehaviour:
   gameManages: {fileID: 740509306}
   placeSound: {fileID: 1834336923}
   placementsound: {fileID: 625137327}
+  dragDrop: {fileID: 1460303208}
 --- !u!114 &2063597183
 MonoBehaviour:
   m_ObjectHideFlags: 0
