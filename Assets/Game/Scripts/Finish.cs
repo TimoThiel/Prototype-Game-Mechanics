@@ -21,12 +21,12 @@ public class Finish : MonoBehaviour
         /*if(points == pointsNeeded)
         {
 
-        }*/
-        if (points >= pointsNeeded && busReachEnd)
+        */
+        if (points >= pointsNeeded  && busReachEnd )
         {
             Win();
         }
-        if (pointsLevel2 >= pointsNeeded && busReachEnd)
+        if (pointsLevel2 >= pointsNeeded  && busReachEnd )
         {
             WinLevel2();
         }
@@ -44,13 +44,13 @@ public class Finish : MonoBehaviour
     }
     void WinLevel2()
     {
-        SceneManager.LoadScene("Level2");
+        SceneManager.LoadScene("Win");
         Finish.pointsLevel2 = 0;
         busReachEnd = false;
     }
     void WinLevel3()
     {
-        SceneManager.LoadScene("Win");
+        SceneManager.LoadScene("Level2");
         Finish.pointsLevel3 = 0;
         busReachEnd = false;
     }

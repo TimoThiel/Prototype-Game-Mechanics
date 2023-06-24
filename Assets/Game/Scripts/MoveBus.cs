@@ -28,7 +28,7 @@ public class MoveBus : MonoBehaviour
     void Update()
     {
         /*Debug.Log(canWin);*/
-        if (checkpointCount >= DragDrop.RoadToCheckpoint.Count && Finish.points == 2)
+        if (checkpointCount >= DragDrop.RoadToCheckpoint.Count && Finish.points == 2 && Finish.money >=0)
         {
             Finish.busReachEnd = true;
             ResetTheGame();

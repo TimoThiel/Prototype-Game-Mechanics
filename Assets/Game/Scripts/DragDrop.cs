@@ -13,6 +13,7 @@ public class DragDrop : MonoBehaviour, IPointerDownHandler,IBeginDragHandler,IEn
     public static DragDrop CurrentDragDrop { get; private set; }
     
     public bool isDragging = false;
+    public bool isSelected = false;
     public bool topConnect, leftConnect, rightConnect, bottomConnect;
     [SerializeField] private bool isCorner;
     int rotation;
@@ -38,6 +39,7 @@ public class DragDrop : MonoBehaviour, IPointerDownHandler,IBeginDragHandler,IEn
     }
     public void Update()
     {
+
         if (Input.GetKeyDown(KeyCode.R))
         {
          
@@ -47,56 +49,33 @@ public class DragDrop : MonoBehaviour, IPointerDownHandler,IBeginDragHandler,IEn
         {
             StartGame();
         }
-        if (Input.GetKeyDown(KeyCode.Space)&& isDragging == false)
+        if (Input.GetKeyDown(KeyCode.Space) && !isDragging && isSelected)
         {
-
-            rectTransform.rotation = Quaternion.Euler(0, 0, transform.rotation.eulerAngles.z + 90);
-            rotation += 90;
-            if (rotation >= 360)
-            {
-                rotation = 0;
-            }
-            RotateConnectionPoints();
+            Quaternion targetRotation = Quaternion.Euler(0f, 0f, rotation + 90f);
+            StartCoroutine(RotatePiece(targetRotation));
         }
     }
     public void OnBeginDrag(PointerEventData eventData)
     {
+        isSelected = true;
         isDragging = false;
         CurrentDragDrop = this;
         canvasGroup.alpha = 0.6f;
         canvasGroup.blocksRaycasts = false;
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-
-            rectTransform.rotation = Quaternion.Euler(0, 0, transform.rotation.eulerAngles.z + 90);
-            rotation += 90;
-            if (rotation >= 360)
-            {
-                rotation = 0;
-            }
-            RotateConnectionPoints();
-        }
+      
     }
 
     public void OnDrag(PointerEventData eventData)
     {
-        isDragging= false;
+        isSelected = true;
+        isDragging = false;
         rectTransform.anchoredPosition += eventData.delta/ canvas.scaleFactor;
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            
-            rectTransform.rotation = Quaternion.Euler(0, 0, transform.rotation.eulerAngles.z + 90);
-            rotation += 90;
-            if(rotation>= 360)
-            {
-                rotation = 0;
-            }
-            RotateConnectionPoints();
-        }
+        
     }
 
     public void OnEndDrag(PointerEventData eventData)
     {
+        isSelected = true;
         isDragging = true;
         canvasGroup.alpha = 1f;
         canvasGroup.blocksRaycasts = true;
@@ -106,6 +85,29 @@ public class DragDrop : MonoBehaviour, IPointerDownHandler,IBeginDragHandler,IEn
             rectTransform.rotation = Quaternion.Euler(0, 0, transform.rotation.eulerAngles.z + 90);
             rotation += 90;
         }*/
+    }
+    private IEnumerator RotatePiece(Quaternion targetRotation)
+    {
+        const float rotationDuration = 0.3f; // Duur van de rotatie (in seconden)
+        float elapsedTime = 0f;
+        Quaternion startRotation = rectTransform.rotation;
+
+        while (elapsedTime < rotationDuration)
+        {
+            elapsedTime += Time.deltaTime;
+            float t = Mathf.Clamp01(elapsedTime / rotationDuration);
+            rectTransform.rotation = Quaternion.Lerp(startRotation, targetRotation, t);
+            yield return null;
+        }
+
+        rectTransform.rotation = targetRotation; // Zorg ervoor dat de rotatie exact de doelrotatie is
+        rotation += 90;
+        if (rotation >= 360f)
+        {
+            rotation = 0;
+        }
+
+        RotateConnectionPoints();
     }
     public void OnPointerDown(PointerEventData eventData)
     {

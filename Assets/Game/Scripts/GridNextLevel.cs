@@ -30,7 +30,7 @@ public class GridNextLevel : MonoBehaviour
         if (tijdCount < 0)
         {
 
-            gameManages.ChangeTijd(-1);
+            /*gameManages.ChangeTijd(-1);*/
             tijdCount = 1;
         }
         tijdCount -= Time.deltaTime;
@@ -57,8 +57,10 @@ public class GridNextLevel : MonoBehaviour
 
 
                 var waterTile = Instantiate(_waterTile, new Vector3(5, 3), Quaternion.identity);
-                var obstacleTile = Instantiate(_obstacleTile, new Vector3(6, 4), Quaternion.identity);
-                var obstacleTileHr = Instantiate(_obstacleTile, new Vector3(5, 2), Quaternion.identity);
+                var obstacleTile = Instantiate(_obstacleTile, new Vector3(4, 2), Quaternion.identity);
+                var obstacleTileHr = Instantiate(_obstacleTile, new Vector3(1, 1), Quaternion.identity);
+                var obstacleTileHr2 = Instantiate(_obstacleTile, new Vector3(5, 5), Quaternion.identity);
+                var obstacleTileHr3 = Instantiate(_obstacleTile, new Vector3(6, 4), Quaternion.identity);
                 startPoint.position = new Vector3(7, 0, -1);
 
 
