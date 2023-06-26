@@ -6,6 +6,7 @@ using UnityEngine.EventSystems;
 public class ItemSlot : MonoBehaviour,IDropHandler
 {
     [field:SerializeField] public int time { get; set; }
+    [field: SerializeField] public int brug { get; set; }
     [field:SerializeField] public int points { get; set; }
     [field: SerializeField] public int points2 { get; set; }
 
@@ -14,10 +15,16 @@ public class ItemSlot : MonoBehaviour,IDropHandler
     [SerializeField] private GameManages gameManages;
     [SerializeField] private AudioSource placeSound, placementsound;
     [SerializeField] private DragDrop dragDrop;
-     void Start()
+    [SerializeField] private BridgeController bridgeController;
+    
+
+    
+    private void Awake()
     {
-       
+        bridgeController.isBridgeBuilt = false;// Stel de startwaarde van brug in op 0
     }
+
+
     public void OnDrop(PointerEventData eventData)
     {
         dragDrop.isDragging = true;
@@ -32,6 +39,7 @@ public class ItemSlot : MonoBehaviour,IDropHandler
             Finish.pointsLevel2 += points2;
             Finish.pointsLevel3 += points3;
             Finish.time+= time;
+            Finish.brug += brug;
             gameManages.money += money;
             placeSound.Play();
             placementsound.Play();
@@ -40,7 +48,11 @@ public class ItemSlot : MonoBehaviour,IDropHandler
         gameManages.ChangePunten(points2);
         gameManages.ChangePunten(points3);
         gameManages.ChangeTijd(time);
+        if (brug == 1)
+        {
 
+            bridgeController.BuildBridge();
+        }
     }
 
 

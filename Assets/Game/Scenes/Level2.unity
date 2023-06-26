@@ -175,6 +175,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <time>k__BackingField: 0
+  <brug>k__BackingField: 0
   <points>k__BackingField: 0
   <points2>k__BackingField: 0
   <points3>k__BackingField: 0
@@ -183,6 +184,7 @@ MonoBehaviour:
   placeSound: {fileID: 4003378952028926955}
   placementsound: {fileID: 5139525997351657935}
   dragDrop: {fileID: 5139525997351657938}
+  bridgeController: {fileID: 472892560}
 --- !u!114 &3851098
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -273,6 +275,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <time>k__BackingField: 0
+  <brug>k__BackingField: 0
   <points>k__BackingField: 0
   <points2>k__BackingField: 1
   <points3>k__BackingField: 0
@@ -281,6 +284,7 @@ MonoBehaviour:
   placeSound: {fileID: 4003378952028926955}
   placementsound: {fileID: 5139525997351657935}
   dragDrop: {fileID: 5139525997351657938}
+  bridgeController: {fileID: 472892560}
 --- !u!114 &9277099
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -371,6 +375,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <time>k__BackingField: 0
+  <brug>k__BackingField: 0
   <points>k__BackingField: 0
   <points2>k__BackingField: 0
   <points3>k__BackingField: 0
@@ -379,6 +384,7 @@ MonoBehaviour:
   placeSound: {fileID: 4003378952028926955}
   placementsound: {fileID: 5139525997351657935}
   dragDrop: {fileID: 5139525997351657938}
+  bridgeController: {fileID: 472892560}
 --- !u!114 &12690193
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -553,6 +559,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <time>k__BackingField: 0
+  <brug>k__BackingField: 0
   <points>k__BackingField: 0
   <points2>k__BackingField: 0
   <points3>k__BackingField: 0
@@ -561,6 +568,7 @@ MonoBehaviour:
   placeSound: {fileID: 4003378952028926955}
   placementsound: {fileID: 5139525997351657935}
   dragDrop: {fileID: 5139525997351657938}
+  bridgeController: {fileID: 472892560}
 --- !u!114 &30413468
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -750,6 +758,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <time>k__BackingField: 0
+  <brug>k__BackingField: 0
   <points>k__BackingField: 0
   <points2>k__BackingField: 0
   <points3>k__BackingField: 0
@@ -758,6 +767,7 @@ MonoBehaviour:
   placeSound: {fileID: 4003378952028926955}
   placementsound: {fileID: 5139525997351657935}
   dragDrop: {fileID: 5139525997351657938}
+  bridgeController: {fileID: 472892560}
 --- !u!114 &58907691
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1124,6 +1134,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <time>k__BackingField: 0
+  <brug>k__BackingField: 0
   <points>k__BackingField: 0
   <points2>k__BackingField: 0
   <points3>k__BackingField: 0
@@ -1132,6 +1143,7 @@ MonoBehaviour:
   placeSound: {fileID: 4003378952028926955}
   placementsound: {fileID: 5139525997351657935}
   dragDrop: {fileID: 5139525997351657938}
+  bridgeController: {fileID: 472892560}
 --- !u!114 &144070415
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1222,6 +1234,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <time>k__BackingField: 0
+  <brug>k__BackingField: 0
   <points>k__BackingField: 0
   <points2>k__BackingField: 0
   <points3>k__BackingField: 0
@@ -1230,6 +1243,7 @@ MonoBehaviour:
   placeSound: {fileID: 4003378952028926955}
   placementsound: {fileID: 5139525997351657935}
   dragDrop: {fileID: 5139525997351657938}
+  bridgeController: {fileID: 472892560}
 --- !u!114 &167243772
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1320,6 +1334,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <time>k__BackingField: 0
+  <brug>k__BackingField: 0
   <points>k__BackingField: 0
   <points2>k__BackingField: 0
   <points3>k__BackingField: 0
@@ -1328,6 +1343,7 @@ MonoBehaviour:
   placeSound: {fileID: 4003378952028926955}
   placementsound: {fileID: 5139525997351657935}
   dragDrop: {fileID: 5139525997351657938}
+  bridgeController: {fileID: 472892560}
 --- !u!114 &182004646
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1708,6 +1724,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <time>k__BackingField: 0
+  <brug>k__BackingField: 0
   <points>k__BackingField: 0
   <points2>k__BackingField: 0
   <points3>k__BackingField: 0
@@ -1716,6 +1733,7 @@ MonoBehaviour:
   placeSound: {fileID: 4003378952028926955}
   placementsound: {fileID: 5139525997351657935}
   dragDrop: {fileID: 5139525997351657938}
+  bridgeController: {fileID: 472892560}
 --- !u!114 &340000961
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1806,6 +1824,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <time>k__BackingField: 0
+  <brug>k__BackingField: 0
   <points>k__BackingField: 0
   <points2>k__BackingField: 0
   <points3>k__BackingField: 0
@@ -1814,6 +1833,7 @@ MonoBehaviour:
   placeSound: {fileID: 4003378952028926955}
   placementsound: {fileID: 5139525997351657935}
   dragDrop: {fileID: 5139525997351657938}
+  bridgeController: {fileID: 472892560}
 --- !u!114 &364338703
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2050,6 +2070,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <time>k__BackingField: 0
+  <brug>k__BackingField: 0
   <points>k__BackingField: 0
   <points2>k__BackingField: 0
   <points3>k__BackingField: 0
@@ -2058,6 +2079,7 @@ MonoBehaviour:
   placeSound: {fileID: 4003378952028926955}
   placementsound: {fileID: 5139525997351657935}
   dragDrop: {fileID: 5139525997351657938}
+  bridgeController: {fileID: 472892560}
 --- !u!114 &405581712
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2148,6 +2170,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <time>k__BackingField: 0
+  <brug>k__BackingField: 0
   <points>k__BackingField: 0
   <points2>k__BackingField: 0
   <points3>k__BackingField: 0
@@ -2156,6 +2179,7 @@ MonoBehaviour:
   placeSound: {fileID: 4003378952028926955}
   placementsound: {fileID: 5139525997351657935}
   dragDrop: {fileID: 5139525997351657938}
+  bridgeController: {fileID: 472892560}
 --- !u!114 &428907457
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2246,6 +2270,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <time>k__BackingField: 0
+  <brug>k__BackingField: 0
   <points>k__BackingField: 0
   <points2>k__BackingField: 0
   <points3>k__BackingField: 0
@@ -2254,6 +2279,7 @@ MonoBehaviour:
   placeSound: {fileID: 4003378952028926955}
   placementsound: {fileID: 5139525997351657935}
   dragDrop: {fileID: 5139525997351657938}
+  bridgeController: {fileID: 472892560}
 --- !u!114 &446212688
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2292,6 +2318,58 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 446212685}
   m_CullTransparentMesh: 1
+--- !u!1 &472892558
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 472892559}
+  - component: {fileID: 472892560}
+  m_Layer: 5
+  m_Name: bridge
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &472892559
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 472892558}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1163739954}
+  m_RootOrder: 45
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &472892560
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 472892558}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 565312739521f184aa77bd3562ffe622, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isBridgeBuilt: 0
+  requiredObjectParent: {fileID: 872944716}
+  grid: {fileID: 0}
 --- !u!1 &476265124
 GameObject:
   m_ObjectHideFlags: 0
@@ -2344,6 +2422,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <time>k__BackingField: 0
+  <brug>k__BackingField: 0
   <points>k__BackingField: 0
   <points2>k__BackingField: 0
   <points3>k__BackingField: 0
@@ -2352,6 +2431,7 @@ MonoBehaviour:
   placeSound: {fileID: 4003378952028926955}
   placementsound: {fileID: 5139525997351657935}
   dragDrop: {fileID: 5139525997351657938}
+  bridgeController: {fileID: 472892560}
 --- !u!114 &476265127
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2442,6 +2522,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <time>k__BackingField: 0
+  <brug>k__BackingField: 0
   <points>k__BackingField: 0
   <points2>k__BackingField: 0
   <points3>k__BackingField: 0
@@ -2450,6 +2531,7 @@ MonoBehaviour:
   placeSound: {fileID: 4003378952028926955}
   placementsound: {fileID: 5139525997351657935}
   dragDrop: {fileID: 5139525997351657938}
+  bridgeController: {fileID: 472892560}
 --- !u!114 &574885318
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2540,6 +2622,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <time>k__BackingField: 0
+  <brug>k__BackingField: 0
   <points>k__BackingField: 0
   <points2>k__BackingField: 0
   <points3>k__BackingField: 0
@@ -2548,6 +2631,7 @@ MonoBehaviour:
   placeSound: {fileID: 4003378952028926955}
   placementsound: {fileID: 5139525997351657935}
   dragDrop: {fileID: 5139525997351657938}
+  bridgeController: {fileID: 472892560}
 --- !u!114 &586853186
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2638,6 +2722,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <time>k__BackingField: 0
+  <brug>k__BackingField: 0
   <points>k__BackingField: 0
   <points2>k__BackingField: 0
   <points3>k__BackingField: 0
@@ -2646,6 +2731,7 @@ MonoBehaviour:
   placeSound: {fileID: 4003378952028926955}
   placementsound: {fileID: 5139525997351657935}
   dragDrop: {fileID: 5139525997351657938}
+  bridgeController: {fileID: 472892560}
 --- !u!114 &601629728
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2971,6 +3057,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <time>k__BackingField: 0
+  <brug>k__BackingField: 0
   <points>k__BackingField: 0
   <points2>k__BackingField: 0
   <points3>k__BackingField: 0
@@ -2979,6 +3066,7 @@ MonoBehaviour:
   placeSound: {fileID: 4003378952028926955}
   placementsound: {fileID: 5139525997351657935}
   dragDrop: {fileID: 5139525997351657938}
+  bridgeController: {fileID: 472892560}
 --- !u!114 &739082243
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3216,14 +3304,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <time>k__BackingField: 5
+  <brug>k__BackingField: 0
   <points>k__BackingField: 0
-  <points2>k__BackingField: 1
+  <points2>k__BackingField: 0
   <points3>k__BackingField: 0
   <money>k__BackingField: 0
   gameManages: {fileID: 740509306}
   placeSound: {fileID: 4003378952028926955}
   placementsound: {fileID: 5139525997351657935}
   dragDrop: {fileID: 5139525997351657938}
+  bridgeController: {fileID: 472892560}
 --- !u!114 &826587693
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3320,6 +3410,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <time>k__BackingField: 0
+  <brug>k__BackingField: 0
   <points>k__BackingField: 0
   <points2>k__BackingField: 0
   <points3>k__BackingField: 0
@@ -3328,6 +3419,7 @@ MonoBehaviour:
   placeSound: {fileID: 4003378952028926955}
   placementsound: {fileID: 5139525997351657935}
   dragDrop: {fileID: 5139525997351657938}
+  bridgeController: {fileID: 472892560}
 --- !u!114 &854525610
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3418,6 +3510,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <time>k__BackingField: 0
+  <brug>k__BackingField: 0
   <points>k__BackingField: 0
   <points2>k__BackingField: 0
   <points3>k__BackingField: 0
@@ -3426,6 +3519,7 @@ MonoBehaviour:
   placeSound: {fileID: 4003378952028926955}
   placementsound: {fileID: 5139525997351657935}
   dragDrop: {fileID: 5139525997351657938}
+  bridgeController: {fileID: 472892560}
 --- !u!114 &857775149
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3561,6 +3655,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <time>k__BackingField: 0
+  <brug>k__BackingField: 0
   <points>k__BackingField: 0
   <points2>k__BackingField: 0
   <points3>k__BackingField: 0
@@ -3569,6 +3664,7 @@ MonoBehaviour:
   placeSound: {fileID: 4003378952028926955}
   placementsound: {fileID: 5139525997351657935}
   dragDrop: {fileID: 5139525997351657938}
+  bridgeController: {fileID: 472892560}
 --- !u!114 &883488614
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3794,6 +3890,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <time>k__BackingField: 0
+  <brug>k__BackingField: 0
   <points>k__BackingField: 0
   <points2>k__BackingField: 1
   <points3>k__BackingField: 0
@@ -3802,6 +3899,7 @@ MonoBehaviour:
   placeSound: {fileID: 4003378952028926955}
   placementsound: {fileID: 5139525997351657935}
   dragDrop: {fileID: 5139525997351657938}
+  bridgeController: {fileID: 472892560}
 --- !u!114 &934784755
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3892,6 +3990,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <time>k__BackingField: 0
+  <brug>k__BackingField: 0
   <points>k__BackingField: 0
   <points2>k__BackingField: 0
   <points3>k__BackingField: 0
@@ -3900,6 +3999,7 @@ MonoBehaviour:
   placeSound: {fileID: 4003378952028926955}
   placementsound: {fileID: 5139525997351657935}
   dragDrop: {fileID: 5139525997351657938}
+  bridgeController: {fileID: 472892560}
 --- !u!114 &955891064
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3990,6 +4090,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <time>k__BackingField: 0
+  <brug>k__BackingField: 0
   <points>k__BackingField: 0
   <points2>k__BackingField: 0
   <points3>k__BackingField: 0
@@ -3998,6 +4099,7 @@ MonoBehaviour:
   placeSound: {fileID: 4003378952028926955}
   placementsound: {fileID: 5139525997351657935}
   dragDrop: {fileID: 5139525997351657938}
+  bridgeController: {fileID: 472892560}
 --- !u!114 &964593808
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4403,6 +4505,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <time>k__BackingField: 0
+  <brug>k__BackingField: 0
   <points>k__BackingField: 0
   <points2>k__BackingField: 0
   <points3>k__BackingField: 0
@@ -4411,6 +4514,7 @@ MonoBehaviour:
   placeSound: {fileID: 4003378952028926955}
   placementsound: {fileID: 5139525997351657935}
   dragDrop: {fileID: 5139525997351657938}
+  bridgeController: {fileID: 472892560}
 --- !u!114 &1040975542
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4501,6 +4605,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <time>k__BackingField: 0
+  <brug>k__BackingField: 0
   <points>k__BackingField: 0
   <points2>k__BackingField: 0
   <points3>k__BackingField: 0
@@ -4509,6 +4614,7 @@ MonoBehaviour:
   placeSound: {fileID: 4003378952028926955}
   placementsound: {fileID: 5139525997351657935}
   dragDrop: {fileID: 5139525997351657938}
+  bridgeController: {fileID: 472892560}
 --- !u!114 &1091562617
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4599,6 +4705,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <time>k__BackingField: 0
+  <brug>k__BackingField: 0
   <points>k__BackingField: 0
   <points2>k__BackingField: 0
   <points3>k__BackingField: 0
@@ -4607,6 +4714,7 @@ MonoBehaviour:
   placeSound: {fileID: 4003378952028926955}
   placementsound: {fileID: 5139525997351657935}
   dragDrop: {fileID: 5139525997351657938}
+  bridgeController: {fileID: 472892560}
 --- !u!114 &1101873310
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4697,6 +4805,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <time>k__BackingField: 0
+  <brug>k__BackingField: 0
   <points>k__BackingField: 0
   <points2>k__BackingField: 0
   <points3>k__BackingField: 0
@@ -4705,6 +4814,7 @@ MonoBehaviour:
   placeSound: {fileID: 4003378952028926955}
   placementsound: {fileID: 5139525997351657935}
   dragDrop: {fileID: 5139525997351657938}
+  bridgeController: {fileID: 472892560}
 --- !u!114 &1146011535
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4816,6 +4926,7 @@ RectTransform:
   - {fileID: 144070413}
   - {fileID: 1180330415}
   - {fileID: 9277097}
+  - {fileID: 472892559}
   m_Father: {fileID: 285593159}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4876,6 +4987,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <time>k__BackingField: 0
+  <brug>k__BackingField: 0
   <points>k__BackingField: 0
   <points2>k__BackingField: 0
   <points3>k__BackingField: 0
@@ -4884,6 +4996,7 @@ MonoBehaviour:
   placeSound: {fileID: 4003378952028926955}
   placementsound: {fileID: 5139525997351657935}
   dragDrop: {fileID: 5139525997351657938}
+  bridgeController: {fileID: 472892560}
 --- !u!114 &1180330417
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5109,6 +5222,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <time>k__BackingField: 0
+  <brug>k__BackingField: 0
   <points>k__BackingField: 0
   <points2>k__BackingField: 0
   <points3>k__BackingField: 0
@@ -5117,6 +5231,7 @@ MonoBehaviour:
   placeSound: {fileID: 4003378952028926955}
   placementsound: {fileID: 5139525997351657935}
   dragDrop: {fileID: 5139525997351657938}
+  bridgeController: {fileID: 472892560}
 --- !u!114 &1239101832
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5213,6 +5328,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <time>k__BackingField: 0
+  <brug>k__BackingField: 0
   <points>k__BackingField: 0
   <points2>k__BackingField: 0
   <points3>k__BackingField: 0
@@ -5221,6 +5337,7 @@ MonoBehaviour:
   placeSound: {fileID: 4003378952028926955}
   placementsound: {fileID: 5139525997351657935}
   dragDrop: {fileID: 5139525997351657938}
+  bridgeController: {fileID: 472892560}
 --- !u!114 &1358121265
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5930,6 +6047,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <time>k__BackingField: 0
+  <brug>k__BackingField: 0
   <points>k__BackingField: 0
   <points2>k__BackingField: 0
   <points3>k__BackingField: 0
@@ -5938,6 +6056,7 @@ MonoBehaviour:
   placeSound: {fileID: 4003378952028926955}
   placementsound: {fileID: 5139525997351657935}
   dragDrop: {fileID: 5139525997351657938}
+  bridgeController: {fileID: 472892560}
 --- !u!114 &1443282997
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6034,6 +6153,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <time>k__BackingField: 0
+  <brug>k__BackingField: 0
   <points>k__BackingField: 0
   <points2>k__BackingField: 0
   <points3>k__BackingField: 0
@@ -6042,6 +6162,7 @@ MonoBehaviour:
   placeSound: {fileID: 4003378952028926955}
   placementsound: {fileID: 5139525997351657935}
   dragDrop: {fileID: 5139525997351657938}
+  bridgeController: {fileID: 472892560}
 --- !u!114 &1483181813
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6138,6 +6259,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <time>k__BackingField: 0
+  <brug>k__BackingField: 0
   <points>k__BackingField: 0
   <points2>k__BackingField: 0
   <points3>k__BackingField: 0
@@ -6146,6 +6268,7 @@ MonoBehaviour:
   placeSound: {fileID: 4003378952028926955}
   placementsound: {fileID: 5139525997351657935}
   dragDrop: {fileID: 5139525997351657938}
+  bridgeController: {fileID: 472892560}
 --- !u!114 &1511646080
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6236,6 +6359,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <time>k__BackingField: 0
+  <brug>k__BackingField: 0
   <points>k__BackingField: 0
   <points2>k__BackingField: 0
   <points3>k__BackingField: 0
@@ -6244,6 +6368,7 @@ MonoBehaviour:
   placeSound: {fileID: 4003378952028926955}
   placementsound: {fileID: 5139525997351657935}
   dragDrop: {fileID: 5139525997351657938}
+  bridgeController: {fileID: 472892560}
 --- !u!114 &1517821857
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6317,7 +6442,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3253d72010f3a14b9f12a790ea5a8c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pointsNeeded: 0
+  pointsNeeded: 2
 --- !u!4 &1535381176
 Transform:
   m_ObjectHideFlags: 0
@@ -6655,6 +6780,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <time>k__BackingField: 5
+  <brug>k__BackingField: 0
   <points>k__BackingField: 0
   <points2>k__BackingField: 1
   <points3>k__BackingField: 0
@@ -6663,6 +6789,7 @@ MonoBehaviour:
   placeSound: {fileID: 4003378952028926955}
   placementsound: {fileID: 5139525997351657935}
   dragDrop: {fileID: 5139525997351657938}
+  bridgeController: {fileID: 472892560}
 --- !u!114 &1650388174
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6753,6 +6880,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <time>k__BackingField: 0
+  <brug>k__BackingField: 0
   <points>k__BackingField: 0
   <points2>k__BackingField: 0
   <points3>k__BackingField: 0
@@ -6761,6 +6889,7 @@ MonoBehaviour:
   placeSound: {fileID: 4003378952028926955}
   placementsound: {fileID: 5139525997351657935}
   dragDrop: {fileID: 5139525997351657938}
+  bridgeController: {fileID: 472892560}
 --- !u!114 &1662105090
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7160,6 +7289,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <time>k__BackingField: 0
+  <brug>k__BackingField: 0
   <points>k__BackingField: 0
   <points2>k__BackingField: 0
   <points3>k__BackingField: 0
@@ -7168,6 +7298,7 @@ MonoBehaviour:
   placeSound: {fileID: 4003378952028926955}
   placementsound: {fileID: 5139525997351657935}
   dragDrop: {fileID: 5139525997351657938}
+  bridgeController: {fileID: 472892560}
 --- !u!114 &1750400277
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7393,6 +7524,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <time>k__BackingField: 0
+  <brug>k__BackingField: 0
   <points>k__BackingField: 0
   <points2>k__BackingField: 0
   <points3>k__BackingField: 0
@@ -7401,6 +7533,7 @@ MonoBehaviour:
   placeSound: {fileID: 4003378952028926955}
   placementsound: {fileID: 5139525997351657935}
   dragDrop: {fileID: 5139525997351657938}
+  bridgeController: {fileID: 472892560}
 --- !u!114 &1803557211
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7491,6 +7624,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <time>k__BackingField: 0
+  <brug>k__BackingField: 0
   <points>k__BackingField: 0
   <points2>k__BackingField: 0
   <points3>k__BackingField: 0
@@ -7499,6 +7633,7 @@ MonoBehaviour:
   placeSound: {fileID: 4003378952028926955}
   placementsound: {fileID: 5139525997351657935}
   dragDrop: {fileID: 5139525997351657938}
+  bridgeController: {fileID: 472892560}
 --- !u!114 &1827181412
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7595,6 +7730,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <time>k__BackingField: 0
+  <brug>k__BackingField: 0
   <points>k__BackingField: 0
   <points2>k__BackingField: 0
   <points3>k__BackingField: 0
@@ -7603,6 +7739,7 @@ MonoBehaviour:
   placeSound: {fileID: 4003378952028926955}
   placementsound: {fileID: 5139525997351657935}
   dragDrop: {fileID: 5139525997351657938}
+  bridgeController: {fileID: 472892560}
 --- !u!114 &1851088144
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7693,6 +7830,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <time>k__BackingField: 0
+  <brug>k__BackingField: 0
   <points>k__BackingField: 0
   <points2>k__BackingField: 0
   <points3>k__BackingField: 0
@@ -7701,6 +7839,7 @@ MonoBehaviour:
   placeSound: {fileID: 4003378952028926955}
   placementsound: {fileID: 5139525997351657935}
   dragDrop: {fileID: 5139525997351657938}
+  bridgeController: {fileID: 472892560}
 --- !u!114 &1951469133
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7926,6 +8065,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <time>k__BackingField: 0
+  <brug>k__BackingField: 0
   <points>k__BackingField: 0
   <points2>k__BackingField: 0
   <points3>k__BackingField: 0
@@ -7934,6 +8074,7 @@ MonoBehaviour:
   placeSound: {fileID: 4003378952028926955}
   placementsound: {fileID: 5139525997351657935}
   dragDrop: {fileID: 5139525997351657938}
+  bridgeController: {fileID: 472892560}
 --- !u!114 &1989595434
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8191,6 +8332,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <time>k__BackingField: 0
+  <brug>k__BackingField: 0
   <points>k__BackingField: 0
   <points2>k__BackingField: 0
   <points3>k__BackingField: 0
@@ -8199,6 +8341,7 @@ MonoBehaviour:
   placeSound: {fileID: 4003378952028926955}
   placementsound: {fileID: 5139525997351657935}
   dragDrop: {fileID: 5139525997351657938}
+  bridgeController: {fileID: 472892560}
 --- !u!114 &2063597183
 MonoBehaviour:
   m_ObjectHideFlags: 0

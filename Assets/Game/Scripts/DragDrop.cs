@@ -15,7 +15,7 @@ public class DragDrop : MonoBehaviour, IPointerDownHandler,IBeginDragHandler,IEn
     public bool isDragging = false;
     public bool isSelected = false;
     public bool topConnect, leftConnect, rightConnect, bottomConnect;
-    [SerializeField] private bool isCorner;
+    [SerializeField] private bool isCorner, isRight;
     int rotation;
 
     private void Awake()
@@ -29,12 +29,19 @@ public class DragDrop : MonoBehaviour, IPointerDownHandler,IBeginDragHandler,IEn
             bottomConnect = true;
             topConnect = false;
         }
-        else
+        else if(isRight)
         {
             leftConnect = true; 
             rightConnect = true; 
             bottomConnect =false; 
             topConnect = false;
+        }
+        else
+        {
+            leftConnect = true;
+            rightConnect = true;
+            bottomConnect = true;
+            topConnect = true;
         }
     }
     public void Update()
@@ -107,7 +114,7 @@ public class DragDrop : MonoBehaviour, IPointerDownHandler,IBeginDragHandler,IEn
             rotation = 0;
         }
 
-        RotateConnectionPoints();
+       /* RotateConnectionPoints();*/
     }
     public void OnPointerDown(PointerEventData eventData)
     {
@@ -133,7 +140,7 @@ public class DragDrop : MonoBehaviour, IPointerDownHandler,IBeginDragHandler,IEn
     {
         
     }
-    void RotateConnectionPoints()
+/*    void RotateConnectionPoints()
     {
         if (isCorner)
         {
@@ -165,6 +172,15 @@ public class DragDrop : MonoBehaviour, IPointerDownHandler,IBeginDragHandler,IEn
                     break;
             }
         }
+        else if (isRight)
+        {
+            bool temp = leftConnect;
+            leftConnect = rightConnect;
+            rightConnect = temp;
+            temp = bottomConnect;
+            bottomConnect = topConnect;
+            topConnect = temp;
+        }
         else
         {
             leftConnect = !leftConnect;
@@ -173,4 +189,5 @@ public class DragDrop : MonoBehaviour, IPointerDownHandler,IBeginDragHandler,IEn
             topConnect = !topConnect;
         }
     }
+*/
 }

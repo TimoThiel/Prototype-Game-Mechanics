@@ -7,11 +7,15 @@ public class GridLevel3 : MonoBehaviour
     [SerializeField] private GameManages gameManages;
     [SerializeField] private int _width, _height;
 
-    [SerializeField] private test _tilePrefab, _roadTile, _obstacleTile, _waterTile;
+    [SerializeField] private test _tilePrefab, _roadTile, _obstacleTile, _waterTile,_brugTile;
     [SerializeField] private Transform camera;
 
     [SerializeField] public Transform startPoint, carStart;
     [SerializeField] private GameObject truck, car;
+
+    [SerializeField] private GameObject brugItemslot;
+
+    [SerializeField] private BridgeController bridgeController;
 
     public float tijdCount;
     private float countdown = 1f;
@@ -26,7 +30,7 @@ public class GridLevel3 : MonoBehaviour
     }
     private void Update()
     {
-
+        bridgeController.Update();
         if (tijdCount < 0)
         {
 
@@ -57,9 +61,9 @@ public class GridLevel3 : MonoBehaviour
 
 
                 var waterTile = Instantiate(_waterTile, new Vector3(1, 1), Quaternion.identity);
-                var waterTileHr = Instantiate(_waterTile,new Vector3(5,5), Quaternion.identity);
-                var obstacleTile = Instantiate(_obstacleTile, new Vector3(5, 4), Quaternion.identity);
-                var obstacleTileHr = Instantiate(_obstacleTile, new Vector3(4, 2), Quaternion.identity);
+                var waterTileHr = Instantiate(_waterTile,new Vector3(5,y), Quaternion.identity);
+                var obstacleTile = Instantiate(_obstacleTile, new Vector3(0,2), Quaternion.identity);
+                var obstacleTileHr = Instantiate(_obstacleTile, new Vector3(2, 3), Quaternion.identity);
                 startPoint.position = new Vector3(7, 0, -1);
 
 
@@ -78,6 +82,15 @@ public class GridLevel3 : MonoBehaviour
         }
 
         camera.transform.position = new Vector3((float)_width / 2 - 0.5f, (float)_height / 2 - 0.5f, -8);
+    }
+    public void GenerateBrugTile()
+    {
+         
+            var brugTile = Instantiate(_brugTile, new Vector3(5, 4), Quaternion.identity);
+            brugItemslot.SetActive(true);
+       
+        
+        
     }
 
     /*   void SpawnCar()

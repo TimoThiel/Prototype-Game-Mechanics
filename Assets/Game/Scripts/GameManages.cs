@@ -8,11 +8,11 @@ public class GameManages : MonoBehaviour
 {
     [SerializeField] public MoveTruck move;
     public TextMeshProUGUI tijdMeter, puntenMeter, moneyMeter,bochtMeter;
-    public int money, punten, tijd, bocht;
+    public int money, punten, tijd, bocht, brug;
     public float tijdCount, puntCount,moneyCount;
     private void Awake()
     {
-
+        brug = 0;
         bocht = 11;
         money = 35;
         tijd = 35;
@@ -23,7 +23,7 @@ public class GameManages : MonoBehaviour
         }
         tijdCount += Time.deltaTime;
     }
-
+    
     public void ChangeBocht(int text)
     {
         this.bocht += text;
@@ -62,5 +62,6 @@ public class GameManages : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         Finish.busReachEnd = false;
         Finish.points = 0;
+        Finish.brug = 0;
     }
 }

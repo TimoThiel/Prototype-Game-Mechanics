@@ -92,41 +92,33 @@ public class MoveTruck : MonoBehaviour
     bool CheckConnectionPoints(DragDrop current, DragDrop next)
     {
         Vector2 distance = current.transform.position - next.transform.position;
-        if (MathF.Abs(distance.y) <=.2f)
+
+        // Controleren op horizontale verbinding
+        if (Mathf.Abs(distance.y) <= 0.2f)
         {
-            if (distance.x <= 0)
+            if (distance.x <= -0.2f && current.leftConnect && next.rightConnect)
             {
-                if (current.leftConnect && next.rightConnect)
-                {
-                    return true;
-                }
+                return true;
             }
-            else
+            else if (distance.x >= 0.2f && current.rightConnect && next.leftConnect)
             {
-                if (current.rightConnect && next.leftConnect)
-                {
-                    return true;
-                }
+                return true;
             }
         }
-       if(MathF.Abs(distance.x) <= .2f)
+
+        // Controleren op verticale verbinding
+        if (Mathf.Abs(distance.x) <= 0.2f)
         {
-            if(distance.y <= 0)
+            if (distance.y <= -0.2f && current.topConnect && next.bottomConnect)
             {
-                if (current.topConnect && next.bottomConnect)
-                {
-                    return true;
-                }
+                return true;
             }
-            else
+            else if (distance.y >= 0.2f && current.bottomConnect && next.topConnect)
             {
-                if (current.bottomConnect && next.topConnect)
-                {
-                    return true;
-                }
+                return true;
             }
         }
-      
+
         ResetTheGame();
         return false;
     }

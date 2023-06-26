@@ -155,7 +155,7 @@ RectTransform:
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1163739954}
-  m_RootOrder: 5
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -175,6 +175,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <time>k__BackingField: 0
+  <brug>k__BackingField: 0
   <points>k__BackingField: 0
   <points2>k__BackingField: 0
   <points3>k__BackingField: 0
@@ -183,6 +184,7 @@ MonoBehaviour:
   placeSound: {fileID: 4003378952028926955}
   placementsound: {fileID: 5139525997351657935}
   dragDrop: {fileID: 4003378952028926958}
+  bridgeController: {fileID: 1744091988}
 --- !u!114 &3851098
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -253,7 +255,7 @@ RectTransform:
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1163739954}
-  m_RootOrder: 44
+  m_RootOrder: 37
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -273,14 +275,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <time>k__BackingField: 5
+  <brug>k__BackingField: 0
   <points>k__BackingField: 0
   <points2>k__BackingField: 0
-  <points3>k__BackingField: 1
-  <money>k__BackingField: 10
+  <points3>k__BackingField: 0
+  <money>k__BackingField: 0
   gameManages: {fileID: 740509306}
   placeSound: {fileID: 4003378952028926955}
   placementsound: {fileID: 5139525997351657935}
   dragDrop: {fileID: 4003378952028926958}
+  bridgeController: {fileID: 1744091988}
 --- !u!114 &9277099
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -324,7 +328,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 891106892}
+    m_TransformParent: {fileID: 872944717}
     m_Modifications:
     - target: {fileID: 8722536334966963202, guid: 195cedd7048fec54abbdabf4c4b520e4,
         type: 3}
@@ -335,6 +339,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_TagString
       value: Untagged
+      objectReference: {fileID: 0}
+    - target: {fileID: 8722536334966963208, guid: 195cedd7048fec54abbdabf4c4b520e4,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8722536334966963213, guid: 195cedd7048fec54abbdabf4c4b520e4,
         type: 3}
@@ -349,7 +358,7 @@ PrefabInstance:
     - target: {fileID: 8722536334966963213, guid: 195cedd7048fec54abbdabf4c4b520e4,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 8722536334966963213, guid: 195cedd7048fec54abbdabf4c4b520e4,
         type: 3}
@@ -424,7 +433,7 @@ PrefabInstance:
     - target: {fileID: 8722536334966963213, guid: 195cedd7048fec54abbdabf4c4b520e4,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -0.0000076293945
+      value: 0.000023027533
       objectReference: {fileID: 0}
     - target: {fileID: 8722536334966963213, guid: 195cedd7048fec54abbdabf4c4b520e4,
         type: 3}
@@ -594,7 +603,7 @@ RectTransform:
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1163739954}
-  m_RootOrder: 8
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -614,6 +623,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <time>k__BackingField: 0
+  <brug>k__BackingField: 0
   <points>k__BackingField: 0
   <points2>k__BackingField: 0
   <points3>k__BackingField: 0
@@ -622,6 +632,7 @@ MonoBehaviour:
   placeSound: {fileID: 4003378952028926955}
   placementsound: {fileID: 5139525997351657935}
   dragDrop: {fileID: 4003378952028926958}
+  bridgeController: {fileID: 1744091988}
 --- !u!114 &12690193
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -776,7 +787,7 @@ RectTransform:
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1163739954}
-  m_RootOrder: 18
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -796,14 +807,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <time>k__BackingField: 0
+  <brug>k__BackingField: 0
   <points>k__BackingField: 0
   <points2>k__BackingField: 0
-  <points3>k__BackingField: 0
-  <money>k__BackingField: 0
+  <points3>k__BackingField: 1
+  <money>k__BackingField: 10
   gameManages: {fileID: 740509306}
   placeSound: {fileID: 4003378952028926955}
   placementsound: {fileID: 5139525997351657935}
   dragDrop: {fileID: 4003378952028926958}
+  bridgeController: {fileID: 1744091988}
 --- !u!114 &30413468
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -973,7 +986,7 @@ RectTransform:
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1163739954}
-  m_RootOrder: 12
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -993,6 +1006,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <time>k__BackingField: 0
+  <brug>k__BackingField: 0
   <points>k__BackingField: 0
   <points2>k__BackingField: 0
   <points3>k__BackingField: 0
@@ -1001,6 +1015,7 @@ MonoBehaviour:
   placeSound: {fileID: 4003378952028926955}
   placementsound: {fileID: 5139525997351657935}
   dragDrop: {fileID: 4003378952028926958}
+  bridgeController: {fileID: 1744091988}
 --- !u!114 &58907691
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1206,7 +1221,7 @@ RectTransform:
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1163739954}
-  m_RootOrder: 42
+  m_RootOrder: 35
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1226,6 +1241,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <time>k__BackingField: 0
+  <brug>k__BackingField: 0
   <points>k__BackingField: 0
   <points2>k__BackingField: 0
   <points3>k__BackingField: 0
@@ -1234,6 +1250,7 @@ MonoBehaviour:
   placeSound: {fileID: 4003378952028926955}
   placementsound: {fileID: 5139525997351657935}
   dragDrop: {fileID: 4003378952028926958}
+  bridgeController: {fileID: 1744091988}
 --- !u!114 &144070415
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1272,104 +1289,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 144070412}
   m_CullTransparentMesh: 1
---- !u!1 &167243769
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 167243770}
-  - component: {fileID: 167243773}
-  - component: {fileID: 167243772}
-  - component: {fileID: 167243771}
-  m_Layer: 5
-  m_Name: itemSlot (39)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &167243770
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 167243769}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.6, y: 0.6, z: 0.54545456}
-  m_ConstrainProportionsScale: 1
-  m_Children: []
-  m_Father: {fileID: 1163739954}
-  m_RootOrder: 34
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 100, y: 164}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &167243771
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 167243769}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 016638f3f9c129248b0663dd0511ebec, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  <time>k__BackingField: 0
-  <points>k__BackingField: 0
-  <points2>k__BackingField: 0
-  <points3>k__BackingField: 0
-  <money>k__BackingField: 0
-  gameManages: {fileID: 740509306}
-  placeSound: {fileID: 4003378952028926955}
-  placementsound: {fileID: 5139525997351657935}
-  dragDrop: {fileID: 4003378952028926958}
---- !u!114 &167243772
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 167243769}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.09803922}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 0}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &167243773
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 167243769}
-  m_CullTransparentMesh: 1
 --- !u!1 &182004643
 GameObject:
   m_ObjectHideFlags: 0
@@ -1402,7 +1321,7 @@ RectTransform:
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1163739954}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1422,6 +1341,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <time>k__BackingField: 0
+  <brug>k__BackingField: 0
   <points>k__BackingField: 0
   <points2>k__BackingField: 0
   <points3>k__BackingField: 0
@@ -1430,6 +1350,7 @@ MonoBehaviour:
   placeSound: {fileID: 4003378952028926955}
   placementsound: {fileID: 5139525997351657935}
   dragDrop: {fileID: 4003378952028926958}
+  bridgeController: {fileID: 1744091988}
 --- !u!114 &182004646
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1613,6 +1534,7 @@ RectTransform:
   - {fileID: 9131885533068430997}
   - {fileID: 783227447}
   - {fileID: 1072914782}
+  - {fileID: 1926647847}
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1787,7 +1709,7 @@ RectTransform:
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1163739954}
-  m_RootOrder: 30
+  m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1807,6 +1729,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <time>k__BackingField: 0
+  <brug>k__BackingField: 0
   <points>k__BackingField: 0
   <points2>k__BackingField: 0
   <points3>k__BackingField: 0
@@ -1815,6 +1738,7 @@ MonoBehaviour:
   placeSound: {fileID: 4003378952028926955}
   placementsound: {fileID: 5139525997351657935}
   dragDrop: {fileID: 4003378952028926958}
+  bridgeController: {fileID: 1744091988}
 --- !u!114 &340000961
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1885,7 +1809,7 @@ RectTransform:
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1163739954}
-  m_RootOrder: 9
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1905,6 +1829,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <time>k__BackingField: 0
+  <brug>k__BackingField: 0
   <points>k__BackingField: 0
   <points2>k__BackingField: 0
   <points3>k__BackingField: 0
@@ -1913,6 +1838,7 @@ MonoBehaviour:
   placeSound: {fileID: 4003378952028926955}
   placementsound: {fileID: 5139525997351657935}
   dragDrop: {fileID: 4003378952028926958}
+  bridgeController: {fileID: 1744091988}
 --- !u!114 &364338703
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2127,7 +2053,7 @@ RectTransform:
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1163739954}
-  m_RootOrder: 36
+  m_RootOrder: 29
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2147,6 +2073,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <time>k__BackingField: 0
+  <brug>k__BackingField: 0
   <points>k__BackingField: 0
   <points2>k__BackingField: 0
   <points3>k__BackingField: 0
@@ -2155,6 +2082,7 @@ MonoBehaviour:
   placeSound: {fileID: 4003378952028926955}
   placementsound: {fileID: 5139525997351657935}
   dragDrop: {fileID: 4003378952028926958}
+  bridgeController: {fileID: 1744091988}
 --- !u!114 &405581712
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2193,104 +2121,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 405581709}
   m_CullTransparentMesh: 1
---- !u!1 &428907454
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 428907455}
-  - component: {fileID: 428907458}
-  - component: {fileID: 428907457}
-  - component: {fileID: 428907456}
-  m_Layer: 5
-  m_Name: itemSlot (32)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &428907455
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 428907454}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.6, y: 0.6, z: 0.54545456}
-  m_ConstrainProportionsScale: 1
-  m_Children: []
-  m_Father: {fileID: 1163739954}
-  m_RootOrder: 28
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 100, y: 98}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &428907456
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 428907454}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 016638f3f9c129248b0663dd0511ebec, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  <time>k__BackingField: 5
-  <points>k__BackingField: 0
-  <points2>k__BackingField: 0
-  <points3>k__BackingField: 1
-  <money>k__BackingField: 10
-  gameManages: {fileID: 740509306}
-  placeSound: {fileID: 4003378952028926955}
-  placementsound: {fileID: 5139525997351657935}
-  dragDrop: {fileID: 4003378952028926958}
---- !u!114 &428907457
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 428907454}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.09803922}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 0}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &428907458
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 428907454}
-  m_CullTransparentMesh: 1
 --- !u!1 &446212685
 GameObject:
   m_ObjectHideFlags: 0
@@ -2323,7 +2153,7 @@ RectTransform:
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1163739954}
-  m_RootOrder: 14
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2343,6 +2173,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <time>k__BackingField: 0
+  <brug>k__BackingField: 0
   <points>k__BackingField: 0
   <points2>k__BackingField: 0
   <points3>k__BackingField: 0
@@ -2351,6 +2182,7 @@ MonoBehaviour:
   placeSound: {fileID: 4003378952028926955}
   placementsound: {fileID: 5139525997351657935}
   dragDrop: {fileID: 4003378952028926958}
+  bridgeController: {fileID: 1744091988}
 --- !u!114 &446212688
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2421,7 +2253,7 @@ RectTransform:
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1163739954}
-  m_RootOrder: 38
+  m_RootOrder: 31
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2441,6 +2273,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <time>k__BackingField: 0
+  <brug>k__BackingField: 0
   <points>k__BackingField: 0
   <points2>k__BackingField: 0
   <points3>k__BackingField: 0
@@ -2449,6 +2282,7 @@ MonoBehaviour:
   placeSound: {fileID: 4003378952028926955}
   placementsound: {fileID: 5139525997351657935}
   dragDrop: {fileID: 4003378952028926958}
+  bridgeController: {fileID: 1744091988}
 --- !u!114 &476265127
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2519,7 +2353,7 @@ RectTransform:
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1163739954}
-  m_RootOrder: 17
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2539,6 +2373,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <time>k__BackingField: 0
+  <brug>k__BackingField: 0
   <points>k__BackingField: 0
   <points2>k__BackingField: 0
   <points3>k__BackingField: 0
@@ -2547,6 +2382,7 @@ MonoBehaviour:
   placeSound: {fileID: 4003378952028926955}
   placementsound: {fileID: 5139525997351657935}
   dragDrop: {fileID: 4003378952028926958}
+  bridgeController: {fileID: 1744091988}
 --- !u!114 &574885318
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2617,7 +2453,7 @@ RectTransform:
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1163739954}
-  m_RootOrder: 31
+  m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2637,6 +2473,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <time>k__BackingField: 0
+  <brug>k__BackingField: 0
   <points>k__BackingField: 0
   <points2>k__BackingField: 0
   <points3>k__BackingField: 0
@@ -2645,6 +2482,7 @@ MonoBehaviour:
   placeSound: {fileID: 4003378952028926955}
   placementsound: {fileID: 5139525997351657935}
   dragDrop: {fileID: 4003378952028926958}
+  bridgeController: {fileID: 1744091988}
 --- !u!114 &586853186
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2715,7 +2553,7 @@ RectTransform:
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1163739954}
-  m_RootOrder: 25
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2735,6 +2573,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <time>k__BackingField: 0
+  <brug>k__BackingField: 0
   <points>k__BackingField: 0
   <points2>k__BackingField: 0
   <points3>k__BackingField: 0
@@ -2743,6 +2582,7 @@ MonoBehaviour:
   placeSound: {fileID: 4003378952028926955}
   placementsound: {fileID: 5139525997351657935}
   dragDrop: {fileID: 4003378952028926958}
+  bridgeController: {fileID: 1744091988}
 --- !u!114 &601629728
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3048,7 +2888,7 @@ RectTransform:
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1163739954}
-  m_RootOrder: 29
+  m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -3068,6 +2908,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <time>k__BackingField: 0
+  <brug>k__BackingField: 0
   <points>k__BackingField: 0
   <points2>k__BackingField: 0
   <points3>k__BackingField: 0
@@ -3076,6 +2917,7 @@ MonoBehaviour:
   placeSound: {fileID: 4003378952028926955}
   placementsound: {fileID: 5139525997351657935}
   dragDrop: {fileID: 4003378952028926958}
+  bridgeController: {fileID: 1744091988}
 --- !u!114 &739082243
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3131,7 +2973,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 891106892}
+    m_TransformParent: {fileID: 872944717}
     m_Modifications:
     - target: {fileID: 6440672101379952292, guid: c80053e3b15585d4eb098468596560ae,
         type: 3}
@@ -3146,7 +2988,7 @@ PrefabInstance:
     - target: {fileID: 6440672101379952292, guid: c80053e3b15585d4eb098468596560ae,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 6440672101379952292, guid: c80053e3b15585d4eb098468596560ae,
         type: 3}
@@ -3221,7 +3063,7 @@ PrefabInstance:
     - target: {fileID: 6440672101379952292, guid: c80053e3b15585d4eb098468596560ae,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: 0.000030656927
       objectReference: {fileID: 0}
     - target: {fileID: 6440672101379952292, guid: c80053e3b15585d4eb098468596560ae,
         type: 3}
@@ -3259,6 +3101,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: 46d04a5f4e2599a40b9722453b2cb857,
         type: 3}
+    - target: {fileID: 6440672101379952299, guid: c80053e3b15585d4eb098468596560ae,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c80053e3b15585d4eb098468596560ae, type: 3}
 --- !u!224 &771502665 stripped
@@ -3504,104 +3351,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 783227446}
   m_CullTransparentMesh: 1
---- !u!1 &826587690
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 826587691}
-  - component: {fileID: 826587694}
-  - component: {fileID: 826587693}
-  - component: {fileID: 826587692}
-  m_Layer: 5
-  m_Name: itemSlot
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &826587691
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 826587690}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.6, y: 0.6, z: 0.54545456}
-  m_ConstrainProportionsScale: 1
-  m_Children: []
-  m_Father: {fileID: 1163739954}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 100, y: -34.000008}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &826587692
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 826587690}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 016638f3f9c129248b0663dd0511ebec, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  <time>k__BackingField: 0
-  <points>k__BackingField: 0
-  <points2>k__BackingField: 0
-  <points3>k__BackingField: 0
-  <money>k__BackingField: 0
-  gameManages: {fileID: 740509306}
-  placeSound: {fileID: 4003378952028926955}
-  placementsound: {fileID: 5139525997351657935}
-  dragDrop: {fileID: 4003378952028926958}
---- !u!114 &826587693
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 826587690}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.09803922}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 0}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &826587694
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 826587690}
-  m_CullTransparentMesh: 1
 --- !u!224 &830312664 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 3656250086651510783, guid: acebaf6f801f0bb42806232c7c52967c,
@@ -3640,7 +3389,7 @@ RectTransform:
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1163739954}
-  m_RootOrder: 20
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -3660,6 +3409,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <time>k__BackingField: 0
+  <brug>k__BackingField: 0
   <points>k__BackingField: 0
   <points2>k__BackingField: 0
   <points3>k__BackingField: 0
@@ -3668,6 +3418,7 @@ MonoBehaviour:
   placeSound: {fileID: 4003378952028926955}
   placementsound: {fileID: 5139525997351657935}
   dragDrop: {fileID: 4003378952028926958}
+  bridgeController: {fileID: 1744091988}
 --- !u!114 &854525610
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3738,7 +3489,7 @@ RectTransform:
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1163739954}
-  m_RootOrder: 11
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -3758,6 +3509,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <time>k__BackingField: 0
+  <brug>k__BackingField: 0
   <points>k__BackingField: 0
   <points2>k__BackingField: 0
   <points3>k__BackingField: 0
@@ -3766,6 +3518,7 @@ MonoBehaviour:
   placeSound: {fileID: 4003378952028926955}
   placementsound: {fileID: 5139525997351657935}
   dragDrop: {fileID: 4003378952028926958}
+  bridgeController: {fileID: 1744091988}
 --- !u!114 &857775149
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3838,9 +3591,17 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1022257777}
-  - {fileID: 2057845418}
-  - {fileID: 891106892}
+  - {fileID: 1834336917}
+  - {fileID: 2110350905}
+  - {fileID: 1460303199}
+  - {fileID: 830312664}
+  - {fileID: 1280690422}
+  - {fileID: 625137321}
+  - {fileID: 1487821032}
+  - {fileID: 2013512261}
+  - {fileID: 1051398107}
+  - {fileID: 11624841}
+  - {fileID: 771502665}
   m_Father: {fileID: 285593159}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3881,7 +3642,7 @@ RectTransform:
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1163739954}
-  m_RootOrder: 22
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -3901,6 +3662,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <time>k__BackingField: 0
+  <brug>k__BackingField: 0
   <points>k__BackingField: 0
   <points2>k__BackingField: 0
   <points3>k__BackingField: 0
@@ -3909,6 +3671,7 @@ MonoBehaviour:
   placeSound: {fileID: 4003378952028926955}
   placementsound: {fileID: 5139525997351657935}
   dragDrop: {fileID: 4003378952028926958}
+  bridgeController: {fileID: 1744091988}
 --- !u!114 &883488614
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3947,45 +3710,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 883488611}
   m_CullTransparentMesh: 1
---- !u!1 &891106891
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 891106892}
-  m_Layer: 5
-  m_Name: Kruisings
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &891106892
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 891106891}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1051398107}
-  - {fileID: 11624841}
-  - {fileID: 771502665}
-  m_Father: {fileID: 872944717}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0.000030517578}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &934784752
 GameObject:
   m_ObjectHideFlags: 0
@@ -4018,7 +3742,7 @@ RectTransform:
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1163739954}
-  m_RootOrder: 7
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -4038,6 +3762,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <time>k__BackingField: 0
+  <brug>k__BackingField: 0
   <points>k__BackingField: 0
   <points2>k__BackingField: 0
   <points3>k__BackingField: 0
@@ -4046,6 +3771,7 @@ MonoBehaviour:
   placeSound: {fileID: 4003378952028926955}
   placementsound: {fileID: 5139525997351657935}
   dragDrop: {fileID: 4003378952028926958}
+  bridgeController: {fileID: 1744091988}
 --- !u!114 &934784755
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4116,7 +3842,7 @@ RectTransform:
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1163739954}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -4136,6 +3862,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <time>k__BackingField: 0
+  <brug>k__BackingField: 0
   <points>k__BackingField: 0
   <points2>k__BackingField: 0
   <points3>k__BackingField: 0
@@ -4144,6 +3871,7 @@ MonoBehaviour:
   placeSound: {fileID: 4003378952028926955}
   placementsound: {fileID: 5139525997351657935}
   dragDrop: {fileID: 4003378952028926958}
+  bridgeController: {fileID: 1744091988}
 --- !u!114 &955891064
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4181,104 +3909,6 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 955891061}
-  m_CullTransparentMesh: 1
---- !u!1 &964593805
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 964593806}
-  - component: {fileID: 964593809}
-  - component: {fileID: 964593808}
-  - component: {fileID: 964593807}
-  m_Layer: 5
-  m_Name: itemSlot (4)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &964593806
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 964593805}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.6, y: 0.6, z: 0.54545456}
-  m_ConstrainProportionsScale: 1
-  m_Children: []
-  m_Father: {fileID: 1163739954}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 100, y: -166}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &964593807
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 964593805}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 016638f3f9c129248b0663dd0511ebec, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  <time>k__BackingField: 0
-  <points>k__BackingField: 0
-  <points2>k__BackingField: 0
-  <points3>k__BackingField: 0
-  <money>k__BackingField: 0
-  gameManages: {fileID: 740509306}
-  placeSound: {fileID: 4003378952028926955}
-  placementsound: {fileID: 5139525997351657935}
-  dragDrop: {fileID: 4003378952028926958}
---- !u!114 &964593808
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 964593805}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.09803922}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 0}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &964593809
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 964593805}
   m_CullTransparentMesh: 1
 --- !u!1 &968704227
 GameObject:
@@ -4554,47 +4184,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2227891228923891061}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1022257776
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1022257777}
-  m_Layer: 5
-  m_Name: Bochten
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1022257777
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1022257776}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1834336917}
-  - {fileID: 2110350905}
-  - {fileID: 1460303199}
-  - {fileID: 830312664}
-  - {fileID: 1280690422}
-  m_Father: {fileID: 872944717}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1040975539
 GameObject:
   m_ObjectHideFlags: 0
@@ -4627,7 +4216,7 @@ RectTransform:
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1163739954}
-  m_RootOrder: 24
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -4647,6 +4236,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <time>k__BackingField: 0
+  <brug>k__BackingField: 0
   <points>k__BackingField: 0
   <points2>k__BackingField: 0
   <points3>k__BackingField: 0
@@ -4655,6 +4245,7 @@ MonoBehaviour:
   placeSound: {fileID: 4003378952028926955}
   placementsound: {fileID: 5139525997351657935}
   dragDrop: {fileID: 4003378952028926958}
+  bridgeController: {fileID: 1744091988}
 --- !u!114 &1040975542
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4698,7 +4289,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 891106892}
+    m_TransformParent: {fileID: 872944717}
     m_Modifications:
     - target: {fileID: 5139525997976434529, guid: 8dc6889a7e99ee342a9d1e4d1df6fd50,
         type: 3}
@@ -4706,6 +4297,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: 46d04a5f4e2599a40b9722453b2cb857,
         type: 3}
+    - target: {fileID: 5139525997976434531, guid: 8dc6889a7e99ee342a9d1e4d1df6fd50,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5139525997976434532, guid: 8dc6889a7e99ee342a9d1e4d1df6fd50,
         type: 3}
       propertyPath: m_Pivot.x
@@ -4719,7 +4315,7 @@ PrefabInstance:
     - target: {fileID: 5139525997976434532, guid: 8dc6889a7e99ee342a9d1e4d1df6fd50,
         type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 5139525997976434532, guid: 8dc6889a7e99ee342a9d1e4d1df6fd50,
         type: 3}
@@ -4794,7 +4390,7 @@ PrefabInstance:
     - target: {fileID: 5139525997976434532, guid: 8dc6889a7e99ee342a9d1e4d1df6fd50,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -0.0000076293945
+      value: 0.000023027533
       objectReference: {fileID: 0}
     - target: {fileID: 5139525997976434532, guid: 8dc6889a7e99ee342a9d1e4d1df6fd50,
         type: 3}
@@ -5103,7 +4699,7 @@ RectTransform:
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1163739954}
-  m_RootOrder: 19
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -5123,6 +4719,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <time>k__BackingField: 0
+  <brug>k__BackingField: 0
   <points>k__BackingField: 0
   <points2>k__BackingField: 0
   <points3>k__BackingField: 0
@@ -5131,6 +4728,7 @@ MonoBehaviour:
   placeSound: {fileID: 4003378952028926955}
   placementsound: {fileID: 5139525997351657935}
   dragDrop: {fileID: 4003378952028926958}
+  bridgeController: {fileID: 1744091988}
 --- !u!114 &1091562617
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5201,7 +4799,7 @@ RectTransform:
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1163739954}
-  m_RootOrder: 6
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -5221,6 +4819,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <time>k__BackingField: 0
+  <brug>k__BackingField: 0
   <points>k__BackingField: 0
   <points2>k__BackingField: 0
   <points3>k__BackingField: 0
@@ -5229,6 +4828,7 @@ MonoBehaviour:
   placeSound: {fileID: 4003378952028926955}
   placementsound: {fileID: 5139525997351657935}
   dragDrop: {fileID: 4003378952028926958}
+  bridgeController: {fileID: 1744091988}
 --- !u!114 &1101873310
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5299,7 +4899,7 @@ RectTransform:
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1163739954}
-  m_RootOrder: 41
+  m_RootOrder: 34
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -5319,6 +4919,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <time>k__BackingField: 0
+  <brug>k__BackingField: 0
   <points>k__BackingField: 0
   <points2>k__BackingField: 0
   <points3>k__BackingField: 0
@@ -5327,6 +4928,7 @@ MonoBehaviour:
   placeSound: {fileID: 4003378952028926955}
   placementsound: {fileID: 5139525997351657935}
   dragDrop: {fileID: 4003378952028926958}
+  bridgeController: {fileID: 1744091988}
 --- !u!114 &1146011535
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5393,17 +4995,14 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 826587691}
   - {fileID: 182004644}
   - {fileID: 1358121263}
   - {fileID: 955891062}
-  - {fileID: 964593806}
   - {fileID: 3851096}
   - {fileID: 1101873308}
   - {fileID: 934784753}
   - {fileID: 12690191}
   - {fileID: 364338701}
-  - {fileID: 1827181410}
   - {fileID: 857775147}
   - {fileID: 58907689}
   - {fileID: 2063597181}
@@ -5414,20 +5013,16 @@ RectTransform:
   - {fileID: 30413466}
   - {fileID: 1091562615}
   - {fileID: 854525608}
-  - {fileID: 1989595432}
   - {fileID: 883488612}
   - {fileID: 1517821855}
   - {fileID: 1040975540}
   - {fileID: 601629726}
-  - {fileID: 1662105088}
   - {fileID: 1483181811}
-  - {fileID: 428907455}
   - {fileID: 739082241}
   - {fileID: 340000959}
   - {fileID: 586853184}
   - {fileID: 1239101830}
   - {fileID: 1650388172}
-  - {fileID: 167243770}
   - {fileID: 1803557209}
   - {fileID: 405581710}
   - {fileID: 1851088142}
@@ -5438,6 +5033,9 @@ RectTransform:
   - {fileID: 144070413}
   - {fileID: 1180330415}
   - {fileID: 9277097}
+  - {fileID: 1744091987}
+  - {fileID: 1636679048}
+  - {fileID: 1364238122}
   m_Father: {fileID: 285593159}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5478,7 +5076,7 @@ RectTransform:
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1163739954}
-  m_RootOrder: 43
+  m_RootOrder: 36
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -5498,6 +5096,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <time>k__BackingField: 0
+  <brug>k__BackingField: 0
   <points>k__BackingField: 0
   <points2>k__BackingField: 0
   <points3>k__BackingField: 0
@@ -5506,6 +5105,7 @@ MonoBehaviour:
   placeSound: {fileID: 4003378952028926955}
   placementsound: {fileID: 5139525997351657935}
   dragDrop: {fileID: 4003378952028926958}
+  bridgeController: {fileID: 1744091988}
 --- !u!114 &1180330417
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5711,7 +5311,7 @@ RectTransform:
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1163739954}
-  m_RootOrder: 32
+  m_RootOrder: 26
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -5731,6 +5331,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <time>k__BackingField: 0
+  <brug>k__BackingField: 0
   <points>k__BackingField: 0
   <points2>k__BackingField: 0
   <points3>k__BackingField: 0
@@ -5739,6 +5340,7 @@ MonoBehaviour:
   placeSound: {fileID: 4003378952028926955}
   placementsound: {fileID: 5139525997351657935}
   dragDrop: {fileID: 4003378952028926958}
+  bridgeController: {fileID: 1744091988}
 --- !u!114 &1239101832
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5815,7 +5417,7 @@ RectTransform:
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1163739954}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -5835,6 +5437,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <time>k__BackingField: 0
+  <brug>k__BackingField: 0
   <points>k__BackingField: 0
   <points2>k__BackingField: 0
   <points3>k__BackingField: 0
@@ -5843,6 +5446,7 @@ MonoBehaviour:
   placeSound: {fileID: 4003378952028926955}
   placementsound: {fileID: 5139525997351657935}
   dragDrop: {fileID: 4003378952028926958}
+  bridgeController: {fileID: 1744091988}
 --- !u!114 &1358121265
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5881,6 +5485,106 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1358121262}
   m_CullTransparentMesh: 1
+--- !u!1 &1364238121
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1364238122}
+  - component: {fileID: 1364238125}
+  - component: {fileID: 1364238124}
+  - component: {fileID: 1364238123}
+  m_Layer: 5
+  m_Name: itemSlot (30)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1364238122
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1364238121}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.6, y: 0.6, z: 0.54545456}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 1163739954}
+  m_RootOrder: 40
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -34.999992, y: 98}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1364238123
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1364238121}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 016638f3f9c129248b0663dd0511ebec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <time>k__BackingField: 0
+  <brug>k__BackingField: 1
+  <points>k__BackingField: 0
+  <points2>k__BackingField: 0
+  <points3>k__BackingField: 0
+  <money>k__BackingField: 5
+  gameManages: {fileID: 740509306}
+  placeSound: {fileID: 4003378952028926955}
+  placementsound: {fileID: 5139525997351657935}
+  dragDrop: {fileID: 4003378952028926958}
+  bridgeController: {fileID: 1744091988}
+--- !u!114 &1364238124
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1364238121}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.09803922}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1364238125
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1364238121}
+  m_CullTransparentMesh: 1
 --- !u!1 &1364769868
 GameObject:
   m_ObjectHideFlags: 0
@@ -5916,7 +5620,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 29.6, y: -16.5}
+  m_AnchoredPosition: {x: -100, y: 50.7}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1364769870
@@ -6391,7 +6095,7 @@ RectTransform:
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1163739954}
-  m_RootOrder: 15
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -6411,6 +6115,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <time>k__BackingField: 0
+  <brug>k__BackingField: 0
   <points>k__BackingField: 0
   <points2>k__BackingField: 0
   <points3>k__BackingField: 0
@@ -6419,6 +6124,7 @@ MonoBehaviour:
   placeSound: {fileID: 4003378952028926955}
   placementsound: {fileID: 5139525997351657935}
   dragDrop: {fileID: 4003378952028926958}
+  bridgeController: {fileID: 1744091988}
 --- !u!114 &1443282997
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6495,7 +6201,7 @@ RectTransform:
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1163739954}
-  m_RootOrder: 27
+  m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -6515,6 +6221,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <time>k__BackingField: 0
+  <brug>k__BackingField: 0
   <points>k__BackingField: 0
   <points2>k__BackingField: 0
   <points3>k__BackingField: 0
@@ -6523,6 +6230,7 @@ MonoBehaviour:
   placeSound: {fileID: 4003378952028926955}
   placementsound: {fileID: 5139525997351657935}
   dragDrop: {fileID: 4003378952028926958}
+  bridgeController: {fileID: 1744091988}
 --- !u!114 &1483181813
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6599,7 +6307,7 @@ RectTransform:
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1163739954}
-  m_RootOrder: 40
+  m_RootOrder: 33
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -6619,6 +6327,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <time>k__BackingField: 0
+  <brug>k__BackingField: 0
   <points>k__BackingField: 0
   <points2>k__BackingField: 0
   <points3>k__BackingField: 0
@@ -6627,6 +6336,7 @@ MonoBehaviour:
   placeSound: {fileID: 4003378952028926955}
   placementsound: {fileID: 5139525997351657935}
   dragDrop: {fileID: 4003378952028926958}
+  bridgeController: {fileID: 1744091988}
 --- !u!114 &1511646080
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6697,7 +6407,7 @@ RectTransform:
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1163739954}
-  m_RootOrder: 23
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -6717,6 +6427,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <time>k__BackingField: 0
+  <brug>k__BackingField: 0
   <points>k__BackingField: 0
   <points2>k__BackingField: 0
   <points3>k__BackingField: 0
@@ -6725,6 +6436,7 @@ MonoBehaviour:
   placeSound: {fileID: 4003378952028926955}
   placementsound: {fileID: 5139525997351657935}
   dragDrop: {fileID: 4003378952028926958}
+  bridgeController: {fileID: 1744091988}
 --- !u!114 &1517821857
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6943,6 +6655,106 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1619591403}
   m_CullTransparentMesh: 1
+--- !u!1 &1636679047
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1636679048}
+  - component: {fileID: 1636679051}
+  - component: {fileID: 1636679050}
+  - component: {fileID: 1636679049}
+  m_Layer: 5
+  m_Name: itemSlot (32)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1636679048
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1636679047}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.6, y: 0.6, z: 0.54545456}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 1163739954}
+  m_RootOrder: 39
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 100.00001, y: 98}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1636679049
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1636679047}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 016638f3f9c129248b0663dd0511ebec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <time>k__BackingField: 0
+  <brug>k__BackingField: 0
+  <points>k__BackingField: 0
+  <points2>k__BackingField: 0
+  <points3>k__BackingField: 0
+  <money>k__BackingField: 0
+  gameManages: {fileID: 740509306}
+  placeSound: {fileID: 4003378952028926955}
+  placementsound: {fileID: 5139525997351657935}
+  dragDrop: {fileID: 4003378952028926958}
+  bridgeController: {fileID: 1744091988}
+--- !u!114 &1636679050
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1636679047}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.09803922}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1636679051
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1636679047}
+  m_CullTransparentMesh: 1
 --- !u!1 &1650388171
 GameObject:
   m_ObjectHideFlags: 0
@@ -6975,7 +6787,7 @@ RectTransform:
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1163739954}
-  m_RootOrder: 33
+  m_RootOrder: 27
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -6995,6 +6807,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <time>k__BackingField: 0
+  <brug>k__BackingField: 0
   <points>k__BackingField: 0
   <points2>k__BackingField: 0
   <points3>k__BackingField: 0
@@ -7003,6 +6816,7 @@ MonoBehaviour:
   placeSound: {fileID: 4003378952028926955}
   placementsound: {fileID: 5139525997351657935}
   dragDrop: {fileID: 4003378952028926958}
+  bridgeController: {fileID: 1744091988}
 --- !u!114 &1650388174
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7040,104 +6854,6 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1650388171}
-  m_CullTransparentMesh: 1
---- !u!1 &1662105087
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1662105088}
-  - component: {fileID: 1662105091}
-  - component: {fileID: 1662105090}
-  - component: {fileID: 1662105089}
-  m_Layer: 5
-  m_Name: itemSlot (30)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1662105088
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1662105087}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.6, y: 0.6, z: 0.54545456}
-  m_ConstrainProportionsScale: 1
-  m_Children: []
-  m_Father: {fileID: 1163739954}
-  m_RootOrder: 26
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -35, y: 98}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1662105089
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1662105087}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 016638f3f9c129248b0663dd0511ebec, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  <time>k__BackingField: 0
-  <points>k__BackingField: 0
-  <points2>k__BackingField: 0
-  <points3>k__BackingField: 0
-  <money>k__BackingField: 0
-  gameManages: {fileID: 740509306}
-  placeSound: {fileID: 4003378952028926955}
-  placementsound: {fileID: 5139525997351657935}
-  dragDrop: {fileID: 4003378952028926958}
---- !u!114 &1662105090
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1662105087}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.09803922}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 0}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &1662105091
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1662105087}
   m_CullTransparentMesh: 1
 --- !u!1 &1671414856
 GameObject:
@@ -7409,6 +7125,85 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1740589007}
   m_CullTransparentMesh: 1
+--- !u!1 &1744091986
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1744091987}
+  - component: {fileID: 1744091989}
+  - component: {fileID: 1744091988}
+  m_Layer: 5
+  m_Name: Bridge
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1744091987
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1744091986}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.7, y: 0.7, z: 0.7}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 1163739954}
+  m_RootOrder: 38
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -34.999985, y: 98}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1744091988
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1744091986}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 565312739521f184aa77bd3562ffe622, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isBridgeBuilt: 0
+  requiredObjectParent: {fileID: 872944716}
+  grid: {fileID: 1395946646780338267}
+--- !u!61 &1744091989
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1744091986}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.3020172, y: 0.15097809}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 98.83772, y: 98.535934}
+  m_EdgeRadius: 0
 --- !u!1 &1750400274
 GameObject:
   m_ObjectHideFlags: 0
@@ -7441,7 +7236,7 @@ RectTransform:
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1163739954}
-  m_RootOrder: 16
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -7461,6 +7256,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <time>k__BackingField: 0
+  <brug>k__BackingField: 0
   <points>k__BackingField: 0
   <points2>k__BackingField: 0
   <points3>k__BackingField: 0
@@ -7469,6 +7265,7 @@ MonoBehaviour:
   placeSound: {fileID: 4003378952028926955}
   placementsound: {fileID: 5139525997351657935}
   dragDrop: {fileID: 4003378952028926958}
+  bridgeController: {fileID: 1744091988}
 --- !u!114 &1750400277
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7539,7 +7336,7 @@ RectTransform:
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1163739954}
-  m_RootOrder: 35
+  m_RootOrder: 28
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -7559,6 +7356,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <time>k__BackingField: 0
+  <brug>k__BackingField: 0
   <points>k__BackingField: 0
   <points2>k__BackingField: 0
   <points3>k__BackingField: 0
@@ -7567,6 +7365,7 @@ MonoBehaviour:
   placeSound: {fileID: 4003378952028926955}
   placementsound: {fileID: 5139525997351657935}
   dragDrop: {fileID: 4003378952028926958}
+  bridgeController: {fileID: 1744091988}
 --- !u!114 &1803557211
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7604,104 +7403,6 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1803557208}
-  m_CullTransparentMesh: 1
---- !u!1 &1827181409
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1827181410}
-  - component: {fileID: 1827181413}
-  - component: {fileID: 1827181412}
-  - component: {fileID: 1827181411}
-  m_Layer: 5
-  m_Name: itemSlot (11)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1827181410
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1827181409}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.6, y: 0.6, z: 0.54545456}
-  m_ConstrainProportionsScale: 1
-  m_Children: []
-  m_Father: {fileID: 1163739954}
-  m_RootOrder: 10
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 100, y: -100}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1827181411
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1827181409}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 016638f3f9c129248b0663dd0511ebec, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  <time>k__BackingField: 0
-  <points>k__BackingField: 0
-  <points2>k__BackingField: 0
-  <points3>k__BackingField: 0
-  <money>k__BackingField: 0
-  gameManages: {fileID: 740509306}
-  placeSound: {fileID: 4003378952028926955}
-  placementsound: {fileID: 5139525997351657935}
-  dragDrop: {fileID: 4003378952028926958}
---- !u!114 &1827181412
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1827181409}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.09803922}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 0}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &1827181413
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1827181409}
   m_CullTransparentMesh: 1
 --- !u!224 &1834336917 stripped
 RectTransform:
@@ -7741,7 +7442,7 @@ RectTransform:
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1163739954}
-  m_RootOrder: 37
+  m_RootOrder: 30
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -7761,14 +7462,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <time>k__BackingField: 0
+  <brug>k__BackingField: 0
   <points>k__BackingField: 0
   <points2>k__BackingField: 0
-  <points3>k__BackingField: 0
-  <money>k__BackingField: 0
+  <points3>k__BackingField: 1
+  <money>k__BackingField: 5
   gameManages: {fileID: 740509306}
   placeSound: {fileID: 4003378952028926955}
   placementsound: {fileID: 5139525997351657935}
   dragDrop: {fileID: 4003378952028926958}
+  bridgeController: {fileID: 1744091988}
 --- !u!114 &1851088144
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7807,6 +7510,141 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1851088141}
   m_CullTransparentMesh: 1
+--- !u!1 &1926647846
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1926647847}
+  - component: {fileID: 1926647849}
+  - component: {fileID: 1926647848}
+  m_Layer: 5
+  m_Name: Text (TMP) (4)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1926647847
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1926647846}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.25, y: 0.25, z: 0.25}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 281458899}
+  m_RootOrder: 15
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -34.3, y: 116.4}
+  m_SizeDelta: {x: 200, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1926647848
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1926647846}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: Brug Key
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 46
+  m_fontSizeBase: 46
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: -8.767177, w: -0.7894611}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1926647849
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1926647846}
+  m_CullTransparentMesh: 1
 --- !u!1 &1951469130
 GameObject:
   m_ObjectHideFlags: 0
@@ -7839,7 +7677,7 @@ RectTransform:
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1163739954}
-  m_RootOrder: 39
+  m_RootOrder: 32
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -7859,6 +7697,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <time>k__BackingField: 0
+  <brug>k__BackingField: 0
   <points>k__BackingField: 0
   <points2>k__BackingField: 0
   <points3>k__BackingField: 0
@@ -7867,6 +7706,7 @@ MonoBehaviour:
   placeSound: {fileID: 4003378952028926955}
   placementsound: {fileID: 5139525997351657935}
   dragDrop: {fileID: 4003378952028926958}
+  bridgeController: {fileID: 1744091988}
 --- !u!114 &1951469133
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8040,104 +7880,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1972609265}
   m_CullTransparentMesh: 1
---- !u!1 &1989595431
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1989595432}
-  - component: {fileID: 1989595435}
-  - component: {fileID: 1989595434}
-  - component: {fileID: 1989595433}
-  m_Layer: 5
-  m_Name: itemSlot (25)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1989595432
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1989595431}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.6, y: 0.6, z: 0.54545456}
-  m_ConstrainProportionsScale: 1
-  m_Children: []
-  m_Father: {fileID: 1163739954}
-  m_RootOrder: 21
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 100, y: 32}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1989595433
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1989595431}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 016638f3f9c129248b0663dd0511ebec, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  <time>k__BackingField: 0
-  <points>k__BackingField: 0
-  <points2>k__BackingField: 0
-  <points3>k__BackingField: 0
-  <money>k__BackingField: 0
-  gameManages: {fileID: 740509306}
-  placeSound: {fileID: 4003378952028926955}
-  placementsound: {fileID: 5139525997351657935}
-  dragDrop: {fileID: 4003378952028926958}
---- !u!114 &1989595434
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1989595431}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.09803922}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 0}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &1989595435
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1989595431}
-  m_CullTransparentMesh: 1
 --- !u!224 &2013512261 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 6440672101379952292, guid: c80053e3b15585d4eb098468596560ae,
@@ -8179,7 +7921,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 101.0015, y: 114.2}
+  m_AnchoredPosition: {x: -234, y: -16.5}
   m_SizeDelta: {x: 208.012, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2022070277
@@ -8401,45 +8143,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2057265488}
   m_CullTransparentMesh: 1
---- !u!1 &2057845417
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2057845418}
-  m_Layer: 5
-  m_Name: Rechten
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &2057845418
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2057845417}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 625137321}
-  - {fileID: 1487821032}
-  - {fileID: 2013512261}
-  m_Father: {fileID: 872944717}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &2063597180
 GameObject:
   m_ObjectHideFlags: 0
@@ -8472,7 +8175,7 @@ RectTransform:
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1163739954}
-  m_RootOrder: 13
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -8492,6 +8195,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <time>k__BackingField: 0
+  <brug>k__BackingField: 0
   <points>k__BackingField: 0
   <points2>k__BackingField: 0
   <points3>k__BackingField: 0
@@ -8500,6 +8204,7 @@ MonoBehaviour:
   placeSound: {fileID: 4003378952028926955}
   placementsound: {fileID: 5139525997351657935}
   dragDrop: {fileID: 4003378952028926958}
+  bridgeController: {fileID: 1744091988}
 --- !u!114 &2063597183
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8734,12 +8439,16 @@ MonoBehaviour:
     type: 3}
   _waterTile: {fileID: -8300478635791618853, guid: 68f94e46ce0b8b14cafee6adca4f287d,
     type: 3}
+  _brugTile: {fileID: 973379988469935266, guid: 2fa7df802bdfb6c4797e9a7c4954e4eb,
+    type: 3}
   camera: {fileID: 14354945}
   startPoint: {fileID: 3228531992879283587, guid: 877f68c65bc43b744959f950a012203c,
     type: 3}
   carStart: {fileID: 865257773}
   truck: {fileID: 0}
   car: {fileID: 1412344354}
+  brugItemslot: {fileID: 1636679047}
+  bridgeController: {fileID: 1744091988}
   tijdCount: 0
   timeBetweenWaves: 100
   currentSpeed: 100
@@ -8817,7 +8526,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 1022257777}
+    m_TransformParent: {fileID: 872944717}
     m_Modifications:
     - target: {fileID: 3656250086651510768, guid: acebaf6f801f0bb42806232c7c52967c,
         type: 3}
@@ -8828,6 +8537,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_TagString
       value: Untagged
+      objectReference: {fileID: 0}
+    - target: {fileID: 3656250086651510778, guid: acebaf6f801f0bb42806232c7c52967c,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3656250086651510781, guid: acebaf6f801f0bb42806232c7c52967c,
         type: 3}
@@ -9053,13 +8767,18 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 1022257777}
+    m_TransformParent: {fileID: 872944717}
     m_Modifications:
     - target: {fileID: 4003378952778314097, guid: c88b64de1b1d9ce4f97050a3518c49a0,
         type: 3}
       propertyPath: canvas
       value: 
       objectReference: {fileID: 281458898}
+    - target: {fileID: 4003378952778314099, guid: c88b64de1b1d9ce4f97050a3518c49a0,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4003378952778314108, guid: c88b64de1b1d9ce4f97050a3518c49a0,
         type: 3}
       propertyPath: m_Pivot.x
@@ -9296,7 +9015,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 1022257777}
+    m_TransformParent: {fileID: 872944717}
     m_Modifications:
     - target: {fileID: 4161609467690802548, guid: 264d5663e959bfd498fb5571e3e9847b,
         type: 3}
@@ -9412,6 +9131,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_TagString
       value: Untagged
+      objectReference: {fileID: 0}
+    - target: {fileID: 4161609467690802553, guid: 264d5663e959bfd498fb5571e3e9847b,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4161609467690802554, guid: 264d5663e959bfd498fb5571e3e9847b,
         type: 3}
@@ -9532,8 +9256,13 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 2057845418}
+    m_TransformParent: {fileID: 872944717}
     m_Modifications:
+    - target: {fileID: 5139525997976434531, guid: 8dc6889a7e99ee342a9d1e4d1df6fd50,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5139525997976434532, guid: 8dc6889a7e99ee342a9d1e4d1df6fd50,
         type: 3}
       propertyPath: m_Pivot.x
@@ -9547,7 +9276,7 @@ PrefabInstance:
     - target: {fileID: 5139525997976434532, guid: 8dc6889a7e99ee342a9d1e4d1df6fd50,
         type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5139525997976434532, guid: 8dc6889a7e99ee342a9d1e4d1df6fd50,
         type: 3}
@@ -9654,6 +9383,11 @@ PrefabInstance:
       propertyPath: canvas
       value: 
       objectReference: {fileID: 281458898}
+    - target: {fileID: 5139525997976434534, guid: 8dc6889a7e99ee342a9d1e4d1df6fd50,
+        type: 3}
+      propertyPath: isRight
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8dc6889a7e99ee342a9d1e4d1df6fd50, type: 3}
 --- !u!1 &5139525997351657934 stripped
@@ -9832,8 +9566,13 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 1022257777}
+    m_TransformParent: {fileID: 872944717}
     m_Modifications:
+    - target: {fileID: 6424162130488254771, guid: 10b4232ac144e2b40aa9d8d3e72b2d77,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6424162130488254772, guid: 10b4232ac144e2b40aa9d8d3e72b2d77,
         type: 3}
       propertyPath: m_Pivot.x
@@ -10068,7 +9807,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 2057845418}
+    m_TransformParent: {fileID: 872944717}
     m_Modifications:
     - target: {fileID: 6440672101379952292, guid: c80053e3b15585d4eb098468596560ae,
         type: 3}
@@ -10083,7 +9822,7 @@ PrefabInstance:
     - target: {fileID: 6440672101379952292, guid: c80053e3b15585d4eb098468596560ae,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 6440672101379952292, guid: c80053e3b15585d4eb098468596560ae,
         type: 3}
@@ -10190,6 +9929,16 @@ PrefabInstance:
       propertyPath: canvas
       value: 
       objectReference: {fileID: 281458898}
+    - target: {fileID: 6440672101379952294, guid: c80053e3b15585d4eb098468596560ae,
+        type: 3}
+      propertyPath: isRight
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6440672101379952299, guid: c80053e3b15585d4eb098468596560ae,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c80053e3b15585d4eb098468596560ae, type: 3}
 --- !u!1 &6440672099903638754 stripped
@@ -10368,7 +10117,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 1022257777}
+    m_TransformParent: {fileID: 872944717}
     m_Modifications:
     - target: {fileID: 6999868650973555148, guid: c28daf5552d67aa4682e8a28c5594e30,
         type: 3}
@@ -10493,6 +10242,11 @@ PrefabInstance:
     - target: {fileID: 6999868650973555187, guid: c28daf5552d67aa4682e8a28c5594e30,
         type: 3}
       propertyPath: isCorner
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6999868650973555190, guid: c28daf5552d67aa4682e8a28c5594e30,
+        type: 3}
+      propertyPath: m_IsTrigger
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -10710,7 +10464,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 2057845418}
+    m_TransformParent: {fileID: 872944717}
     m_Modifications:
     - target: {fileID: 8722536334966963202, guid: 195cedd7048fec54abbdabf4c4b520e4,
         type: 3}
@@ -10721,6 +10475,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_TagString
       value: Untagged
+      objectReference: {fileID: 0}
+    - target: {fileID: 8722536334966963208, guid: 195cedd7048fec54abbdabf4c4b520e4,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8722536334966963213, guid: 195cedd7048fec54abbdabf4c4b520e4,
         type: 3}
@@ -10735,7 +10494,7 @@ PrefabInstance:
     - target: {fileID: 8722536334966963213, guid: 195cedd7048fec54abbdabf4c4b520e4,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8722536334966963213, guid: 195cedd7048fec54abbdabf4c4b520e4,
         type: 3}
@@ -10832,6 +10591,11 @@ PrefabInstance:
       propertyPath: canvas
       value: 
       objectReference: {fileID: 281458898}
+    - target: {fileID: 8722536334966963215, guid: 195cedd7048fec54abbdabf4c4b520e4,
+        type: 3}
+      propertyPath: isRight
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 195cedd7048fec54abbdabf4c4b520e4, type: 3}
 --- !u!1 &8722536336181617894 stripped
